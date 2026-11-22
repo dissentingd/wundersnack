@@ -16,7 +16,7 @@
       "binding": "DB",
       "database_name": "wundersnack-votes",
       // From Cloudflare dashboard → Storage & Databases → D1 → wundersnack-votes. Not a secret.
-      "database_id": "00000000-0000-0000-0000-000000000000"
+      "database_id": "13cb8622-93c0-4012-be34-a0dd88f1f27c"
     }
   ],
   "observability": { "enabled": true }
