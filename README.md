@@ -21,7 +21,9 @@ The natural world is full of wonder most people never get to see. wundersnack pu
 | [iNaturalist](https://www.inaturalist.org/) | Research-grade, most-favourited observation photos for wonder-rich groups (fungi, slime molds, nudibranchs, radiolarians, tardigrades and more), plus a fact from Wikipedia about the species, or its genus, family, order or phylum | Each photo's own Creative Commons license; facts CC BY-SA |
 | [NASA Image and Video Library](https://images.nasa.gov/) | Nebulae, aurorae, galaxies, Earth from space, and short science videos | Public domain (NASA) |
 | [ESO](https://www.eso.org/public/news/) | Latest press releases: new discoveries about the universe | CC BY 4.0 |
-| [Wikimedia Commons](https://commons.wikimedia.org/) | Short nature videos from the community's *Media of the day* picks: time-lapses, slow motion, microscopy. Copies converted to H.264 for iPhone compatibility | Each file's own license |
+| [Wikimedia Commons](https://commons.wikimedia.org/) | Short nature videos from the community's *Media of the day* picks: time-lapses, slow motion, microscopy, volcanoes and geysers, waves, wind. Copies converted to H.264 for iPhone compatibility | Each file's own license |
+| [Wikimedia Commons Featured Pictures](https://commons.wikimedia.org/wiki/Commons:Featured_pictures) | Community-selected photos of geology (hoodoos, basalt columns, canyons, caves), waves and wind (dunes, wind-carved rock, wave clouds) | Each file's own license |
+| [Wiki Loves Earth](https://wikilovesearth.org/) winners and Commons [Picture of the Year](https://commons.wikimedia.org/wiki/Commons:Picture_of_the_Year) finalists | Prize-winning nature photography (Picture of the Year finalists are filtered to nature subjects) | Each file's own license |
 | Hand-picked (`curated.json`) | YouTube and Vimeo videos, embedded | The creator's own terms |
 
 If you made something shown here and want it removed, or spot something that shouldn't be in a calm feed, please [open an issue](https://github.com/dissentingd/wundersnack/issues).
@@ -68,7 +70,9 @@ A source that fails or returns nothing keeps its items from the previous `feed.j
 
 ### Video copies (Cloudflare R2)
 
-Wikimedia Commons only offers its videos as MPEG-4 Part 2 or WebM, which iPhone Safari plays unreliably, and it rate-limits heavy hotlinking. `scripts/cache-media.mjs --upload` converts each new Commons video once with ffmpeg (H.264 + AAC, at most 1280 px wide and 30 fps) and uploads it, plus a poster frame, to an R2 bucket served at `mediaCache.baseUrl`. A public `manifest.json` in the bucket records what's cached. Cards list our copy first and the Commons originals after it, so playback falls back to Commons if our copy is unavailable.
+Wikimedia Commons only offers its videos as MPEG-4 Part 2 or WebM, which iPhone Safari plays unreliably, and it rate-limits heavy hotlinking. Commons photos are copied too (Wikimedia's own 1280 and 1920 px JPEG renditions, unchanged), with the original as fallback. `scripts/cache-media.mjs --upload` converts each new Commons video once with ffmpeg (H.264 + AAC, at most 1280 px wide and 30 fps) and uploads it, plus a poster frame, to an R2 bucket served at `mediaCache.baseUrl`. A public `manifest.json` in the bucket records what's cached. Cards list our copy first and the Commons originals after it, so playback falls back to Commons if our copy is unavailable.
+
+**Storage budget.** R2's Standard storage includes 10 GB free, and `mediaCache.maxBytes` caps the bucket at 9 GB. Every upload run first prunes copies of items that have left the feed (including ones dropped for being voted unhelpful), then, if a new file wouldn't fit, deletes the copies with the worst vote scores (helped < 50%) before skipping new items; skipped items keep loading from Wikimedia. A run never prunes more than a quarter of the cache at once.
 
 The weekly workflow does this automatically (up to 60 new videos per run) when these repository secrets are set: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` (an R2 API token with object read and write on the bucket). It uses the AWS CLI against R2's S3-compatible API. To test conversion locally without uploading: `node scripts/cache-media.mjs --dry-run=out --limit=3` (needs ffmpeg).
 
@@ -87,6 +91,7 @@ In `sources.config.json`:
 - `calmBlocklist`: words that drop an item. Each entry is a case-insensitive regex matched at the start of a word, so `war\b` blocks "war" but not "warbler".
 - `commons.natureAllowlist`: a Commons video is kept only if its title, description or categories match one of these.
 - `grossButCool.patterns`: names that flag an item as "gross, but cool" (checked against titles, and captions for videos; space sources are skipped). Whole iNaturalist taxa can be flagged with `grossButCool: true`.
+- `commons.groups` and `commonsPictures.groups`: search terms per topic (Geology, Waves, Wind); `commonsPictures.collections`: prize-winning photo collections.
 - `exclude.ids`: feed item ids (for example `commons-12345` or `inat-67890`) to always leave out.
 - `votes`: where to read vote totals, and when to drop an item (by default, 8 or more votes and under 25% helpful).
 - Taxa, queries and per-source counts for each source.

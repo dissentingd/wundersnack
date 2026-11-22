@@ -134,8 +134,17 @@ async function wikiLeads(titles) {
 const cleanCredit = s => stripHtml(s).replace(/^\(c\)\s*/i, '')
   .replace(/,?\s*(some|no|all) rights reserved.*$/i, '').trim();
 // "Hercostomus rogenhoferi - 2018-07-19" / "Nepenthes gracilis video2" -> tidy title
+// "006 Dune 45 in Sossusvlei at sunrise Photo by Giles Laurent" -> "Dune 45 in Sossusvlei at sunrise"
 const cleanTitle = s => s.replace(/_/g, ' ').replace(/\s*[-–]\s*\d{4}-\d{2}-\d{2}$/, '')
-  .replace(/\s+(video\s*)?\d{1,2}$/i, '').replace(/^\d{4}-\d{2}-\d{2}\s+/, '').trim();
+  .replace(/\s+(video\s*)?\d{1,2}$/i, '').replace(/^\d{4}-\d{2}-\d{2}\s+/, '')
+  .replace(/\s+(photo|video|image|picture)\s+by\s+.+$/i, '').replace(/^\d{1,4}\s+/, '')
+  .replace(/\s*\((cropped|edit\d*|crop)\)$/i, '').replace(/\s+(cropped|edit\d*|crop)$/i, '')
+  // camera/date codes: "-- 2019 -- 3489", ", 2017-08-26, DD 130-132 PAN", " (1)", " nn", " 2015-3"
+  .replace(/\s+--\s+\d{4}\b.*$/, '').replace(/,?\s+\d{4}-\d{2}-\d{2}\b.*$/, '').replace(/,?\s+DD\s+\d.*$/, '')
+  .replace(/\s+\(\d+\)$/, '').replace(/\s+nn$/i, '').replace(/\s+\d{4}-\d{1,2}$/, '')
+  // camera file names: "HDR-20200912-RM-155609", "IMG_1234", "DSC 0042", "P1010123"
+  .replace(/[\s_-]+(HDR[-_])?\d{8}[-_][\w-]+$/i, '').replace(/[\s_-]+(IMG|DSC|DSCF|DSCN|P)[_ -]?\d{3,}$/i, '')
+  .replace(/[\s,;-]+$/, '').trim();
 
 const LICENSES = {
   'cc0': 'CC0', 'cc-by': 'CC BY', 'cc-by-nc': 'CC BY-NC', 'cc-by-sa': 'CC BY-SA',
@@ -367,18 +376,19 @@ async function fromESO() {
 // ---------- Wikimedia Commons: "Media of the day" videos ----------
 async function fromCommons() {
   const c = cfg.commons, api = 'https://commons.wikimedia.org/w/api.php';
-  const titles = new Set();
-  for (const query of c.queries) {
+  const topicOf = new Map(); // file title -> topic (first group that found it wins)
+  const groups = [{ topic: 'Motion', queries: c.queries }, ...(c.groups || [])];
+  for (const g of groups) for (const query of g.queries) {
     const q = new URLSearchParams({
       action: 'query', format: 'json', list: 'search', srnamespace: '6', srlimit: String(c.perQuery),
       srsearch: `filetype:video incategory:"${c.category}" ${query}`,
     });
     try {
       const r = await getJSON(`${api}?${q}`, { delay: 200 });
-      for (const s of r.query.search) titles.add(s.title);
+      for (const s of r.query.search) if (!topicOf.has(s.title) || topicOf.get(s.title) === 'Motion') topicOf.set(s.title, g.topic);
     } catch (e) { console.warn('Commons search', query, e.message); }
   }
-  const all = [...titles], out = [];
+  const all = [...topicOf.keys()], out = [];
   for (let i = 0; i < all.length; i += 20) {
     const q = new URLSearchParams({
       action: 'query', format: 'json', titles: all.slice(i, i + 20).join('|'),
@@ -405,7 +415,7 @@ async function fromCommons() {
         id: `commons-${p.pageid}`,
         source: 'Wikimedia Commons',
         kind: 'video',
-        topic: 'Motion',
+        topic: topicOf.get(p.title) || 'Motion',
         title: name,
         subtitle: '',
         caption: desc && desc !== name ? snippet(desc) : '',
@@ -419,12 +429,80 @@ async function fromCommons() {
   return out;
 }
 
+// ---------- Wikimedia Commons: Featured Pictures by topic (geology, waves, wind) ----------
+async function fromCommonsPictures() {
+  const c = cfg.commonsPictures, api = 'https://commons.wikimedia.org/w/api.php';
+  if (!c) return [];
+  const topicOf = new Map();
+  for (const g of c.groups) for (const query of g.queries) {
+    const q = new URLSearchParams({
+      action: 'query', format: 'json', list: 'search', srnamespace: '6', srlimit: String(c.perQuery),
+      srsearch: `filetype:bitmap incategory:"${c.category}" ${query}`,
+    });
+    try {
+      const r = await getJSON(`${api}?${q}`, { delay: 200 });
+      for (const s of r.query.search) if (!topicOf.has(s.title)) topicOf.set(s.title, g.topic);
+    } catch (e) { console.warn('Commons pictures search', query, e.message); }
+  }
+  // Prize-winning collections (Wiki Loves Earth winners, Picture of the Year finalists).
+  const natureOnly = new Set();
+  for (const col of c.collections || []) {
+    const q = new URLSearchParams({
+      action: 'query', format: 'json', list: 'search', srnamespace: '6', srlimit: String(col.max || 30), srsearch: col.search,
+      ...(col.random ? { srsort: 'random' } : {}),
+    });
+    try {
+      const r = await getJSON(`${api}?${q}`, { delay: 200 });
+      for (const s of r.query.search) {
+        topicOf.set(s.title, col.topic); // a prize beats a plain topic tag
+        if (col.natureOnly) natureOnly.add(s.title); else natureOnly.delete(s.title);
+      }
+    } catch (e) { console.warn('Commons collection', col.topic, e.message); }
+  }
+  const all = [...topicOf.keys()], out = [];
+  for (let i = 0; i < all.length; i += 20) {
+    const q = new URLSearchParams({
+      action: 'query', format: 'json', titles: all.slice(i, i + 20).join('|'),
+      prop: 'imageinfo', iiprop: 'url|extmetadata|size|mime', iiurlwidth: '1280', iiextmetadatalanguage: 'en',
+      iiextmetadatafilter: 'LicenseShortName|Artist|ImageDescription|ObjectName|Categories',
+    });
+    let r;
+    try { r = await getJSON(`${api}?${q}`, { delay: 200 }); } catch (e) { console.warn('Commons pictures info', e.message); continue; }
+    for (const p of Object.values(r.query.pages)) {
+      const ii = p.imageinfo?.[0];
+      if (!ii?.thumburl || !/jpe?g|png/.test(ii.mime || '')) continue;
+      const m = ii.extmetadata || {};
+      const name = cleanTitle(stripHtml(m.ObjectName?.value) || p.title.replace(/^File:/, '').replace(/\.[^.]+$/, ''));
+      const desc = stripHtml(m.ImageDescription?.value).replace(/^Original caption( released with image)?:\s*/i, '');
+      const cats = stripHtml(m.Categories?.value).replace(/\|/g, ' ');
+      if (!isCalm(name, desc, cats)) continue;
+      if (natureOnly.has(p.title) && !isNature(name, desc, cats)) continue;
+      const src = ii.thumburl.replace(/\?.*$/, '');
+      out.push({
+        id: `commonsimg-${p.pageid}`,
+        source: 'Wikimedia Commons',
+        kind: 'image',
+        topic: topicOf.get(p.title),
+        title: name,
+        subtitle: '',
+        caption: desc && desc.toLowerCase() !== name.toLowerCase() ? snippet(desc) : '',
+        // 1280 for phones; 1920 for big screens when the original is that large (Wikimedia serves fixed widths)
+        media: { src, ...(ii.width > 1600 ? { hi: src.replace(/\/1280px-/, '/1920px-') } : {}), thumb: src.replace(/\/1280px-/, '/330px-') },
+        credit: cleanCredit(m.Artist?.value) || 'Wikimedia Commons contributor',
+        license: stripHtml(m.LicenseShortName?.value),
+        sourceUrl: ii.descriptionurl,
+      });
+    }
+  }
+  return out;
+}
+
 // ---------- assemble ----------
 const curated = JSON.parse(await readFile(path.join(root, 'curated.json'), 'utf8')).items || [];
 let previous = { items: [] };
 try { previous = JSON.parse(await readFile(path.join(root, 'feed.json'), 'utf8')); } catch {}
 
-const runners = { inaturalist: fromINaturalist, nasa: fromNASA, nasaVideo: fromNASAVideo, eso: fromESO, commons: fromCommons };
+const runners = { inaturalist: fromINaturalist, nasa: fromNASA, nasaVideo: fromNASAVideo, eso: fromESO, commons: fromCommons, commonsPictures: fromCommonsPictures };
 const bySource = {};
 for (const [name, fn] of Object.entries(runners)) {
   if (!want(name)) continue;
@@ -434,7 +512,7 @@ for (const [name, fn] of Object.entries(runners)) {
 }
 // Sources not rebuilt this run (or that came back empty) keep their previous items.
 // Items are matched to their runner by id prefix (NASA stills and videos share a source name).
-const prefixOf = { inaturalist: 'inat-', nasa: 'nasa-', nasaVideo: 'nasavid-', eso: 'eso-', commons: 'commons-' };
+const prefixOf = { inaturalist: 'inat-', nasa: 'nasa-', nasaVideo: 'nasavid-', eso: 'eso-', commons: 'commons-', commonsPictures: 'commonsimg-' };
 for (const name of Object.keys(runners)) {
   if (!bySource[name]?.length) {
     bySource[name] = previous.items.filter(i => i.id.startsWith(prefixOf[name]) && !i.curated);

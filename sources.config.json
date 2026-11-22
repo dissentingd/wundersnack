@@ -73,7 +73,29 @@
     "duke\\b",
     "locomotive",
     "train\\b",
-    "ICE\\d"
+    "ICE\\d",
+    "wind farms?\\b",
+    "wind (tunnels?|turbines?|parks?|power|energy)\\b",
+    "turbines?\\b",
+    "cyclones?\\b",
+    "tornado(e?s)?\\b",
+    "tsunamis?\\b",
+    "hurricanes?\\b",
+    "typhoons?\\b",
+    "contests?\\b",
+    "competitions?\\b",
+    "kayak\\w*\\b",
+    "aircraft\\b",
+    "NACA\\b",
+    "evacuat\\w*\\b",
+    "casualt(y|ies)\\b",
+    "fight(s|ing)?\\b",
+    "industrial\\b",
+    "factory\\b",
+    "quarr(y|ies)\\b",
+    "pipes?\\b",
+    "sheds?\\b",
+    "Quarzwerke"
   ],
   "inaturalist": {
     "perTaxon": 30,
@@ -337,9 +359,74 @@
       "organism",
       "species",
       "wildlife",
-      "nature"
+      "nature",
+      "surf",
+      "swell",
+      "tide",
+      "tidal",
+      "wind",
+      "dune",
+      "sand",
+      "breeze",
+      "volcan",
+      "lava",
+      "geyser",
+      "glacier",
+      "canyon",
+      "cave",
+      "rock",
+      "erosion",
+      "cliff",
+      "basalt",
+      "hoodoo",
+      "mountain",
+      "spring",
+      "ocean",
+      "sea"
     ],
-    "_allowlistDoc": "A Commons video is kept only if its title, description or categories match one of these (word-start, case-insensitive)."
+    "_allowlistDoc": "A Commons video is kept only if its title, description or categories match one of these (word-start, case-insensitive).",
+    "_groupsDoc": "Extra query groups, each with its own topic tag. The plain \"queries\" list above is tagged \"Motion\".",
+    "groups": [
+      {
+        "topic": "Geology",
+        "queries": [
+          "volcano",
+          "lava",
+          "geyser",
+          "glacier",
+          "canyon",
+          "cave",
+          "erosion",
+          "basalt",
+          "hot spring",
+          "mud pot"
+        ]
+      },
+      {
+        "topic": "Waves",
+        "queries": [
+          "ocean waves",
+          "breaking wave",
+          "swell",
+          "tide",
+          "waves crashing",
+          "standing wave",
+          "wave tank"
+        ]
+      },
+      {
+        "topic": "Wind",
+        "queries": [
+          "sand dune",
+          "wind blowing",
+          "windswept",
+          "dust devil",
+          "lenticular cloud",
+          "clouds timelapse",
+          "wind ripples"
+        ]
+      }
+    ]
   },
   "exclude": {
     "_doc": "Feed item ids to always drop (vetoed by hand).",
@@ -355,7 +442,9 @@
   "mediaCache": {
     "_doc": "Our own H.264 copies of Wikimedia Commons videos (see scripts/cache-media.mjs). Served publicly from baseUrl (an R2 bucket's custom domain).",
     "bucket": "wundersnack-media",
-    "baseUrl": "https://media.wundersnack.com"
+    "baseUrl": "https://media.wundersnack.com",
+    "maxBytes": 9000000000,
+    "_budgetDoc": "Storage budget for the bucket (R2 Standard storage: 10 GB free). Upload runs prune copies of items no longer in the feed, then evict the worst-voted copies (helped < 50%) before skipping new items."
   },
   "grossButCool": {
     "_doc": "Items whose title, subtitle, caption or topic match one of these (case-insensitive regex at a word start) are flagged gross: true. The app hides them unless the viewer turns on \"Gross, but cool\". Taxa can also be flagged wholesale with grossButCool in inaturalist.taxa. Items from skipSources are never flagged.",
@@ -393,6 +482,94 @@
     "skipSources": [
       "NASA",
       "ESO"
+    ]
+  },
+  "commonsPictures": {
+    "_doc": "Photos from Wikimedia Commons Featured Pictures, by topic. Cached in R2 by scripts/cache-media.mjs like the videos.",
+    "category": "Featured_pictures_on_Wikimedia_Commons",
+    "perQuery": 6,
+    "groups": [
+      {
+        "topic": "Geology",
+        "queries": [
+          "hoodoos",
+          "rock formation",
+          "basalt columns",
+          "canyon",
+          "natural arch",
+          "geyser",
+          "stalactites",
+          "travertine terraces",
+          "volcano",
+          "lava",
+          "glacier",
+          "karst",
+          "sandstone",
+          "fjord",
+          "tafoni"
+        ]
+      },
+      {
+        "topic": "Waves",
+        "queries": [
+          "breaking wave",
+          "ocean wave",
+          "waves crashing",
+          "tidal bore",
+          "wave cloud",
+          "sea foam",
+          "tide pool",
+          "swell"
+        ]
+      },
+      {
+        "topic": "Wind",
+        "queries": [
+          "sand dunes",
+          "dune ripples",
+          "windswept tree",
+          "lenticular cloud",
+          "yardang",
+          "ventifact",
+          "wind erosion",
+          "sandstorm"
+        ]
+      }
+    ],
+    "_collectionsDoc": "Prize-winning photo collections (Commons search strings). natureOnly applies the commons.natureAllowlist; random picks a fresh random selection each build.",
+    "collections": [
+      {
+        "topic": "Wiki Loves Earth winner",
+        "search": "filetype:bitmap deepcat:\"Winners of Wiki Loves Earth 2021\"",
+        "max": 30
+      },
+      {
+        "topic": "Wiki Loves Earth winner",
+        "search": "filetype:bitmap deepcat:\"Winners of Wiki Loves Earth 2022\"",
+        "max": 30
+      },
+      {
+        "topic": "Wiki Loves Earth winner",
+        "search": "filetype:bitmap deepcat:\"Winners of Wiki Loves Earth 2023\"",
+        "max": 30
+      },
+      {
+        "topic": "Wiki Loves Earth winner",
+        "search": "filetype:bitmap deepcat:\"Winners of Wiki Loves Earth 2024\"",
+        "max": 30
+      },
+      {
+        "topic": "Wiki Loves Earth winner",
+        "search": "filetype:bitmap deepcat:\"Winners of Wiki Loves Earth 2025\"",
+        "max": 30
+      },
+      {
+        "topic": "Picture of the Year finalist",
+        "search": "filetype:bitmap incategory:\"Pictures_of_the_Year_(finalist)\"",
+        "max": 60,
+        "natureOnly": true,
+        "random": true
+      }
     ]
   }
 }

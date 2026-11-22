@@ -8,6 +8,9 @@ on:
       limit:
         description: "Max new Commons videos to convert and upload this run"
         default: "60"
+      limit_images:
+        description: "Max new Commons photos to copy and upload this run"
+        default: "300"
 
 permissions:
   contents: write
@@ -39,7 +42,7 @@ jobs:
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
         run: |
           if [ -n "$R2_ACCOUNT_ID" ]; then
-            node scripts/cache-media.mjs --upload --limit=${{ github.event.inputs.limit || '60' }}
+            node scripts/cache-media.mjs --upload --limit=${{ github.event.inputs.limit || '60' }} --limit-images=${{ github.event.inputs.limit_images || '300' }}
           else
             node scripts/cache-media.mjs
           fi

@@ -78,15 +78,17 @@ function roundRobin(pool, keyOf, rank) {
 }
 // Alternate motion (video/embeds) and stills one-for-one while motion lasts; curated picks lead each pool.
 // Items this device voted down are left out.
+// Each source + topic (e.g. Commons Geology, iNaturalist Fungi, NASA Space) is its own group, so new topics get a fair share.
+const groupOf = i => `${i.source}:${i.topic || ''}`;
 function arrange(all) {
   const rank = ranker(all);
   const pool = all.filter(i => myVotes[i.id] !== -1 && (showGross || !i.gross));
   const isMotion = i => i.kind === 'video' || i.kind === 'embed';
   const byRank = list => list.map(i => [rank(i), i]).sort((a, b) => b[0] - a[0]).map(x => x[1]);
   const motion = [...byRank(pool.filter(i => i.curated && isMotion(i))),
-    ...roundRobin(pool.filter(i => !i.curated && isMotion(i)), i => i.id.split('-')[0], rank)];
+    ...roundRobin(pool.filter(i => !i.curated && isMotion(i)), groupOf, rank)];
   const stills = [...byRank(pool.filter(i => i.curated && !isMotion(i))),
-    ...roundRobin(pool.filter(i => !i.curated && !isMotion(i)), i => i.source === 'iNaturalist' ? `inat:${i.topic}` : i.source, rank)];
+    ...roundRobin(pool.filter(i => !i.curated && !isMotion(i)), groupOf, rank)];
   const out = [];
   while (motion.length || stills.length) {
     if (motion.length) out.push(motion.shift());
@@ -173,7 +175,14 @@ function mount(card) {
       media.sizes = '100vw';
     }
     media.addEventListener('load', () => media.classList.add('ready'));
-    media.addEventListener('error', () => dropCard(card));
+    media.addEventListener('error', () => {
+      // Our cached copy failed: try the original once (no srcset, so the browser can't pick the broken one again).
+      if (it.media.fallback && media.dataset.fellBack !== '1') {
+        media.dataset.fellBack = '1';
+        media.removeAttribute('srcset');
+        media.src = it.media.fallback;
+      } else dropCard(card);
+    });
   } else if (it.kind === 'video') {
     media = el('video', { className: 'media', muted: true, defaultMuted: true, loop: true, playsInline: true, preload: 'metadata', poster: it.media.poster || '' });
     // iOS Safari only autoplays when these are real attributes, not just properties.
