@@ -10,16 +10,16 @@ The natural world is full of wonder most people never get to see. wundersnack pu
 - **Calm first.** Sources are filtered to leave out predation, death, disease, disasters and other distressing material.
 - **No social layer.** No accounts, likes, comments, follower counts, ads or tracking.
 - **"Helped?"** Each card asks whether it helped, with a thumbs up or down. A thumbs-up keeps you on the card; a thumbs-down moves on. Votes are counted anonymously per item, with no account, device id, cookie or IP stored, and they help the project rank and find content that actually helps. Your own votes and what you've already seen stay in your browser, so your feed adapts to you and keeps showing you new things first.
-- **Nothing is re-hosted.** Every image and video is loaded from where it lives and shown with its creator, license and a link back to the source. Videos from YouTube and Vimeo are embedded with their own players.
+- **Credit always travels with the content.** Photos load from where they live. Videos from Wikimedia Commons are converted once to a format every phone can play and served from our own storage (`media.wundersnack.com`), with the original as automatic fallback. Every card shows the creator, license and a link back to the source. YouTube and Vimeo videos are embedded with their own players.
 
 ## Where the content comes from
 
 | Source | What | License |
 | --- | --- | --- |
-| [iNaturalist](https://www.inaturalist.org/) | Research-grade, most-favourited observation photos for wonder-rich groups (fungi, slime molds, nudibranchs, radiolarians, tardigrades and more), plus a species fact from Wikipedia | Each photo's own Creative Commons license; facts CC BY-SA |
+| [iNaturalist](https://www.inaturalist.org/) | Research-grade, most-favourited observation photos for wonder-rich groups (fungi, slime molds, nudibranchs, radiolarians, tardigrades and more), plus a fact from Wikipedia about the species, or its genus, family, order or phylum | Each photo's own Creative Commons license; facts CC BY-SA |
 | [NASA Image and Video Library](https://images.nasa.gov/) | Nebulae, aurorae, galaxies, Earth from space, and short science videos | Public domain (NASA) |
 | [ESO](https://www.eso.org/public/news/) | Latest press releases: new discoveries about the universe | CC BY 4.0 |
-| [Wikimedia Commons](https://commons.wikimedia.org/) | Short nature videos from the community's *Media of the day* picks: time-lapses, slow motion, microscopy | Each file's own license |
+| [Wikimedia Commons](https://commons.wikimedia.org/) | Short nature videos from the community's *Media of the day* picks: time-lapses, slow motion, microscopy. Copies converted to H.264 for iPhone compatibility | Each file's own license |
 | Hand-picked (`curated.json`) | YouTube and Vimeo videos, embedded | The creator's own terms |
 
 If you made something shown here and want it removed, or spot something that shouldn't be in a calm feed, please [open an issue](https://github.com/dissentingd/wundersnack/issues).
@@ -38,6 +38,7 @@ sources.config.json      what to pull from each open source, and the calm filter
 scripts/build-feed.mjs   builds feed.json from the sources above
 scripts/add-curated.mjs  adds a YouTube/Vimeo video to curated.json
 scripts/vote-report.mjs  what helps most, by source, topic and kind
+scripts/cache-media.mjs  converts Commons videos to H.264 and stores them in Cloudflare R2
 src/worker.js            POST /api/vote (one anonymous up/down) and GET /api/totals (public counts)
 schema.sql               the votes table (the Worker creates it automatically on first use)
 wrangler.jsonc           Worker config: static assets, D1 binding
@@ -55,7 +56,19 @@ node scripts/build-feed.mjs                     # all sources, about a minute an
 node scripts/build-feed.mjs --only=eso,nasa     # just some sources
 ```
 
+Then attach the cached video copies (no credentials needed; it reads the public manifest):
+
+```sh
+node scripts/cache-media.mjs
+```
+
 A source that fails or returns nothing keeps its items from the previous `feed.json`. The [refresh workflow](.github/workflows/refresh-feed.yml) runs this every Monday and commits the result; you can also run it by hand from the Actions tab.
+
+### Video copies (Cloudflare R2)
+
+Wikimedia Commons only offers its videos as MPEG-4 Part 2 or WebM, which iPhone Safari plays unreliably, and it rate-limits heavy hotlinking. `scripts/cache-media.mjs --upload` converts each new Commons video once with ffmpeg (H.264 + AAC, at most 1280 px wide and 30 fps) and uploads it, plus a poster frame, to an R2 bucket served at `mediaCache.baseUrl`. A public `manifest.json` in the bucket records what's cached. Cards list our copy first and the Commons originals after it, so playback falls back to Commons if our copy is unavailable.
+
+The weekly workflow does this automatically (up to 60 new videos per run) when these repository secrets are set: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` (an R2 API token with object read and write on the bucket). It uses the AWS CLI against R2's S3-compatible API. To test conversion locally without uploading: `node scripts/cache-media.mjs --dry-run=out --limit=3` (needs ffmpeg).
 
 ### Add a hand-picked video
 

@@ -349,5 +349,10 @@
     "totalsUrl": "https://wundersnack.com/api/totals",
     "minVotes": 8,
     "dropBelow": 0.25
+  },
+  "mediaCache": {
+    "_doc": "Our own H.264 copies of Wikimedia Commons videos (see scripts/cache-media.mjs). Served publicly from baseUrl (an R2 bucket's custom domain).",
+    "bucket": "wundersnack-media",
+    "baseUrl": "https://media.wundersnack.com"
   }
 }

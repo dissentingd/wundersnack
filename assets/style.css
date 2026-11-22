@@ -68,6 +68,14 @@ a { color: var(--accent); }
   background: var(--glass); border: 1px solid var(--line);
 }
 
+.tap-play {
+  position: absolute; z-index: 2; inset: 0; margin: auto; width: 84px; height: 84px; padding: 0;
+  border-radius: 50%; border: 1px solid var(--line); background: var(--glass); color: var(--fg); cursor: pointer;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+.tap-play::before { content: "▶"; font-size: 30px; margin-left: 5px; }
+.tap-play:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
 .info {
   position: absolute; inset: auto 0 0 0; z-index: 2;
   padding: 64px 84px calc(22px + var(--safe-bottom)) 18px;

@@ -21,11 +21,20 @@ const only = onlyArg ? new Set(onlyArg.slice(7).split(',')) : null;
 const want = s => !only || only.has(s);
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-async function getJSON(url, { delay = 0 } = {}) {
+// Retries rate limits (429), server errors and network failures with backoff, so one bad response
+// doesn't silently drop a whole group of items.
+async function getJSON(url, { delay = 0, tries = 3 } = {}) {
   if (delay) await sleep(delay);
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
-  if (!res.ok) throw new Error(`${res.status} ${url}`);
-  return res.json();
+  for (let attempt = 1; ; attempt++) {
+    let res;
+    try { res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } }); }
+    catch (e) { if (attempt >= tries) throw e; await sleep(5000 * attempt); continue; }
+    if (res.ok) return res.json();
+    if (attempt >= tries || !(res.status === 429 || res.status >= 500)) throw new Error(`${res.status} ${url}`);
+    const wait = Number(res.headers.get('retry-after')) * 1000 || 10000 * attempt;
+    console.warn(`  ${res.status}, retrying in ${Math.round(wait / 1000)}s`);
+    await sleep(wait);
+  }
 }
 async function getText(url) {
   const res = await fetch(url, { headers: { 'User-Agent': UA } });
@@ -53,15 +62,74 @@ const isCalm = (...texts) => {
 };
 const nature = (cfg.commons.natureAllowlist || []).map(w => new RegExp(`\\b${w}`, 'i'));
 const isNature = (...texts) => { const t = texts.join(' '); return !nature.length || nature.some(re => re.test(t)); };
-// Wikipedia leads open with taxonomy ("X is a species of fungus in the family Y").
-// Drop those sentences; return '' if nothing more interesting is left.
-function speciesFact(summary) {
-  const sentences = stripHtml(summary).split(/(?<=[.!?])\s+(?=[A-Z"“(])/).filter(s => s.length >= 40);
-  const rest = sentences.filter(s => !/\b(is|are|was) an? ([\w-]+ )?(species|genus|family|order|subfamily|subspecies|tribe|class|phylum)\b/i.test(s)
-    && !/\b(is|was) (native|endemic) to\b/i.test(s)
-    && !/\b(described|circumscribed|transferred|reclassified|taxon|taxa|synonym|epithet|named (by|after)|classified|phylogenetic)\b/i.test(s) && !/\bfamily [A-Z]\w+(idae|aceae)\b/.test(s));
-  return isCalm(rest.join(' ')) ? rest.join(' ').trim() : '';
+// ---------- facts: pick the most wonder-worthy sentence from a Wikipedia lead ----------
+// Leads usually open with taxonomy ("X is a species of fungus in the family Y") and range ("It is found in...").
+// Those are dropped; the rest are scored for wonder (superlatives, glowing, mimicry, "can survive...", numbers)
+// and against anatomy jargon and range/threat talk.
+const TAXONOMY = [
+  /\b(is|are|was) an? ([\w-]+ ){0,3}(species|genus|family|order|subfamily|subspecies|tribe|class|phylum|clade|group) of\b/i,
+  /\b(described|circumscribed|transferred|reclassified|taxon|taxa|synonym|epithet|named (by|after|for|in honou?r)|classified|phylogen|holotype|monotypic|cladistic|etymolog)\w*/i,
+  /\bfamily [A-Z]\w+(idae|aceae)\b/,
+  /\b(in|of) the (genus|family|order|subfamily|tribe)\b/i,
+  /\b(is|was) (native|endemic) to\b/i,
+  /\b(Index Fungorum|species in the genus|includes \d+ species|contains \d+ species|derived from|Greek|Latin|classification|systematics?|molecular|genetic|DNA|genome|sequenc\w*|monophyl\w*|paraphyl\w*|stem-group|type species|only species in the genus|record of the family|fossil (genus|record))\b|†/i,
+];
+const WONDER = [
+  [3, /\b(largest|smallest|biggest|tallest|longest|fastest|oldest|heaviest|deepest|brightest|loudest|strongest)\b/i],
+  [2, /\b(only|unique|unusual|remarkabl|extraordinar|famous|notable|record|nicknamed|known as the|known for)\w*/i],
+  [2, /\b(glow|biolumin|luminous|light|iridescen|transparent|translucent|fluoresc|colou?r|mimic|camouflag|disguis|symbio|mutualis|navigat|migrat|regenerat|surviv|withstand|dormant|ancient|fossil|evolv|evolution|intelligen|learn|communicat|sing|song|danc|courtship|cooperat|social|colon(y|ies)|farm|engineer|electric|magnet)\w*/i],
+  [1, /\b(can|could|able to|capable|up to|as much as|more than|millions?|thousands?)\b/i],
+  [1, /\d/],
+];
+const DULL = [
+  [-3, /\b(found in|found throughout|can be found|occurs? in|distributed|distribution|range|recorded from|habitat|known from|inhabits?|its range)\b/i],
+  [-2, /\b(cap|gills?|stipe|spores?|margin|setae|tergites?|sternites?|forewings?|hindwings?|antennae|thorax|abdomen|sporangi\w*|hyphae|basidi\w*|ascospores?|cheilocystidia|pileus|lamellae|carapace|mantle|rhinophores?|cerata)\b/i],
+  [-1, /\b(endangered|threatened|declin\w*|extinct\w*|vulnerable|toxic|poison\w*|inedible)\b/i],
+];
+const tidy = t => t.replace(/\s*\((?:[^()]*\b(?:in|ft|mi|lb|oz|°F|yd)\b[^()]*)\)/g, '') // imperial conversions
+  .replace(/\s*\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim();
+function sentencesOf(text) {
+  return tidy(stripHtml(text)).split(/(?<=[.!?])\s+(?=[A-Z"“(])/)
+    .filter(x => x.length >= 40 && x.length <= 260 && /[.!?]$/.test(x) && isCalm(x));
 }
+// Candidate sentences, best first.
+function rankFacts(text) {
+  const out = [];
+  for (const x of sentencesOf(text)) {
+    if (TAXONOMY.some(re => re.test(x))) continue;
+    let score = 0;
+    for (const [w, re] of WONDER) if (re.test(x)) score += w;
+    for (const [w, re] of DULL) if (re.test(x)) score += w;
+    out.push({ text: x, score });
+  }
+  return out.sort((a, b) => b.score - a.score);
+}
+const wikiTitle = url => {
+  const m = /\/wiki\/(.+)$/.exec(url || '');
+  return m ? decodeURIComponent(m[1]).replace(/_/g, ' ') : null;
+};
+// Lead sections (plain text) for many titles; follows redirects; 20 titles per request (API limit for exintro).
+async function wikiLeads(titles) {
+  const out = new Map(), list = [...new Set(titles.filter(Boolean))];
+  for (let i = 0; i < list.length; i += 20) {
+    const batch = list.slice(i, i + 20);
+    const q = new URLSearchParams({ action: 'query', format: 'json', prop: 'extracts', exintro: '1', explaintext: '1',
+      exlimit: '20', redirects: '1', titles: batch.join('|') });
+    try {
+      const r = await getJSON(`https://en.wikipedia.org/w/api.php?${q}`, { delay: 200 });
+      const alias = new Map();
+      for (const n of [...(r.query.normalized || []), ...(r.query.redirects || [])]) alias.set(n.from, n.to);
+      const byTitle = new Map(Object.values(r.query.pages || {}).map(p => [p.title, p.extract || '']));
+      for (const t of batch) {
+        let k = t;
+        for (let hops = 0; alias.has(k) && hops < 3; hops++) k = alias.get(k);
+        if (byTitle.get(k)) out.set(t, byTitle.get(k));
+      }
+    } catch (e) { console.warn('Wikipedia', e.message); }
+  }
+  return out;
+}
+
 // "(c) Jane Doe, some rights reserved (CC BY-NC)" -> "Jane Doe"
 const cleanCredit = s => stripHtml(s).replace(/^\(c\)\s*/i, '')
   .replace(/,?\s*(some|no|all) rights reserved.*$/i, '').trim();
@@ -99,19 +167,52 @@ async function fromINaturalist() {
       if (seen.size >= c.perTaxon) break;
     }
   }
-  // species facts: Wikipedia summaries via iNat's taxa endpoint, 30 ids per call
+  // Facts: the species' Wikipedia lead, else its genus's, else its family's (via iNat's taxon links).
   const ids = [...new Set(out.map(x => x.o.taxon.id))];
-  const facts = new Map();
+  const taxa = new Map();
   for (let i = 0; i < ids.length; i += 30) {
     try {
       const r = await getJSON(`https://api.inaturalist.org/v1/taxa/${ids.slice(i, i + 30).join(',')}?locale=en`, { delay: 1100 });
-      for (const t of r.results) facts.set(t.id, t.wikipedia_summary || '');
+      for (const t of r.results) taxa.set(t.id, t);
     } catch (e) { console.warn('iNat taxa', e.message); }
   }
+  // Species first; then genus, family, order, phylum. Higher levels need a stronger sentence and rotate through
+  // their good sentences, so neighbouring cards from the same group don't repeat one fact.
+  const levels = t => {
+    const anc = rank => (t?.ancestors || []).filter(a => a.rank === rank).pop();
+    const about = a => `About ${a.preferred_common_name ? a.preferred_common_name.toLowerCase() : `the ${a.rank} ${a.name}`}: `;
+    return {
+      species: wikiTitle(t?.wikipedia_url),
+      higher: ['genus', 'family', 'order', 'phylum'].map(anc).filter(a => a && a.wikipedia_url)
+        .map(a => ({ title: wikiTitle(a.wikipedia_url), prefix: about(a) })),
+    };
+  };
+  const leads = await wikiLeads([...taxa.values()].flatMap(t => { const l = levels(t); return [l.species, ...l.higher.map(h => h.title)]; }));
+  const ranked = new Map([...leads].map(([k, v]) => [k, rankFacts(v)]));
+  const used = new Map(); // sentence -> times used
+  const facts = new Map();
+  let fromSpecies = 0, fromHigher = 0;
+  for (const [id, t] of taxa) {
+    const { species, higher } = levels(t);
+    const own = ranked.get(species) || [];
+    if (own[0]?.score >= 1) { facts.set(id, own[0].text); fromSpecies++; continue; }
+    let picked = false;
+    for (const h of higher) {
+      // least-used good sentence from this lead; each sentence appears on at most 3 cards
+      const good = (ranked.get(h.title) || []).filter(f => f.score >= 2 && (used.get(f.text) || 0) < 3)
+        .sort((a, b) => (used.get(a.text) || 0) - (used.get(b.text) || 0));
+      if (!good.length) continue;
+      used.set(good[0].text, (used.get(good[0].text) || 0) + 1);
+      facts.set(id, h.prefix + good[0].text);
+      fromHigher++; picked = true; break;
+    }
+    if (!picked && own[0]?.score >= 0) { facts.set(id, own[0].text); fromSpecies++; } // a plain species fact beats a generic line
+  }
+  console.log(`iNat facts: ${fromSpecies} from the species, ${fromHigher} from genus/family/order/phylum, ${taxa.size - fromSpecies - fromHigher} generic`);
   return out.map(({ o, taxon }) => {
     const p = o.photos[0];
     const common = o.taxon.preferred_common_name;
-    const fact = speciesFact(facts.get(o.taxon.id) || '');
+    const fact = facts.get(o.taxon.id);
     return {
       id: `inat-${o.id}`,
       source: 'iNaturalist',
@@ -119,7 +220,7 @@ async function fromINaturalist() {
       topic: taxon.label,
       title: common ? common[0].toUpperCase() + common.slice(1) : o.taxon.name,
       subtitle: common ? o.taxon.name : '',
-      caption: fact ? snippet(fact) : taxon.wonder,
+      caption: fact ? snippet(fact, 260) : taxon.wonder,
       media: { src: p.url.replace('/square.', '/large.'), hi: p.url.replace('/square.', '/original.'), thumb: p.url.replace('/square.', '/small.') },
       credit: cleanCredit(p.attribution),
       license: LICENSES[p.license_code] || p.license_code,
@@ -210,7 +311,8 @@ async function fromNASAVideo() {
       } catch (e) { console.warn('NASA video asset', d.nasa_id, e.message); continue; }
       const duration = parseDuration(meta['QuickTime:Duration'] ?? meta['QuickTime:TrackDuration']);
       if (!(duration > 3 && duration <= c.maxDurationSeconds)) continue;
-      const src = ['~mobile.mp4', '~small.mp4', '~preview.mp4', '~medium.mp4'].map(k => hrefs.find(h => h.endsWith(k))).find(Boolean);
+      // ~small = 640x360 H.264, sharp enough on phones; ~mobile is only 320x180.
+      const src = ['~small.mp4', '~preview.mp4', '~mobile.mp4', '~medium.mp4'].map(k => hrefs.find(h => h.endsWith(k))).find(Boolean);
       const poster = ['~medium.jpg', '~large.jpg', '~small.jpg', '~thumb.jpg'].map(k => hrefs.find(h => h.endsWith(k))).find(Boolean);
       if (!src) continue;
       const enc = u => u && encodeURI(decodeURI(u));

@@ -1,187 +1,7 @@
 {
- "generated": "2026-11-22T19:20:30.483Z",
+ "generated": "2026-11-22T20:26:49.432Z",
  "count": 605,
  "items": [
-  {
-   "id": "eso-eso2613",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Dead star and planetary bodies: astronomers spot unique disc of debris that foretells Solar System’s future",
-   "subtitle": "2026-10-27",
-   "caption": "Astronomers using the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have found a rare disc of debris around a dead star that provides a glimpse of what may happen to our Solar System.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2613a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2613a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2613a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2613/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2612",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Milky Way's fastest star orbits our supermassive black hole so closely it feels its spin",
-   "subtitle": "2026-08-19",
-   "caption": "Astronomers have discovered the fastest known star in our galaxy, the Milky Way, orbiting the black hole at its centre.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2612a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2612a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2612a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2612/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2611",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Astronomers find strongest evidence yet that Betelgeuse has a companion",
-   "subtitle": "2026-07-28",
-   "caption": "At long last, astronomers have firm evidence that Betelgeuse, one of the most famous stars in the night sky, is not alone.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2611a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2611a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2611a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2611/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2610",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "New ‘exomoon’ detection challenges cosmic labels",
-   "subtitle": "2026-07-22",
-   "caption": "Observations made with the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have revealed evidence for a moon-like object in the CD-35 2722 system.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2610a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2610a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2610a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2610/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2609",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Faintest planet ever imaged from Earth found after more than 10 years of hide-and-seek",
-   "subtitle": "2026-07-15",
-   "caption": "A team of astronomers have discovered a third planet orbiting the star Beta Pictoris.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2609a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2609a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2609a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2609/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2608",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Older than the Sun: Astronomers find new clues to the origin of interstellar comet 3I/ATLAS",
-   "subtitle": "2026-07-06",
-   "caption": "Astronomers have used the European Southern Observatory's Very Large Telescope (ESO's VLT) to study the composition of 3I/ATLAS, the brightest interstellar object ever seen, in detail.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2608a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2608a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2608a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2608/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2607",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "\"Beyond the limit\": one million satellites and mirrors in space pose grave threat to the night sky",
-   "subtitle": "2026-07-01",
-   "caption": "A new European Southern Observatory (ESO) study has found that current proposals to launch over 1.7 million satellites into orbit, including extremely bright ones, would have “devastating consequences for astronomy.” According to the study, no more than 100…",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2607a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2607a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2607a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2607/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2606",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Strange winds reveal strongest hints yet of magnetic activity in exoplanets",
-   "subtitle": "2026-06-02",
-   "caption": "A team of astronomers has found the strongest evidence yet that some planets outside our Solar System may be magnetic.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2606a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2606a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2606a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2606/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2605",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "First light for PoET: shining (sun)light on exoplanet research",
-   "subtitle": "2026-04-09",
-   "caption": "The Paranal solar ESPRESSO Telescope (PoET), installed at the European Southern Observatory's (ESO's) Paranal site in Chile, has made its first observations. The telescope will work with ESO's ESPRESSO instrument to study the Sun in detail.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2605a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2605a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2605a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2605/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2604",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "A Solar System in the making? Two planets spotted forming in disc around young star",
-   "subtitle": "2026-03-24",
-   "caption": "Astronomers have observed two planets forming in the disc around a young star named WISPIT 2. Having previously detected one planet, the team have now employed European Southern Observatory (ESO) telescopes to confirm the presence of another.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2604a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2604a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2604a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2604/",
-   "discovery": true
-  },
   {
    "id": "inat-150906376",
    "source": "iNaturalist",
@@ -198,9 +18,7 @@
    "credit": "Cho Fungi",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/150906376",
-   "place": "Zhishan Road Section 3 Lane 150, TW",
-   "score": 0.333,
-   "votes": 1
+   "place": "Zhishan Road Section 3 Lane 150, TW"
   },
   {
    "id": "inat-68967630",
@@ -209,7 +27,7 @@
    "topic": "Fungi",
    "title": "Eternal light",
    "subtitle": "Mycena luxaeterna",
-   "caption": "The mushrooms have parachute-shaped caps which start off darkly grayish-brown, changing to grayish-yellow or pale grayish-brown with a pale white ring at the edge when mature, and reach up to 2 cm (0.79 in) in diameter.",
+   "caption": "Their thin, cylindrical, hollow, fragile stems up to 8 mm in diameter are covered in a thick gel and emit a constant yellow-green bioluminescence (the caps do not glow).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/111805656/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/111805656/original.jpg",
@@ -227,7 +45,7 @@
    "topic": "Fungi",
    "title": "Hoof Fungus",
    "subtitle": "Fomes fomentarius",
-   "caption": "The species produces very large polypore fruit bodies which are shaped like a horse's hoof and vary in colour from a silvery grey to almost black, though they are normally brown.",
+   "caption": "The species produces large, hoof-shaped polypore fruit bodies which vary in colour from silvery grey to almost black, though they are normally brown.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/328913957/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/328913957/original.jpeg",
@@ -245,7 +63,7 @@
    "topic": "Fungi",
    "title": "Jelly Ear",
    "subtitle": "Auricularia auricula-judae",
-   "caption": "The fruiting body is distinguished by its noticeably ear-like shape and brown colouration; it grows upon wood, especially elder.",
+   "caption": "Auricularia auricula-judae was used in folk medicine as recently as the 19th century for complaints including sore throats, sore eyes and jaundice, and as an astringent.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/189585427/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/189585427/original.jpg",
@@ -281,7 +99,7 @@
    "topic": "Fungi",
    "title": "Woolly bird's nest fungus",
    "subtitle": "Nidula niveotomentosa",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "About bird's nest fungi: Commonly known as the bird's nest fungi, their fruiting bodies resemble tiny egg-filled birds' nests.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/186441840/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/186441840/original.jpg",
@@ -299,7 +117,7 @@
    "topic": "Fungi",
    "title": "Blue Pouch Fungus",
    "subtitle": "Clavogaster virescens",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "The species is sometimes known as the \"Spindle Pouch\".",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/125055170/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/125055170/original.jpeg",
@@ -353,7 +171,7 @@
    "topic": "Fungi",
    "title": "Beard lichens",
    "subtitle": "Usnea",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "The genus, which currently contains roughly 130 species, was established by Michel Adanson in 1763.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/6099770/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/6099770/original.jpeg",
@@ -371,7 +189,7 @@
    "topic": "Fungi",
    "title": "Horse-Chestnut Powdery Mildew",
    "subtitle": "Erysiphe flexuosa",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "About the order Helotiales: Helotiales is the largest order of non-stromatic discomycetes that usually, but not always, have brightly coloured apothecia.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/437488364/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/437488364/original.jpeg",
@@ -389,7 +207,7 @@
    "topic": "Fungi",
    "title": "Lanmaoa carminipes",
    "subtitle": "",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "About boletes and allies: The boletes are the best known members of this group, and until recently, the Boletales were thought to only contain boletes.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/51120324/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/51120324/original.jpg",
@@ -407,7 +225,7 @@
    "topic": "Fungi",
    "title": "Rhodotus reticeps",
    "subtitle": "",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "About the genus Rhodotus: Mature specimens can usually be identified by the pinkish color and the distinctive ridged and veined surface of their rubbery caps.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/95655093/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/95655093/original.jpeg",
@@ -443,7 +261,7 @@
    "topic": "Fungi",
    "title": "Leafy Skinlichen",
    "subtitle": "Leptogium phyllocarpum",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "About the order Peltigerales: The fungi form lichens in a symbiotic relationship with one or two photosynthetic partners which may be a cyanobacterium such as Nostoc or a green alga such as Coccomyxa.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/173459317/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/173459317/original.jpeg",
@@ -461,7 +279,7 @@
    "topic": "Fungi",
    "title": "Violet webcap",
    "subtitle": "Cortinarius violaceus",
-   "caption": "Cortinarius violaceus, commonly known as the violet webcap or violet cort, is a fungus in the webcap genus Cortinarius native across the Northern Hemisphere.",
+   "caption": "Forming symbiotic (ectomycorrhizal) relationships with the roots of various plant species, C. violaceus is found predominantly in conifer forests in North America and deciduous forests in Europe.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/55147724/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/55147724/original.jpeg",
@@ -479,7 +297,7 @@
    "topic": "Fungi",
    "title": "Troll-doll Fungus",
    "subtitle": "Syzygites megalocarpus",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "About pin molds: The Mucorales is the largest and best-studied order of zygomycete fungi.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/21933263/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/21933263/original.jpg",
@@ -533,7 +351,7 @@
    "topic": "Fungi",
    "title": "Indigo milk cap",
    "subtitle": "Lactarius indigo",
-   "caption": "A widely distributed species, it grows naturally in eastern North America, East Asia, and Central America; it has also been reported in southern France. L.",
+   "caption": "The fruit body color ranges from dark blue in fresh specimens to pale blue-gray in older ones.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2309496/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2309496/original.jpg",
@@ -551,7 +369,7 @@
    "topic": "Fungi",
    "title": "Cladonia imperialis",
    "subtitle": "",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "About pixie cup and reindeer lichens: The light green species Cladonia stellaris is used in flower decorations.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/231974984/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/231974984/original.jpeg",
@@ -587,7 +405,7 @@
    "topic": "Fungi",
    "title": "Green Wood Cup",
    "subtitle": "Chlorociboria aeruginascens",
-   "caption": "Although the actual fruit bodies are infrequently seen, the green staining of wood caused by the fungus is more prevalent.",
+   "caption": "About the genus Chlorociboria: Two common temperate zone species, Chlorociboria aeruginascens and Chlorociboria aeruginosa, can only reliably be distinguished by microscopic examination.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/4896418/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/4896418/original.jpg",
@@ -605,7 +423,7 @@
    "topic": "Fungi",
    "title": "Teal Conifer-Pin",
    "subtitle": "Dendrostilbella smaragdina",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "About ascomycete fungi: It is the largest phylum of Fungi, with over 64,000 species.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/59270879/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/59270879/original.jpeg",
@@ -641,7 +459,7 @@
    "topic": "Fungi",
    "title": "Purple pinwheel",
    "subtitle": "Marasmius haematocephalus",
-   "caption": "Marasmius haematocephalus, commonly known as the purple pinwheel, is a basidiomycete mushroom of the genus Marasmius. It grows on leaf litter and forms basidiocarps with striated purple caps.",
+   "caption": "A fungus in its fruiting moment",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/606817545/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/606817545/original.jpg",
@@ -659,7 +477,7 @@
    "topic": "Fungi",
    "title": "Chi-ngulu-ngulu",
    "subtitle": "Termitomyces titanicus",
-   "caption": "Found in West Africa (as well as Zambia and the Katanga Province of DR Congo), it has a cap that may reach 1 metre (3 ft) in diameter on a stipe up to 22 inches (57 cm) in length and is reputed to be the largest edible…",
+   "caption": "A fungus in its fruiting moment",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/13552931/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/13552931/original.jpg",
@@ -677,7 +495,7 @@
    "topic": "Fungi",
    "title": "Podoserpula tristis",
    "subtitle": "",
-   "caption": "A fungus in its fruiting moment",
+   "caption": "About the genus Podoserpula: Its unique shape is not known to exist in any other fungi.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/4049108/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/4049108/original.jpg",
@@ -695,7 +513,7 @@
    "topic": "Fungi",
    "title": "Artist's bracket",
    "subtitle": "Ganoderma applanatum",
-   "caption": "Ganoderma applanatum (the artist's bracket, artist's conk or bear bread) is a bracket fungus with a cosmopolitan distribution.",
+   "caption": "As its common names suggest, it can be used as a drawing medium.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/108788741/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/108788741/original.jpg",
@@ -731,7 +549,7 @@
    "topic": "Slime molds",
    "title": "Comatricha nigra",
    "subtitle": "",
-   "caption": "It grows on decayed wood on the forest floor. The sporangium reaches a total height of 2–8 mm, while the black, hair-like stalk is usually two to six times the length of the sporangium.",
+   "caption": "It grows on decayed wood on the forest floor.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/176600092/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/176600092/original.jpg",
@@ -749,7 +567,7 @@
    "topic": "Slime molds",
    "title": "Pretzel slime mold",
    "subtitle": "Hemitrichia serpula",
-   "caption": "A slime mold: no brain, yet it solves mazes",
+   "caption": "About the genus Hemitrichia: This genus includes species such as H. serpula (known as the pretzel slime mold) and H. decipiens (known as salmon-eggs), both of which are widespread.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/596675431/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/596675431/original.jpg",
@@ -767,7 +585,7 @@
    "topic": "Slime molds",
    "title": "Ceratiomyxa morchella",
    "subtitle": "",
-   "caption": "They are widely distributed and commonly found on decaying wood.",
+   "caption": "A slime mold: no brain, yet it solves mazes",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/269949825/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/269949825/original.jpg",
@@ -839,7 +657,7 @@
    "topic": "Slime molds",
    "title": "White-footed Slime",
    "subtitle": "Diachea leucopodia",
-   "caption": "A slime mold: no brain, yet it solves mazes",
+   "caption": "Diachea leucopodia are often found on, in some reports, plant matter, strawberries, and surrounding inorganic matter.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/679995967/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/679995967/original.jpg",
@@ -857,7 +675,7 @@
    "topic": "Slime molds",
    "title": "Red Raspberry Slime Mold",
    "subtitle": "Tubifera ferruginosa",
-   "caption": "It is one of the most widely known and distinct slime molds, being found throughout temperate regions of the world, primarily in Europe and North America.",
+   "caption": "A slime mold: no brain, yet it solves mazes",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/144194751/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/144194751/original.jpg",
@@ -875,7 +693,7 @@
    "topic": "Slime molds",
    "title": "Carnival candy slime mold",
    "subtitle": "Arcyria denudata",
-   "caption": "It is one of the most common species of slime molds, and can be found in temperate environments worldwide.",
+   "caption": "A slime mold: no brain, yet it solves mazes",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/12002644/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/12002644/original.jpg",
@@ -947,7 +765,7 @@
    "topic": "Slime molds",
    "title": "Salmon-eggs",
    "subtitle": "Hemitrichia decipiens",
-   "caption": "A slime mold: no brain, yet it solves mazes",
+   "caption": "About the genus Hemitrichia: This genus includes species such as H. serpula (known as the pretzel slime mold) and H. decipiens (known as salmon-eggs), both of which are widespread.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/240070416/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/240070416/original.jpg",
@@ -965,7 +783,7 @@
    "topic": "Slime molds",
    "title": "Willkommlangea reticulata",
    "subtitle": "",
-   "caption": "Willkommlangea reticulata is a slime mold species from the order Physarida and the only species of the genus Willkommlangea. It is common worldwide, but in Europe it is rare.",
+   "caption": "It is common worldwide, but rare in Europe.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/158242170/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/158242170/original.jpg",
@@ -1019,7 +837,7 @@
    "topic": "Slime molds",
    "title": "Common Coral Slime",
    "subtitle": "Ceratiomyxa fruticulosa",
-   "caption": "They are widely distributed and commonly found on decaying wood.",
+   "caption": "A slime mold: no brain, yet it solves mazes",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/342355226/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/342355226/original.jpg",
@@ -1037,7 +855,7 @@
    "topic": "Slime molds",
    "title": "Comatricha fusiformis",
    "subtitle": "",
-   "caption": "As of 2015, Index Fungorum includes 39 species in the genus.",
+   "caption": "A slime mold: no brain, yet it solves mazes",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/242690323/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/242690323/original.jpg",
@@ -1073,7 +891,7 @@
    "topic": "Slime molds",
    "title": "Dog Vomit Slime Mold",
    "subtitle": "Fuligo septica",
-   "caption": "It is commonly known as the scrambled egg slime, or flowers of tan because of its peculiar yellowish, bile-colored appearance.",
+   "caption": "It is commonly known as scrambled egg slime or flowers of tan because of its peculiar yellowish appearance; it is also known as dog vomit slime mold.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/256357398/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/256357398/original.jpeg",
@@ -1091,7 +909,7 @@
    "topic": "Slime molds",
    "title": "Hemitrichia pardina",
    "subtitle": "",
-   "caption": "A slime mold: no brain, yet it solves mazes",
+   "caption": "About the genus Hemitrichia: This genus includes species such as H. serpula (known as the pretzel slime mold) and H. decipiens (known as salmon-eggs), both of which are widespread.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/300290120/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/300290120/original.jpg",
@@ -1139,24 +957,6 @@
    "place": "Eels Lake Rd. Peterborough County, ON, Canada"
   },
   {
-   "id": "inat-134384980",
-   "source": "iNaturalist",
-   "kind": "image",
-   "topic": "Slime molds",
-   "title": "Diderma tigrinum",
-   "subtitle": "",
-   "caption": "A slime mold: no brain, yet it solves mazes",
-   "media": {
-    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/229053714/large.jpg",
-    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/229053714/original.jpg",
-    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/229053714/small.jpg"
-   },
-   "credit": "Alison Pollack",
-   "license": "CC BY-NC",
-   "sourceUrl": "https://www.inaturalist.org/observations/134384980",
-   "place": "Blister Run, West Virginia 26273, USA"
-  },
-  {
    "id": "inat-106223117",
    "source": "iNaturalist",
    "kind": "image",
@@ -1173,6 +973,24 @@
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/106223117",
    "place": "Marin County, CA, USA"
+  },
+  {
+   "id": "inat-134384980",
+   "source": "iNaturalist",
+   "kind": "image",
+   "topic": "Slime molds",
+   "title": "Diderma tigrinum",
+   "subtitle": "",
+   "caption": "A slime mold: no brain, yet it solves mazes",
+   "media": {
+    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/229053714/large.jpg",
+    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/229053714/original.jpg",
+    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/229053714/small.jpg"
+   },
+   "credit": "Alison Pollack",
+   "license": "CC BY-NC",
+   "sourceUrl": "https://www.inaturalist.org/observations/134384980",
+   "place": "Blister Run, West Virginia 26273, USA"
   },
   {
    "id": "inat-329566634",
@@ -1271,7 +1089,7 @@
    "topic": "Nudibranchs",
    "title": "Sea Swallow",
    "subtitle": "Glaucus atlanticus",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About nudibranchs: They are noted for their often extraordinary colours and striking forms, and they have been given colourful nicknames to match, such as \"clown\", \"marigold\", \"splendid\", \"dancer\", \"dragon\", and \"sea rabbit\".",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/3001219/large.JPG",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/3001219/original.JPG",
@@ -1289,7 +1107,7 @@
    "topic": "Nudibranchs",
    "title": "Doto kwakwak",
    "subtitle": "",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About nudibranchs: A number of these other sea slugs, such as the photosynthetic Sacoglossa and the colourful Aglajidae, are often confused with nudibranchs.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/181011531/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/181011531/original.jpg",
@@ -1307,7 +1125,7 @@
    "topic": "Nudibranchs",
    "title": "Gasflame Nudibranch",
    "subtitle": "Bonisa nakaza",
-   "caption": "The gasflame nudibranch, Bonisa nakaza, is a very colourful species of nudibranch, or sea slug.",
+   "caption": "About nudibranchs: They are noted for their often extraordinary colours and striking forms, and they have been given colourful nicknames to match, such as \"clown\", \"marigold\", \"splendid\", \"dancer\", \"dragon\", and \"sea rabbit\".",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/97327223/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/97327223/original.jpg",
@@ -1325,7 +1143,7 @@
    "topic": "Nudibranchs",
    "title": "Tethys fimbria",
    "subtitle": "",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About nudibranchs: A number of these other sea slugs, such as the photosynthetic Sacoglossa and the colourful Aglajidae, are often confused with nudibranchs.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/96650037/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/96650037/original.jpg",
@@ -1343,7 +1161,7 @@
    "topic": "Nudibranchs",
    "title": "Miller's Nembrotha",
    "subtitle": "Nembrotha milleri",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About nudibranchs: They are noted for their often extraordinary colours and striking forms, and they have been given colourful nicknames to match, such as \"clown\", \"marigold\", \"splendid\", \"dancer\", \"dragon\", and \"sea rabbit\".",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/4541683/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/4541683/original.jpg",
@@ -1361,7 +1179,7 @@
    "topic": "Nudibranchs",
    "title": "Regal Sea Goddess",
    "subtitle": "Felimare picta",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About nudibranchs: A number of these other sea slugs, such as the photosynthetic Sacoglossa and the colourful Aglajidae, are often confused with nudibranchs.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/25759290/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/25759290/original.jpg",
@@ -1379,7 +1197,7 @@
    "topic": "Nudibranchs",
    "title": "Phidiana unilineata",
    "subtitle": "",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Molluscs are the largest marine phylum, comprising about 23% of all the named marine organisms.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/494428216/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/494428216/original.jpeg",
@@ -1397,7 +1215,7 @@
    "topic": "Nudibranchs",
    "title": "Crowned Aeolis",
    "subtitle": "Facelina auriculata",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: The number of recognized fossil species is 57,219 with estimates between 60,000 and 100,000, and the proportion of undescribed extant species is very high.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/538033836/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/538033836/original.jpg",
@@ -1415,7 +1233,7 @@
    "topic": "Nudibranchs",
    "title": "Gold-crowned Sea Goddess",
    "subtitle": "Felimare acriba",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Cephalopod molluscs, such as squid, cuttlefish, and octopuses, are among the most neurologically advanced of all invertebrates—and either the giant squid or the colossal squid is the largest known extant invertebrate species.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/30905187/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/30905187/original.jpg",
@@ -1433,7 +1251,7 @@
    "topic": "Nudibranchs",
    "title": "Threaded Nudibranch",
    "subtitle": "Pseudobornella orientalis",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: The underside of the animal consists of a single muscular \"foot\".",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/3251129/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/3251129/original.jpg",
@@ -1451,7 +1269,7 @@
    "topic": "Nudibranchs",
    "title": "Tritoniella belli",
    "subtitle": "",
-   "caption": "A monotypic genus, the only species is Tritoniella belli.",
+   "caption": "About the family Tritoniidae: This family includes some of the largest known nudibranchs, with the NE Atlantic species Tritonia hombergii reaching 20 cm in length.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/5286713/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/5286713/original.jpeg",
@@ -1469,7 +1287,7 @@
    "topic": "Nudibranchs",
    "title": "Gem Doris",
    "subtitle": "Dendrodoris krusensternii",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Good evidence exists for the appearance of gastropods, cephalopods, and bivalves in the Cambrian period, 541–485.4 million years ago.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2534139/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2534139/original.jpg",
@@ -1487,7 +1305,7 @@
    "topic": "Nudibranchs",
    "title": "Roller's Aeolid",
    "subtitle": "Cuthona rolleri",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: However, the evolutionary history both of molluscs' emergence from the ancestral Lophotrochozoa and of their diversification into the well-known living and fossil forms are still subjects of vigorous debate among scientists.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/354660881/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/354660881/original.jpeg",
@@ -1505,7 +1323,7 @@
    "topic": "Nudibranchs",
    "title": "Chamberlain's Nembrotha",
    "subtitle": "Nembrotha chamberlaini",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Schistosomiasis (also known as bilharzia, bilharziosis, or snail fever) is transmitted to humans by water snail hosts, and affects about 200 million people.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/26680015/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/26680015/original.jpg",
@@ -1523,7 +1341,7 @@
    "topic": "Nudibranchs",
    "title": "Gaudy Babakina",
    "subtitle": "Babakina anadoni",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Molluscs are the largest marine phylum, comprising about 23% of all the named marine organisms.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2559906/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2559906/original.jpg",
@@ -1541,7 +1359,7 @@
    "topic": "Nudibranchs",
    "title": "Hypselodoris iba",
    "subtitle": "",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: The number of recognized fossil species is 57,219 with estimates between 60,000 and 100,000, and the proportion of undescribed extant species is very high.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/46619857/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/46619857/original.jpg",
@@ -1559,7 +1377,7 @@
    "topic": "Nudibranchs",
    "title": "Sea Bunny",
    "subtitle": "Jorunna parva",
-   "caption": "The resemblance of Jorunna parva's rhinophores to bunny ears and its other features facilitated a surge in popularity on Twitter throughout Japan in 2015. Sea slugs eat sponges, which contain toxins.",
+   "caption": "Due to its resemblance to a rabbit, there was an increase in the popularity of the species on Twitter throughout Japan in 2015.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/69820237/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/69820237/original.jpg",
@@ -1577,7 +1395,7 @@
    "topic": "Nudibranchs",
    "title": "Spanish Shawl",
    "subtitle": "Flabellinopsis iodinea",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Cephalopod molluscs, such as squid, cuttlefish, and octopuses, are among the most neurologically advanced of all invertebrates—and either the giant squid or the colossal squid is the largest known extant invertebrate species.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/471712080/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/471712080/original.jpg",
@@ -1595,7 +1413,7 @@
    "topic": "Nudibranchs",
    "title": "Hancock's Nudibranch",
    "subtitle": "Hancockia californica",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: The underside of the animal consists of a single muscular \"foot\".",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/18197011/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/18197011/original.jpeg",
@@ -1613,7 +1431,7 @@
    "topic": "Nudibranchs",
    "title": "Samla telja",
    "subtitle": "",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About the family Samlidae: It is the only family within the superfamily Samloidea.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/757017944/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/757017944/original.jpg",
@@ -1631,7 +1449,7 @@
    "topic": "Nudibranchs",
    "title": "Ringed Goniobranch",
    "subtitle": "Goniobranchus annulatus",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Good evidence exists for the appearance of gastropods, cephalopods, and bivalves in the Cambrian period, 541–485.4 million years ago.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/19352322/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/19352322/original.jpg",
@@ -1649,7 +1467,7 @@
    "topic": "Nudibranchs",
    "title": "Irene's Aeolid",
    "subtitle": "Anteaeolidiella ireneae",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About the family Aeolidiidae: Within Aeolidioidea, Aeolidiidae is one of the largest families, whose members differ from the rest of aeolids by their pectinate radular teeth and their diet –most of them feed on anemones.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/692720933/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/692720933/original.jpg",
@@ -1667,7 +1485,7 @@
    "topic": "Nudibranchs",
    "title": "Verco's Chromodorid",
    "subtitle": "Verconia verconis",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: However, the evolutionary history both of molluscs' emergence from the ancestral Lophotrochozoa and of their diversification into the well-known living and fossil forms are still subjects of vigorous debate among scientists.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/32810122/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/32810122/original.jpg",
@@ -1685,7 +1503,7 @@
    "topic": "Nudibranchs",
    "title": "Sorcerer's Dorid",
    "subtitle": "Polycera atra",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Schistosomiasis (also known as bilharzia, bilharziosis, or snail fever) is transmitted to humans by water snail hosts, and affects about 200 million people.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2385782/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2385782/original.jpg",
@@ -1703,7 +1521,7 @@
    "topic": "Nudibranchs",
    "title": "Cuthona",
    "subtitle": "",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Molluscs are the largest marine phylum, comprising about 23% of all the named marine organisms.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/761486940/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/761486940/original.jpg",
@@ -1721,7 +1539,7 @@
    "topic": "Nudibranchs",
    "title": "Crested aeolis",
    "subtitle": "Antiopella cristata",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: The number of recognized fossil species is 57,219 with estimates between 60,000 and 100,000, and the proportion of undescribed extant species is very high.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/108818781/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/108818781/original.jpeg",
@@ -1739,7 +1557,7 @@
    "topic": "Nudibranchs",
    "title": "Donut Nembrotha",
    "subtitle": "Nembrotha rosannulata",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Cephalopod molluscs, such as squid, cuttlefish, and octopuses, are among the most neurologically advanced of all invertebrates—and either the giant squid or the colossal squid is the largest known extant invertebrate species.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/121390818/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/121390818/original.jpg",
@@ -1757,7 +1575,7 @@
    "topic": "Nudibranchs",
    "title": "Goddard's Aeolid",
    "subtitle": "Pacifia goddardi",
-   "caption": "It was found while searching for another species in Carpinteria State Beach in Santa Barbara, California.",
+   "caption": "About molluscs: The underside of the animal consists of a single muscular \"foot\".",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/351404936/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/351404936/original.jpg",
@@ -1775,7 +1593,7 @@
    "topic": "Nudibranchs",
    "title": "Bullock's Hypselodoris",
    "subtitle": "Hypselodoris bullockii",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "Hypselodoris bullockii is quite pale purple in colour.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/182431554/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/182431554/original.jpg",
@@ -1793,7 +1611,7 @@
    "topic": "Nudibranchs",
    "title": "Sphon's Chromodorid",
    "subtitle": "Felimida sphoni",
-   "caption": "A sea slug wearing its whole palette",
+   "caption": "About molluscs: Good evidence exists for the appearance of gastropods, cephalopods, and bivalves in the Cambrian period, 541–485.4 million years ago.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/12660552/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/12660552/original.jpg",
@@ -1811,7 +1629,7 @@
    "topic": "Radiolarians",
    "title": "Collozoum inerme",
    "subtitle": "",
-   "caption": "A single cell with a glass skeleton",
+   "caption": "About the genus Collozoum: The genus contains bioluminescent species.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/236330950/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/236330950/original.jpeg",
@@ -1829,7 +1647,7 @@
    "topic": "Radiolarians",
    "title": "Trisulcus nana",
    "subtitle": "",
-   "caption": "A single cell with a glass skeleton",
+   "caption": "About radiolarians: Due to their rapid change as species and intricate skeletons, radiolarians represent an important diagnostic fossil found from the Cambrian onwards.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/11617555/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/11617555/original.jpg",
@@ -1847,7 +1665,7 @@
    "topic": "Radiolarians",
    "title": "Sticholonche zanclea",
    "subtitle": "",
-   "caption": "It is generally considered a heliozoan, placed in its own order, called the Taxopodida.",
+   "caption": "Sticholonche are usually around 200 μm, though this varies considerably, and have a bilaterally symmetric shape, somewhat flattened and widened at the front.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/657082132/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/657082132/original.jpg",
@@ -1865,7 +1683,7 @@
    "topic": "Radiolarians",
    "title": "Amphistaurus complanatus",
    "subtitle": "",
-   "caption": "A single cell with a glass skeleton",
+   "caption": "About the order Arthracanthida: They consist mainly of a gelatinous sheath filled with cytoplasm and a skeleton of up to 20 radially placed spicules made of celestine (strontium sulfate).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/336966820/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/336966820/original.jpg",
@@ -1883,7 +1701,7 @@
    "topic": "Radiolarians",
    "title": "Actinomma leptodermum",
    "subtitle": "",
-   "caption": "A single cell with a glass skeleton",
+   "caption": "About the order Spumellaria: They belong among the oldest Polycystine organisms, dating back to the lower Cambrian (ca. 515 million years).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/656838014/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/656838014/original.jpg",
@@ -1901,7 +1719,7 @@
    "topic": "Moths and butterflies",
    "title": "Frosted Phoenix",
    "subtitle": "Titanomis sisyrota",
-   "caption": "It is an extremely rare species with only 10 reliable records. Furthermore, taxonomists have difficulty placing it within an existing superfamily.",
+   "caption": "After 65 years without a sighting, a living individual was observed in March 2024 by a Swedish tourist.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/357771622/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/357771622/original.jpeg",
@@ -1919,7 +1737,7 @@
    "topic": "Moths and butterflies",
    "title": "Macrocilix maia",
    "subtitle": "",
-   "caption": "Macrocilix maia is a moth in the Drepanidae family. It is found in India, Japan, Taiwan, Korea, China, Peninsular Malaysia, Sumatra and Borneo.",
+   "caption": "About butterflies and moths: Lepidopterans have several distinctive features, especially colored scales that cover their bodies, large triangular wings, and a proboscis for drinking nectar.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/53637930/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/53637930/original.jpg",
@@ -1937,7 +1755,7 @@
    "topic": "Moths and butterflies",
    "title": "Satin White Palpita",
    "subtitle": "Palpita flegia",
-   "caption": "Palpita flegia, the satin white moth, is a moth in the Crambidae family.",
+   "caption": "About butterflies and moths: Lepidopterans have several distinctive features, especially colored scales that cover their bodies, large triangular wings, and a proboscis for drinking nectar.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2364045/large.JPG",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2364045/original.JPG",
@@ -1955,7 +1773,7 @@
    "topic": "Moths and butterflies",
    "title": "Sulawesi Moon Moth",
    "subtitle": "Actias isis",
-   "caption": "Wings tiled with thousands of tiny scales",
+   "caption": "About moon moths: As with all Saturniids, adult Actias moths lack functional mouthparts so their lifespan after emergence from the cocoon only ranges from a few days to a week.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/120454809/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/120454809/original.jpg",
@@ -1973,7 +1791,7 @@
    "topic": "Moths and butterflies",
    "title": "Citheronia phoronea",
    "subtitle": "",
-   "caption": "Wings tiled with thousands of tiny scales",
+   "caption": "About emperor and giant silk moths: The family contains some of the largest species of moths in the world.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/13278734/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/13278734/original.jpg",
@@ -1991,7 +1809,7 @@
    "topic": "Moths and butterflies",
    "title": "Papilio glaucus glaucus",
    "subtitle": "",
-   "caption": "Wings tiled with thousands of tiny scales",
+   "caption": "About common swallowtails: Adults are edible to birds and some species are mimics.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/89173929/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/89173929/original.jpg",
@@ -2009,7 +1827,7 @@
    "topic": "Moths and butterflies",
    "title": "Musotima instrumentalis",
    "subtitle": "",
-   "caption": "It is found in Meghalaya, India and in Taiwan.",
+   "caption": "About butterflies and moths: Lepidopterans have several distinctive features, especially colored scales that cover their bodies, large triangular wings, and a proboscis for drinking nectar.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/368163/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/368163/original.jpg",
@@ -2027,7 +1845,7 @@
    "topic": "Moths and butterflies",
    "title": "Pink Snout Moth",
    "subtitle": "Pachypodistes angulata",
-   "caption": "Wings tiled with thousands of tiny scales",
+   "caption": "About pyralid snout moths: In many (particularly older) classifications, the grass moths (Crambidae) are included in the Pyralidae as a subfamily, making the combined group one of the largest families in the Lepidoptera.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/68055096/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/68055096/original.jpg",
@@ -2045,7 +1863,7 @@
    "topic": "Moths and butterflies",
    "title": "Eastern Death's Head hawkmoth",
    "subtitle": "Acherontia styx",
-   "caption": "Wings tiled with thousands of tiny scales",
+   "caption": "They can mimic the scent of bees so that they can enter a hive unharmed to get honey.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/254154018/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/254154018/original.jpg",
@@ -2063,7 +1881,7 @@
    "topic": "Moths and butterflies",
    "title": "Painted Tiger Moth",
    "subtitle": "Arachnis picta",
-   "caption": "It is found in the South-Western United States and the bordering parts of Mexico.",
+   "caption": "About underwing, tiger, tussock, and allied moths: The family is among the largest families of moths by species count and contains a wide variety of well-known macromoth groups.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/5186944/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/5186944/original.jpg",
@@ -2081,7 +1899,7 @@
    "topic": "Moths and butterflies",
    "title": "Manduca neglecta",
    "subtitle": "",
-   "caption": "It is known from eastern Ecuador, Peru and Bolivia.",
+   "caption": "Adults have been recorded in January, from April to May, July to August and November to December in Ecuador.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/600170998/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/600170998/original.jpg",
@@ -2099,7 +1917,7 @@
    "topic": "Moths and butterflies",
    "title": "Eudocima iridescens",
    "subtitle": "",
-   "caption": "It is found in large parts of the world, including Australia, New Zealand and Papua New Guinea.",
+   "caption": "About underwing, tiger, tussock, and allied moths: The family is among the largest families of moths by species count and contains a wide variety of well-known macromoth groups.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/56359290/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/56359290/original.jpg",
@@ -2117,7 +1935,7 @@
    "topic": "Moths and butterflies",
    "title": "Carea",
    "subtitle": "",
-   "caption": "Wings tiled with thousands of tiny scales",
+   "caption": "About tufted moths: They are mostly small with dull coloration, the main distinguishing feature being a silk cocoon with a vertical exit slit.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/413703775/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/413703775/original.jpeg",
@@ -2135,7 +1953,7 @@
    "topic": "Moths and butterflies",
    "title": "Gaudy Sphinx",
    "subtitle": "Eumorpha labruscae",
-   "caption": "Its body and dorsal forewings are a deep green color. The dorsal hindwings have purple-blue patches, yellow borders, and a red spot near the inner margin. The underside is yellow-green and gray-purple.",
+   "caption": "About sphinx moths: This hovering capability is only known to have evolved four times in nectar feeders: in hummingbirds, certain bats, hoverflies, and these sphingids (an example of convergent evolution).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/56674491/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/56674491/original.jpeg",
@@ -2153,7 +1971,7 @@
    "topic": "Moths and butterflies",
    "title": "Coa Jewel Caterpillar Moth",
    "subtitle": "Acraga coa",
-   "caption": "Acraga coa is a moth of the Dalceridae family. It is found in southern Mexico, Belize, Honduras, Guatemala, El Salvador, Costa Rica and Panama.",
+   "caption": "About arthropods: The level of maternal care for hatchlings varies from nonexistent to the prolonged care provided by social insects.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/112217451/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/112217451/original.jpg",
@@ -2171,7 +1989,7 @@
    "topic": "Moths and butterflies",
    "title": "White Witch",
    "subtitle": "Thysania agrippina",
-   "caption": "The species has numerous common names, including white witch, birdwing moth, ghost moth, great grey witch, and great owlet moth.",
+   "caption": "Thysania agrippina is of interest as a competitor for title of \"largest insect\".",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/477844175/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/477844175/original.jpg",
@@ -2189,7 +2007,7 @@
    "topic": "Moths and butterflies",
    "title": "Hummingbird Clearwing",
    "subtitle": "Hemaris thysbe",
-   "caption": "Hemaris thysbe, commonly known as the hummingbird clearwing, is a moth of the Sphingidae (hawkmoth) family.",
+   "caption": "Coloration varies between individuals, but typically the moth is olive green and burgundy on its back, and white or yellow and burgundy on the underside.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/156474264/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/156474264/original.jpg",
@@ -2225,7 +2043,7 @@
    "topic": "Moths and butterflies",
    "title": "Parasa viridogrisea",
    "subtitle": "",
-   "caption": "Wings tiled with thousands of tiny scales",
+   "caption": "About arthropods: The evolutionary ancestry of arthropods dates back to the Cambrian period.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/27270792/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/27270792/original.jpg",
@@ -2243,7 +2061,7 @@
    "topic": "Moths and butterflies",
    "title": "Pseudosphex laticincta",
    "subtitle": "",
-   "caption": "Pseudosphex laticincta is a moth of the Arctiidae family.",
+   "caption": "About the genus Pseudosphex: \"In the cases of moths being like various species of the Hymenoptera aculeata it is impossible to argue that the same environment and general conditions can produce habits in moths which are of no use whatever to them except as a…",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/8738146/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/8738146/original.jpg",
@@ -2261,7 +2079,7 @@
    "topic": "Moths and butterflies",
    "title": "Io Moth",
    "subtitle": "Automeris io",
-   "caption": "It ranges from the southeast corner of Manitoba and in the southern extremes of Ontario, Quebec, and New Brunswick in Canada, and in the US it is found from Montana, North Dakota, South Dakota, Nebraska, Colorado, New…",
+   "caption": "About emperor and giant silk moths: Together with certain Noctuidae, Saturniidae contains the largest Lepidoptera and some of the largest extant insects.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/36127/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/36127/original.jpg",
@@ -2279,7 +2097,7 @@
    "topic": "Moths and butterflies",
    "title": "Anteros aurigans",
    "subtitle": "",
-   "caption": "Wings tiled with thousands of tiny scales",
+   "caption": "About the genus Anteros: The species of this genus are immediately recognizable by the under surface in which small, brown or black-bordered spots with metallic centres stand on the light yellow ground.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/133391415/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/133391415/original.jpg",
@@ -2297,7 +2115,7 @@
    "topic": "Moths and butterflies",
    "title": "Heraclides anchisiades idaeus",
    "subtitle": "",
-   "caption": "Wings tiled with thousands of tiny scales",
+   "caption": "About new world giant swallowtails and allies: Usage of the name was concentrated at Syracuse, a Dorian colony, Tarentum, a Spartan colony, and central Greece, legendary ancestral homeland of the Dorians, but they colonized the islands, Crete, and Anatolia as…",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/9748291/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/9748291/original.jpg",
@@ -2333,7 +2151,7 @@
    "topic": "Moths and butterflies",
    "title": "Monarch",
    "subtitle": "Danaus plexippus",
-   "caption": "Other common names depending on region include milkweed, common tiger, wanderer, and black veined brown. It may be the most familiar North American butterfly, and is considered an iconic pollinator species.",
+   "caption": "The eastern North American monarch population is notable for its annual southward late-summer/autumn instinctive migration from the northern and central United States and southern Canada to Florida and Mexico.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/25328482/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/25328482/original.jpg",
@@ -2351,7 +2169,7 @@
    "topic": "Moths and butterflies",
    "title": "Fiery Skipper",
    "subtitle": "Hylephila phyleus",
-   "caption": "The males are orange or yellow with black spots while the females are dark brown with orange or yellow spots. The caterpillars are greenish pink with a black head.",
+   "caption": "Reaching approximately 1 inch (2.5 cm) in length, male fiery skippers are orange or yellow while the females are dark brown.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/108393615/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/108393615/original.jpg",
@@ -2369,7 +2187,7 @@
    "topic": "Moths and butterflies",
    "title": "Omiza lycoraria",
    "subtitle": "",
-   "caption": "Omiza lycoraria is a geometer moth in the Ennominae subfamily. The It is found in Peninsular Malaysia, Borneo and Sumatra.",
+   "caption": "About arthropods: The level of maternal care for hatchlings varies from nonexistent to the prolonged care provided by social insects.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/3896020/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/3896020/original.jpg",
@@ -2387,7 +2205,7 @@
    "topic": "Moths and butterflies",
    "title": "Queen Alexandra's Birdwing",
    "subtitle": "Ornithoptera alexandrae",
-   "caption": "Ornithoptera alexandrae, the Queen Alexandra's birdwing, is the largest species of butterfly in the world, with females reaching wingspans slightly in excess of 25 cm (9.8 inches).",
+   "caption": "Ornithoptera alexandrae, the Queen Alexandra's birdwing, is the largest species of butterfly in the world, with females reaching wingspans slightly in excess of 25 to 28 cm.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/338928295/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/338928295/original.jpg",
@@ -2405,7 +2223,7 @@
    "topic": "Moths and butterflies",
    "title": "American Lady",
    "subtitle": "Vanessa virginiensis",
-   "caption": "The American painted lady or American lady (Vanessa virginiensis) is a butterfly found throughout North America.",
+   "caption": "About brush-footed butterflies: The Nymphalidae are the largest family of butterflies, with more than 6,000 species distributed throughout most of the world.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/4871987/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/4871987/original.jpg",
@@ -2423,7 +2241,7 @@
    "topic": "Moths and butterflies",
    "title": "Ramadasa plumbeola",
    "subtitle": "",
-   "caption": "Wings tiled with thousands of tiny scales",
+   "caption": "About cutworm moths and allies: Currently, Noctuidae is the second largest family in Noctuoidea, with about 1,089 genera and 11,772 species.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/64673828/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/64673828/original.jpg",
@@ -2441,7 +2259,7 @@
    "topic": "Mosses",
    "title": "Oregon Beaked Moss",
    "subtitle": "Kindbergia oregana",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About feather mosses: The order includes more than 40 families and more than 4,000 species, making them the largest order of mosses.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/137831879/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/137831879/original.jpeg",
@@ -2459,7 +2277,7 @@
    "topic": "Mosses",
    "title": "Yellow Moosedung Moss",
    "subtitle": "Splachnum luteum",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About mosses: Dawsonia superba, the tallest moss in the world, can grow to 60 cm in height.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/29821039/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/29821039/original.jpeg",
@@ -2477,7 +2295,7 @@
    "topic": "Mosses",
    "title": "Tree Climacium Moss",
    "subtitle": "Climacium dendroides",
-   "caption": "A forest at the scale of an ant",
+   "caption": "Their sporophytes are only abundant in late winter and early spring, and appears as a red-brown shoot with long stalk and cylindrical capsules.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/174947566/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/174947566/original.jpeg",
@@ -2495,7 +2313,7 @@
    "topic": "Mosses",
    "title": "Takakia lepidozioides",
    "subtitle": "",
-   "caption": "It is characterized by its tiny bifid leaves in which each segment is only a few cells wide, conspicuous rhizomous shoots, and long leafless stolon shoots which facilitate the colonization of bare areas.",
+   "caption": "About mosses: The individual plants are usually composed of simple leaves that are generally only one cell thick, attached to a stem that may be branched or unbranched and has only a limited role in conducting water and nutrients.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/26694641/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/26694641/original.jpeg",
@@ -2513,7 +2331,7 @@
    "topic": "Mosses",
    "title": "Lyell's Bristle-moss",
    "subtitle": "Pulvigera lyellii",
-   "caption": "O. lyellii can be found throughout western North America and Europe. It is found most commonly growing epiphytically on a variety of trees, and less commonly on rocks or boulder substrates.",
+   "caption": "About mosses: Lichens may superficially resemble mosses, and they sometimes have common names that include the word moss (e.g., \"reindeer moss\" and \"Iceland moss\"), but they are symbiotic colonies and not related to mosses.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/566836375/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/566836375/original.jpg",
@@ -2531,7 +2349,7 @@
    "topic": "Mosses",
    "title": "Smooth-stalk Feather-moss",
    "subtitle": "Brachythecium salebrosum",
-   "caption": "It is widely distributed throughout the world, except for in South-America and in tropical regions.",
+   "caption": "Brachythecium salebrosum is known to be able to use artificial light to grow in places which are otherwise devoid of natural light, such as Crystal Cave in Wisconsin.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/32634473/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/32634473/original.jpg",
@@ -2549,7 +2367,7 @@
    "topic": "Mosses",
    "title": "Sphagnum microcarpum",
    "subtitle": "",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About peat mosses and allies: The genus Sphagnum contains the largest number of species currently discovered (about 200, number varying according to the various authors).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/177237140/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/177237140/original.jpeg",
@@ -2567,7 +2385,7 @@
    "topic": "Mosses",
    "title": "Mucronate Screw Moss",
    "subtitle": "Tortula mucronifolia",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About the family Pottiaceae: They form the most numerous moss family known, containing nearly 1500 species or more than 10% of the 10,000 to 15,000 moss species known.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/377911609/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/377911609/original.jpg",
@@ -2585,7 +2403,7 @@
    "topic": "Mosses",
    "title": "Slender Cruet-moss",
    "subtitle": "Tetraplodon mnioides",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About mosses: Traditional uses of mosses included as insulation and for the ability to absorb liquids up to 20 times their weight.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/141276662/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/141276662/original.jpeg",
@@ -2603,7 +2421,7 @@
    "topic": "Mosses",
    "title": "Bug-on-a-stick",
    "subtitle": "Buxbaumia aphylla",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About humpbacked elves: The moss is microscopic for most of its existence, and plants are noticeable only after they begin to produce their reproductive structures.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/178657259/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/178657259/original.jpeg",
@@ -2621,7 +2439,7 @@
    "topic": "Mosses",
    "title": "Common wall-screw moss",
    "subtitle": "Tortula muralis muralis",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About the family Pottiaceae: They form the most numerous moss family known, containing nearly 1500 species or more than 10% of the 10,000 to 15,000 moss species known.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/61882320/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/61882320/original.jpeg",
@@ -2639,7 +2457,7 @@
    "topic": "Mosses",
    "title": "Glasswort Feather-moss",
    "subtitle": "Scleropodium touretii",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About feather mosses: The order includes more than 40 families and more than 4,000 species, making them the largest order of mosses.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/177503717/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/177503717/original.jpeg",
@@ -2657,7 +2475,7 @@
    "topic": "Mosses",
    "title": "Northern Peatmoss",
    "subtitle": "Sphagnum capillifolium",
-   "caption": "Small red peat can be distinguished by its sweeping, outward-curving branches that resemble tresses.",
+   "caption": "Sphagnum moss can hold large amounts of water within its cells, up to 20 times its own weight.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/56313823/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/56313823/original.jpg",
@@ -2675,7 +2493,7 @@
    "topic": "Mosses",
    "title": "Orthotrichum rogeri",
    "subtitle": "",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About mosses: Dawsonia superba, the tallest moss in the world, can grow to 60 cm in height.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/248950093/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/248950093/original.jpg",
@@ -2693,7 +2511,7 @@
    "topic": "Mosses",
    "title": "Coastal Triquetrella",
    "subtitle": "Triquetrella californica",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About the family Pottiaceae: They form the most numerous moss family known, containing nearly 1500 species or more than 10% of the 10,000 to 15,000 moss species known.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/179650171/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/179650171/original.jpeg",
@@ -2729,7 +2547,7 @@
    "topic": "Mosses",
    "title": "Luminous Moss",
    "subtitle": "Schistostega pennata",
-   "caption": "Schistostega pennata, also called goblin gold, luminous moss or luminescent moss, is a moss known for its glowing appearance in dark places.",
+   "caption": "Schistostega pennata, also called goblin gold, Dragon's gold, luminous moss or luminescent moss, is a haplolepidous moss (Dicranidae) known for its glowing appearance in dark places.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/48455008/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/48455008/original.jpg",
@@ -2747,7 +2565,7 @@
    "topic": "Mosses",
    "title": "Tayloria gunnii",
    "subtitle": "",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About mosses: The individual plants are usually composed of simple leaves that are generally only one cell thick, attached to a stem that may be branched or unbranched and has only a limited role in conducting water and nutrients.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/169554347/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/169554347/original.jpg",
@@ -2765,7 +2583,7 @@
    "topic": "Mosses",
    "title": "Sphagnum cavernulosum",
    "subtitle": "",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About peat mosses and allies: The genus Sphagnum contains the largest number of species currently discovered (about 200, number varying according to the various authors).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/336183944/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/336183944/original.jpeg",
@@ -2783,7 +2601,7 @@
    "topic": "Mosses",
    "title": "Donn's Rock-bristle",
    "subtitle": "Seligeria donniana",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About the genus Seligeria: There are 38 unique species of Seligeria on The Plant List.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/448731430/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/448731430/original.jpeg",
@@ -2801,7 +2619,7 @@
    "topic": "Mosses",
    "title": "Curvey-capsuled Thin-leaved Moss",
    "subtitle": "Cyrtomnium hymenophylloides",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About mosses: Lichens may superficially resemble mosses, and they sometimes have common names that include the word moss (e.g., \"reindeer moss\" and \"Iceland moss\"), but they are symbiotic colonies and not related to mosses.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/222383870/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/222383870/original.jpg",
@@ -2819,7 +2637,7 @@
    "topic": "Mosses",
    "title": "Emerald Dewdrops",
    "subtitle": "Ephemerum crassinervium",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About the genus Ephemerum: The genus's many species are of interest to cytogenetics because of evolutionary changes in the structure and number of their chromosomes.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/440059963/large.png",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/440059963/original.png",
@@ -2837,7 +2655,7 @@
    "topic": "Mosses",
    "title": "Sphagnum Subg. Sphagnum",
    "subtitle": "Sphagnum",
-   "caption": "A forest at the scale of an ant",
+   "caption": "As Sphagnum moss grows, it can slowly spread into drier conditions, forming larger mires, both raised bogs and blanket bogs.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/9311563/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/9311563/original.jpg",
@@ -2855,7 +2673,7 @@
    "topic": "Mosses",
    "title": "Ambuchanania leucobryoides",
    "subtitle": "",
-   "caption": "Ambuchanania leucobryoides is the only species in the monotypic genus Ambuchanania. It is a Sphagnum-like moss endemic to Tasmania.",
+   "caption": "Buchanan, (b.1944) an Australian botanist from the Tasmanian Herbarium in Hobart,.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/29176377/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/29176377/original.jpg",
@@ -2873,7 +2691,7 @@
    "topic": "Mosses",
    "title": "Buxbaumia Moss",
    "subtitle": "Buxbaumia viridis",
-   "caption": "Buxbuamia viridis, also known as the green shield-moss, is a rare bryophyte found sporadically throughout the northern hemisphere.",
+   "caption": "Buxbaumia viridis, also known as the green shield-moss, is a rare bryophyte found sporadically throughout the northern hemisphere.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/620277198/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/620277198/original.jpg",
@@ -2891,7 +2709,7 @@
    "topic": "Mosses",
    "title": "Menzies' metaneckera moss",
    "subtitle": "Neckera menziesii",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About feather mosses: The order includes more than 40 families and more than 4,000 species, making them the largest order of mosses.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/335360939/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/335360939/original.jpeg",
@@ -2909,7 +2727,7 @@
    "topic": "Mosses",
    "title": "Don's Thread-moss",
    "subtitle": "Ptychostomum donianum",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About mosses: Traditional uses of mosses included as insulation and for the ability to absorb liquids up to 20 times their weight.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/182618007/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/182618007/original.jpeg",
@@ -2927,7 +2745,7 @@
    "topic": "Mosses",
    "title": "Quill moss",
    "subtitle": "Cyathophorum bulbosum",
-   "caption": "Cyathophorum bulbosum, commonly known as quill moss or the false fern moss, is found in the eastern states of Australia (QLD, NSW, VIC, TAS and south-eastern SA) as well as Papua New Guinea, New Zealand, Auckland…",
+   "caption": "About mosses: Dawsonia superba, the tallest moss in the world, can grow to 60 cm in height.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/78109031/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/78109031/original.jpeg",
@@ -2945,7 +2763,7 @@
    "topic": "Mosses",
    "title": "Twiggy Spear-moss",
    "subtitle": "Sarmentypnum sarmentosum",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About mosses: The individual plants are usually composed of simple leaves that are generally only one cell thick, attached to a stem that may be branched or unbranched and has only a limited role in conducting water and nutrients.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/411368506/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/411368506/original.jpeg",
@@ -2963,7 +2781,7 @@
    "topic": "Mosses",
    "title": "Dendrohypopterygium filiculiforme",
    "subtitle": "",
-   "caption": "A forest at the scale of an ant",
+   "caption": "About mosses: Lichens may superficially resemble mosses, and they sometimes have common names that include the word moss (e.g., \"reindeer moss\" and \"Iceland moss\"), but they are symbiotic colonies and not related to mosses.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/286765936/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/286765936/original.jpeg",
@@ -2981,7 +2799,7 @@
    "topic": "Tardigrades",
    "title": "Grevenius baicalensis",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About the order Parachela: The oldest known species are Beorn leggi and Aerobius dactylus.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/30619320/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/30619320/original.jpg",
@@ -2999,7 +2817,7 @@
    "topic": "Tardigrades",
    "title": "Vladimirobius irregibilis",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About the order Parachela: Members of this order have existed for at least 72 million years, up to the present.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/30618882/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/30618882/original.jpg",
@@ -3017,7 +2835,7 @@
    "topic": "Tardigrades",
    "title": "Halechiniscus remanei",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About tardigrades: The earliest known fossil is from the Cambrian, some 500 million years ago.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/221892619/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/221892619/original.jpeg",
@@ -3035,7 +2853,7 @@
    "topic": "Tardigrades",
    "title": "Tanarctus arborspinosus",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About tardigrades: They have survived exposure to outer space.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/557147810/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/557147810/original.jpg",
@@ -3053,7 +2871,7 @@
    "topic": "Tardigrades",
    "title": "Echiniscus testudo",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About tardigrades: The earliest known fossil is from the Cambrian, some 500 million years ago.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/58119058/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/58119058/original.jpg",
@@ -3071,7 +2889,7 @@
    "topic": "Tardigrades",
    "title": "Dactylobiotus parthenogeneticus",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About the order Parachela: The oldest known species are Beorn leggi and Aerobius dactylus.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2306258/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2306258/original.jpg",
@@ -3089,7 +2907,7 @@
    "topic": "Tardigrades",
    "title": "Milnesium tardigradum",
    "subtitle": "",
-   "caption": "M. tardigradum has also been found in the sea around Antarctica. M. tardigradum contains unidentified osmolytes which could potentially provide important information in the process of cryptobiosis.",
+   "caption": "It contains unidentified osmolytes that could potentially provide important information in the process of cryptobiosis.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/221943925/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/221943925/original.jpg",
@@ -3107,7 +2925,7 @@
    "topic": "Tardigrades",
    "title": "Milnesium cassandrae",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About tardigrades: They have survived exposure to outer space.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/55986325/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/55986325/original.jpg",
@@ -3125,7 +2943,7 @@
    "topic": "Tardigrades",
    "title": "Ramazzottius oberhaeuseri",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About the order Parachela: Members of this order have existed for at least 72 million years, up to the present.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2521767/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2521767/original.jpg",
@@ -3143,7 +2961,7 @@
    "topic": "Tardigrades",
    "title": "Calohypsibius ornatus",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About the order Parachela: The oldest known species are Beorn leggi and Aerobius dactylus.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/681685900/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/681685900/original.jpg",
@@ -3161,7 +2979,7 @@
    "topic": "Tardigrades",
    "title": "Bryodelphax parvulus",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About tardigrades: The earliest known fossil is from the Cambrian, some 500 million years ago.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/577382309/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/577382309/original.jpg",
@@ -3179,7 +2997,7 @@
    "topic": "Tardigrades",
    "title": "Hypsibius scabropygus",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About the order Parachela: Members of this order have existed for at least 72 million years, up to the present.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/360895745/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/360895745/original.jpg",
@@ -3197,7 +3015,7 @@
    "topic": "Tardigrades",
    "title": "Viridiscus viridissimus",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About tardigrades: They have survived exposure to outer space.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/692084464/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/692084464/original.jpg",
@@ -3233,7 +3051,7 @@
    "topic": "Tardigrades",
    "title": "Milnesium",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "Milnesium exhibits tardigrade species with multi-legged, multi-clawed, and segmented morphology.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/568193607/large.gif",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/568193607/original.gif",
@@ -3287,7 +3105,7 @@
    "topic": "Tardigrades",
    "title": "Ramazzottius",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "Ramazzottius varieornatus (see image) is a terrestrial invertebrate that is extroardinarily tolerant of extreme conditions such as irradiation, chemicals, dehydration and high pressure.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/29878753/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/29878753/original.jpg",
@@ -3449,7 +3267,7 @@
    "topic": "Tardigrades",
    "title": "Parechiniscus chitonides",
    "subtitle": "",
-   "caption": "A water bear, nearly indestructible",
+   "caption": "About the genus Parechiniscus: It's only species is Parechiniscus chitonides.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/718452895/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/718452895/original.jpg",
@@ -3521,7 +3339,7 @@
    "topic": "Dragonflies",
    "title": "Goblet-marked Damselfly",
    "subtitle": "Erythromma lindenii",
-   "caption": "The goblet-marked damselfly (Erythromma lindenii) is a medium-sized blue-and-black (or green-and-black) damselfly in the pond damselfly family (Coenagrionidae).",
+   "caption": "The goblet-marked damselfly is also known as the blue-eye.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/399080893/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/399080893/original.jpeg",
@@ -3539,7 +3357,7 @@
    "topic": "Dragonflies",
    "title": "Emerald-banded Skimmer",
    "subtitle": "Cratilla lineata",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "About skimmers: The chasers, darters, skimmers, and perchers and their relatives form the Libellulidae, the largest family of dragonflies.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/45149827/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/45149827/original.jpeg",
@@ -3557,7 +3375,7 @@
    "topic": "Dragonflies",
    "title": "Amazon Sapphirewing",
    "subtitle": "Zenithoptera fasciata",
-   "caption": "The species has in the past been known by additional taxonomic names, including: Libellula fasciata, Libellula americana, and Libellula violacea.",
+   "caption": "About skimmers: Many of the members of this genus are brightly colored or have banded wings.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2967132/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2967132/original.jpg",
@@ -3575,7 +3393,7 @@
    "topic": "Dragonflies",
    "title": "Rambur's Forktail",
    "subtitle": "Ischnura ramburii",
-   "caption": "Males are green with blue on abdominal segments 8 and 9. Females are orange-red, olive green, or similar to males in coloration.",
+   "caption": "Females are orange-red, olive green, or similar to males in coloration.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/21438986/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/21438986/original.jpg",
@@ -3593,7 +3411,7 @@
    "topic": "Dragonflies",
    "title": "Jewel Flutterer",
    "subtitle": "Rhyothemis resplendens",
-   "caption": "The genus Rhyothemis extends from Africa to the western Pacific, with five species known in Australia.",
+   "caption": "It is a small dragonfly with a wingspan of 40-60mm and body length around 25mm.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/45827902/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/45827902/original.jpg",
@@ -3611,7 +3429,7 @@
    "topic": "Dragonflies",
    "title": "Dragonhunter",
    "subtitle": "Hagenius brevistylus",
-   "caption": "The dragonhunter (Hagenius brevistylus) is a clubtail dragonfly of the eastern United States and southeastern Canada.",
+   "caption": "The dragonhunter is the only member of genus Hagenius.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/13339301/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/13339301/original.jpg",
@@ -3629,7 +3447,7 @@
    "topic": "Dragonflies",
    "title": "Vivid Dancer",
    "subtitle": "Argia vivida",
-   "caption": "It is found in Central America and North America.",
+   "caption": "Argia vivida vary in color, although they are typically associated with the bright blue coloration.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/7957160/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/7957160/original.jpg",
@@ -3647,7 +3465,7 @@
    "topic": "Dragonflies",
    "title": "Calico Pennant",
    "subtitle": "Celithemis elisa",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "About skimmers: The chasers, darters, skimmers, and perchers and their relatives form the Libellulidae, the largest family of dragonflies.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2301163/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2301163/original.jpg",
@@ -3665,7 +3483,7 @@
    "topic": "Dragonflies",
    "title": "Eastern Amberwing",
    "subtitle": "Perithemis tenera",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "The eastern amberwing dragonfly is one of the only types of dragonfly that actively mimics a wasp.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/54586695/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/54586695/original.jpeg",
@@ -3683,7 +3501,7 @@
    "topic": "Dragonflies",
    "title": "Autumn Meadowhawk",
    "subtitle": "Sympetrum vicinum",
-   "caption": "Sympetrum vicinum, the yellow-legged meadowhawk or autumn meadowhawk, is a member of the Libellulidae family and grows to 26–35 mm long.",
+   "caption": "About meadowhawks: The more than 50 species predominantly live in the temperate zone of the Northern Hemisphere; 11 species are native to Europe and 15 species native to North America, and most of the rest in Asia.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/444370462/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/444370462/original.jpeg",
@@ -3701,7 +3519,7 @@
    "topic": "Dragonflies",
    "title": "Madagascar Jungleskimmer",
    "subtitle": "Thermorthemis madagascariensis",
-   "caption": "It is the largest dragonfly on the island of Madagascar",
+   "caption": "About skimmers: Many of the members of this genus are brightly colored or have banded wings.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/4818637/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/4818637/original.jpg",
@@ -3719,7 +3537,7 @@
    "topic": "Dragonflies",
    "title": "Red Groundling",
    "subtitle": "Brachythemis lacustris",
-   "caption": "It is found in Angola, Botswana, Burkina Faso, the Democratic Republic of the Congo, Ivory Coast, Equatorial Guinea, Ethiopia, Gambia, Ghana, Guinea, Kenya, Liberia, Malawi, Mozambique, Namibia, Niger, Nigeria, Senegal,…",
+   "caption": "About skimmers: The chasers, darters, skimmers, and perchers and their relatives form the Libellulidae, the largest family of dragonflies.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/41078180/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/41078180/original.jpg",
@@ -3737,7 +3555,7 @@
    "topic": "Dragonflies",
    "title": "Madagascan Rivercruiser",
    "subtitle": "Phyllomacromia trifasciata",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "About arthropods: The evolutionary ancestry of arthropods dates back to the Cambrian period.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/4969870/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/4969870/original.jpg",
@@ -3755,7 +3573,7 @@
    "topic": "Dragonflies",
    "title": "Libellago asclepiades",
    "subtitle": "",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "About jewels: Many species are noted for their metallic colours and elaborate courtship displays, with males using brightly coloured wings and body markings in territorial and mating behaviour.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/7908330/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/7908330/original.jpg",
@@ -3773,7 +3591,7 @@
    "topic": "Dragonflies",
    "title": "Nomad",
    "subtitle": "Sympetrum fonscolombii",
-   "caption": "The red-veined darter or nomad (Sympetrum fonscolombii) is a dragonfly of the genus Sympetrum.",
+   "caption": "About meadowhawks: The more than 50 species predominantly live in the temperate zone of the Northern Hemisphere; 11 species are native to Europe and 15 species native to North America, and most of the rest in Asia.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/167245512/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/167245512/original.jpg",
@@ -3791,7 +3609,7 @@
    "topic": "Dragonflies",
    "title": "Cobra Clubtail",
    "subtitle": "Gomphurus vastus",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "The IUCN Red List conservation status of Gomphurus vastus is \"Least Concern\", with no immediate threat to the species' survival.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/24464028/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/24464028/original.jpeg",
@@ -3809,7 +3627,7 @@
    "topic": "Dragonflies",
    "title": "Ebony Jewelwing",
    "subtitle": "Calopteryx maculata",
-   "caption": "It is one of about 170 species of Odonata, found in the eastern U.S. and southeastern Canada, ranging west to the Great Plains. Other common names include black-winged damselfly.",
+   "caption": "About jewelwings: The colourful males often have coloured wings whereas the more muted females usually have clear wings although some develop male (androchrome) wing characteristics.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/51120638/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/51120638/original.jpg",
@@ -3827,7 +3645,7 @@
    "topic": "Dragonflies",
    "title": "Japanese Relict Dragonfly",
    "subtitle": "Epiophlebia superstes",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "It is one of three recognised species of Epiophlebia, the only living genus in the suborder Anisozygoptera.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/93723942/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/93723942/original.jpg",
@@ -3845,7 +3663,7 @@
    "topic": "Dragonflies",
    "title": "Black-winged Bambootail",
    "subtitle": "Disparoneura quadrimaculata",
-   "caption": "It is a widely distributed species in India.",
+   "caption": "About arthropods: The level of maternal care for hatchlings varies from nonexistent to the prolonged care provided by social insects.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/649364916/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/649364916/original.jpg",
@@ -3863,7 +3681,7 @@
    "topic": "Dragonflies",
    "title": "Greater Bluewing",
    "subtitle": "Rhyothemis plutonia",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "About skimmers: Many of the members of this genus are brightly colored or have banded wings.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/362106/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/362106/original.jpg",
@@ -3881,7 +3699,7 @@
    "topic": "Dragonflies",
    "title": "Common Clubtail",
    "subtitle": "Gomphus vulgatissimus",
-   "caption": "It is found in most of Europe, and is present now in the south of France. Its natural habitats are clean, slow moving streaming rivers and creeks with sandy soil. It can be seen from mid-April in the south to August.",
+   "caption": "It can be seen from mid-April in the south to August.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/13646190/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/13646190/original.jpg",
@@ -3899,7 +3717,7 @@
    "topic": "Dragonflies",
    "title": "Northern Julia Skimmer",
    "subtitle": "Orthetrum julia falsum",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "About arthropods: The evolutionary ancestry of arthropods dates back to the Cambrian period.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/21705222/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/21705222/original.jpeg",
@@ -3917,7 +3735,7 @@
    "topic": "Dragonflies",
    "title": "Skylight Flutterer",
    "subtitle": "Rhyothemis fenestrina",
-   "caption": "It is found in Angola, Botswana, the Republic of the Congo, the Democratic Republic of the Congo, Gabon, Ghana, Kenya, Liberia, Malawi, Namibia, Nigeria, Senegal, Sierra Leone, Tanzania, Uganda, Zambia, and possibly…",
+   "caption": "Its natural habitats are swamps, intermittent freshwater lakes, freshwater marshes, and intermittent freshwater marshes.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/209024228/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/209024228/original.jpg",
@@ -3935,7 +3753,7 @@
    "topic": "Dragonflies",
    "title": "Blue-tailed Damselfly",
    "subtitle": "Ischnura elegans",
-   "caption": "The blue-tailed damselfly (Ischnura elegans) is a European damselfly.",
+   "caption": "Eyes with up to 30,000 facets",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/384020256/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/384020256/original.jpeg",
@@ -3971,7 +3789,7 @@
    "topic": "Dragonflies",
    "title": "Roseate Skimmer",
    "subtitle": "Orthemis ferruginea",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "It is 46–55 millimetres in length with a wingspan 35–44 millimetres long.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/244603/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/244603/original.jpg",
@@ -3989,7 +3807,7 @@
    "topic": "Dragonflies",
    "title": "Familiar Bluet",
    "subtitle": "Enallagma civile",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "Females are polymorphic; they may appear in nature as a pale blue or an olive-tan color.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/270755350/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/270755350/original.jpg",
@@ -4043,7 +3861,7 @@
    "topic": "Dragonflies",
    "title": "Andaeschna timotocuica",
    "subtitle": "",
-   "caption": "Eyes with up to 30,000 facets",
+   "caption": "About darners: The family includes some of the largest dragonflies, and can be over three inches long.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/179983998/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/179983998/original.jpeg",
@@ -4061,7 +3879,7 @@
    "topic": "Hummingbirds",
    "title": "Anna's Hummingbird",
    "subtitle": "Calypte anna",
-   "caption": "In the early 20th century, Anna's hummingbirds bred only in northern Baja California and southern California.",
+   "caption": "Until the late 20th century, Anna's hummingbirds migrated from locations as far north as Alaska and coastal British Columbia, returning south to breed in Baja California and Southern California.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/4856611/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/4856611/original.jpg",
@@ -4079,7 +3897,7 @@
    "topic": "Hummingbirds",
    "title": "Ruby-throated Hummingbird",
    "subtitle": "Archilochus colubris",
-   "caption": "It is by far the most common hummingbird seen east of the Mississippi River in North America.",
+   "caption": "It is the most common hummingbird in eastern North America, having population estimates of about 35 million in 2021.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/239401590/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/239401590/original.jpg",
@@ -4097,7 +3915,7 @@
    "topic": "Hummingbirds",
    "title": "Buffy Helmetcrest",
    "subtitle": "Oxypogon stuebelii",
-   "caption": "A heart that can beat over 1,000 times a minute",
+   "caption": "About hummingbirds: While most hummingbirds do not migrate, the rufous hummingbird has one of the longest migrations among birds, traveling twice per year between Alaska and Mexico, a distance of about 3,900 miles (6,300 km).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/65700653/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/65700653/original.jpg",
@@ -4115,7 +3933,7 @@
    "topic": "Hummingbirds",
    "title": "Bee Hummingbird",
    "subtitle": "Mellisuga helenae",
-   "caption": "A heart that can beat over 1,000 times a minute",
+   "caption": "About bee and vervain hummingbirds: They are notable for being the first and second smallest bird species in the world.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/162743552/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/162743552/original.jpg",
@@ -4133,7 +3951,7 @@
    "topic": "Hummingbirds",
    "title": "Green-breasted Mango",
    "subtitle": "Anthracothorax prevostii",
-   "caption": "The green-breasted mango (Anthracothorax prevostii) is a hummingbird from tropical America. The scientific name of this bird commemorates the French naturalist Florent Prévost.",
+   "caption": "About hummingbirds: The oldest known fossil hummingbird is Eurotrochilus, from the Rupelian Stage of Early Oligocene Europe.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2965312/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2965312/original.jpg",
@@ -4151,7 +3969,7 @@
    "topic": "Hummingbirds",
    "title": "Olivaceous Thornbill",
    "subtitle": "Chalcostigma olivaceum",
-   "caption": "Its natural habitat is subtropical or tropical high-altitude grassland.",
+   "caption": "About hummingbirds: Hummingbirds are the smallest mature birds, measuring 7.5–13 cm in length.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/61438050/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/61438050/original.jpg",
@@ -4169,7 +3987,7 @@
    "topic": "Hummingbirds",
    "title": "Allen's Hummingbird",
    "subtitle": "Selasphorus sasin",
-   "caption": "It is a small bird, with mature adults reaching only 3 to 3.5 in (76 to 89 mm) in length. The male has a green back and forehead, with rust-colored rufous flanks, rump, and tail.",
+   "caption": "About hummingbirds: The smallest is the 5 cm bee hummingbird, which weighs less than 2.0 g, and the largest is the 23 cm giant hummingbird, weighing 17–31 grams.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/9030408/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/9030408/original.jpg",
@@ -4187,7 +4005,7 @@
    "topic": "Hummingbirds",
    "title": "Rufous Hummingbird",
    "subtitle": "Selasphorus rufus",
-   "caption": "The rufous hummingbird (Selasphorus rufus) is a small hummingbird, about 8 cm (3.1 in) long with a long, straight and slender bill.",
+   "caption": "These birds are known for their extraordinary flight skills, flying 3,200 kilometres (2,000 miles) during their migratory transits.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/148222762/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/148222762/original.jpeg",
@@ -4205,7 +4023,7 @@
    "topic": "Hummingbirds",
    "title": "Spangled Coquette",
    "subtitle": "Lophornis stictolophus",
-   "caption": "It is found in Colombia, Ecuador, Peru, and Venezuela. Its natural habitats are subtropical or tropical dry forest, subtropical or tropical moist lowland forest, and heavily degraded former forest.",
+   "caption": "About coquettes: These are all tiny birds, ranking among the smallest hummingbirds.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/57639527/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/57639527/original.jpeg",
@@ -4223,7 +4041,7 @@
    "topic": "Hummingbirds",
    "title": "Crowned Woodnymph",
    "subtitle": "Thalurania colombica",
-   "caption": "It is found in Belize and Guatemala to northern Peru. Its natural habitats are subtropical or tropical moist lowland forests, subtropical or tropical moist montane forests, and heavily degraded former forest.",
+   "caption": "About hummingbirds: They hover at rapid wing-flapping rates, which vary from around 12 beats per second in the largest species to 99 per second in small hummingbirds.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2967087/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2967087/original.jpg",
@@ -4241,7 +4059,7 @@
    "topic": "Hummingbirds",
    "title": "Long-tailed Sylph",
    "subtitle": "Aglaiocercus kingii",
-   "caption": "It is found in Bolivia, Colombia, Ecuador, Peru, and Venezuela. Its natural habitat is subtropical or tropical moist montane forest.",
+   "caption": "About hummingbirds: Hummingbirds have varied specialized characteristics to enable rapid, maneuverable flight: exceptional metabolic capacity, adaptations to high altitude, sensitive visual and communication abilities, and long-distance migration in some…",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/188684388/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/188684388/original.jpg",
@@ -4259,7 +4077,7 @@
    "topic": "Hummingbirds",
    "title": "Marvelous Spatuletail",
    "subtitle": "Loddigesia mirabilis",
-   "caption": "The marvellous spatuletail (Loddigesia mirabilis) is a medium-sized (up to 15 cm long) white, green and bronze hummingbird adorned with blue crest feathers, a brilliant turquoise gorget, and a black line on its white…",
+   "caption": "About hummingbirds: Among all birds, male hummingbirds have the widest diversity of plumage color, particularly in blues, greens, and purples.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/466307005/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/466307005/original.jpeg",
@@ -4277,7 +4095,7 @@
    "topic": "Hummingbirds",
    "title": "Red-tailed Comet",
    "subtitle": "Sappho sparganurus",
-   "caption": "A heart that can beat over 1,000 times a minute",
+   "caption": "About hummingbirds: Hummingbirds split from their sister group, the swifts and treeswifts, around 42 million years ago.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/293391900/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/293391900/original.jpg",
@@ -4295,7 +4113,7 @@
    "topic": "Hummingbirds",
    "title": "Rufous-crested Coquette",
    "subtitle": "Lophornis delattrei",
-   "caption": "A heart that can beat over 1,000 times a minute",
+   "caption": "Males of the species can be easily distinguished by their striking rufous coloured spiked crests, and females, while less obvious, can be identified by their small size and rufous coloured foreheads.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/61493794/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/61493794/original.jpg",
@@ -4313,7 +4131,7 @@
    "topic": "Hummingbirds",
    "title": "Broad-billed Hummingbird",
    "subtitle": "Cynanthus latirostris",
-   "caption": "The broad-billed hummingbird (Cynanthus latirostris) is a medium-sized hummingbird of North America. It is 9–10 cm long, and weighs approximately three to four grams.",
+   "caption": "The bird is also known for its other common names – the Colibrí Pico Ancho in Spanish and Colibri circé in French.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/11420705/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/11420705/original.jpg",
@@ -4331,7 +4149,7 @@
    "topic": "Hummingbirds",
    "title": "Tufted Coquette",
    "subtitle": "Lophornis ornatus",
-   "caption": "The tufted coquette (Lophornis ornatus) is a tiny hummingbird that breeds in eastern Venezuela, Trinidad, Guiana, and northern Brazil.",
+   "caption": "About coquettes: The male coquettes are noted from their outlandish, colorful crests and markings, the females being more subdued.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/105307110/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/105307110/original.jpeg",
@@ -4349,7 +4167,7 @@
    "topic": "Hummingbirds",
    "title": "Costa's Hummingbird",
    "subtitle": "Calypte costae",
-   "caption": "A heart that can beat over 1,000 times a minute",
+   "caption": "About hummingbirds: While most hummingbirds do not migrate, the rufous hummingbird has one of the longest migrations among birds, traveling twice per year between Alaska and Mexico, a distance of about 3,900 miles (6,300 km).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/329092460/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/329092460/original.jpeg",
@@ -4359,24 +4177,6 @@
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/188090845",
    "place": "23019 B.C.S., México"
-  },
-  {
-   "id": "inat-63211946",
-   "source": "iNaturalist",
-   "kind": "image",
-   "topic": "Hummingbirds",
-   "title": "Shining Sunbeam",
-   "subtitle": "Aglaeactis cupripennis",
-   "caption": "It is found in Colombia, Ecuador, and Peru. Its natural habitats are subtropical or tropical moist montane forests and subtropical or tropical high-altitude shrubland.",
-   "media": {
-    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/large.jpg",
-    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/original.jpg",
-    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/small.jpg"
-   },
-   "credit": "John Eppler",
-   "license": "CC BY-NC",
-   "sourceUrl": "https://www.inaturalist.org/observations/63211946",
-   "place": "Metropolitan District of Quito, Ecuador"
   },
   {
    "id": "inat-139071374",
@@ -4397,13 +4197,31 @@
    "place": "Latacunga, Ecuador"
   },
   {
+   "id": "inat-63211946",
+   "source": "iNaturalist",
+   "kind": "image",
+   "topic": "Hummingbirds",
+   "title": "Shining Sunbeam",
+   "subtitle": "Aglaeactis cupripennis",
+   "caption": "About hummingbirds: The oldest known fossil hummingbird is Eurotrochilus, from the Rupelian Stage of Early Oligocene Europe.",
+   "media": {
+    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/large.jpg",
+    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/original.jpg",
+    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/small.jpg"
+   },
+   "credit": "John Eppler",
+   "license": "CC BY-NC",
+   "sourceUrl": "https://www.inaturalist.org/observations/63211946",
+   "place": "Metropolitan District of Quito, Ecuador"
+  },
+  {
    "id": "inat-6177441",
    "source": "iNaturalist",
    "kind": "image",
    "topic": "Hummingbirds",
    "title": "Fiery-throated Hummingbird",
    "subtitle": "Panterpe insignis",
-   "caption": "The fiery-throated hummingbird (Panterpe insignis) is a medium-sized hummingbird which breeds only in the mountains of Costa Rica and western Panama. It is the only member of the genus Panterpe.",
+   "caption": "About hummingbirds: Hummingbirds are the smallest mature birds, measuring 7.5–13 cm in length.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/7749988/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/7749988/original.jpg",
@@ -4421,7 +4239,7 @@
    "topic": "Hummingbirds",
    "title": "Long-billed Starthroat",
    "subtitle": "Heliomaster longirostris",
-   "caption": "The long-billed starthroat (Heliomaster longirostris) is a hummingbird that breeds from southern Mexico to Panama, from Colombia south and east to Bolivia and Brazil, and on Trinidad.",
+   "caption": "About hummingbirds: The smallest is the 5 cm bee hummingbird, which weighs less than 2.0 g, and the largest is the 23 cm giant hummingbird, weighing 17–31 grams.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2420304/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2420304/original.jpg",
@@ -4439,7 +4257,7 @@
    "topic": "Hummingbirds",
    "title": "Broad-tailed Hummingbird",
    "subtitle": "Selasphorus platycercus",
-   "caption": "The broad-tailed hummingbird (Selasphorus platycercus) is a medium-sized hummingbird, nearly 4 in (10 cm) in length. It is one of seven species in the genus Selasphorus.",
+   "caption": "About hummingbirds: They hover at rapid wing-flapping rates, which vary from around 12 beats per second in the largest species to 99 per second in small hummingbirds.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/236690943/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/236690943/original.jpg",
@@ -4457,7 +4275,7 @@
    "topic": "Hummingbirds",
    "title": "Hispaniolan Mango",
    "subtitle": "Anthracothorax dominicus",
-   "caption": "It is found in the Dominican Republic, Haiti, Puerto Rico, the British Virgin Islands, and Virgin Islands, U.S..",
+   "caption": "About hummingbirds: Hummingbirds have varied specialized characteristics to enable rapid, maneuverable flight: exceptional metabolic capacity, adaptations to high altitude, sensitive visual and communication abilities, and long-distance migration in some…",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/321137589/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/321137589/original.jpg",
@@ -4475,7 +4293,7 @@
    "topic": "Hummingbirds",
    "title": "Xantus's Hummingbird",
    "subtitle": "Basilinna xantusii",
-   "caption": "A heart that can beat over 1,000 times a minute",
+   "caption": "Xantus's hummingbird (Basilinna xantusii), previously known as the black-fronted hummingbird, is a species in the \"emeralds\", tribe Trochilini of subfamily Trochilinae.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/251837627/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/251837627/original.jpeg",
@@ -4493,7 +4311,7 @@
    "topic": "Hummingbirds",
    "title": "Green-backed Firecrown",
    "subtitle": "Sephanoides sephaniodes",
-   "caption": "The green-backed firecrown (Sephanoides sephaniodes) is a hummingbird that is found in Argentina and Chile.",
+   "caption": "About hummingbirds: Among all birds, male hummingbirds have the widest diversity of plumage color, particularly in blues, greens, and purples.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/418368989/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/418368989/original.jpeg",
@@ -4511,7 +4329,7 @@
    "topic": "Hummingbirds",
    "title": "Chestnut-breasted Coronet",
    "subtitle": "Boissonneaua matthewsii",
-   "caption": "It is found in humid montane Andean forests in Colombia, Ecuador, and Peru. It is generally easily recognized by its contrasting rufous underparts.",
+   "caption": "About hummingbirds: Hummingbirds split from their sister group, the swifts and treeswifts, around 42 million years ago.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/142840237/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/142840237/original.jpg",
@@ -4529,7 +4347,7 @@
    "topic": "Hummingbirds",
    "title": "Black-chinned Hummingbird",
    "subtitle": "Archilochus alexandri",
-   "caption": "The black-chinned hummingbird (Archilochus alexandri) is a small hummingbird. It is an extremely adaptable bird, occupying a broad range of habitats.",
+   "caption": "Male black-chinned hummingbirds are recognizable by the faint iridescent purple gorget on their neck which is only visible in certain lighting.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/45068399/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/45068399/original.jpg",
@@ -4547,7 +4365,7 @@
    "topic": "Hummingbirds",
    "title": "Hooded Visorbearer",
    "subtitle": "Augastes lumachella",
-   "caption": "Its natural habitat is subtropical or tropical high-altitude shrubland.",
+   "caption": "Endemic to the east Brazilian state of Bahia, it is found only at higher altitudes in the Chapada Diamantina region.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/352440878/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/352440878/original.jpg",
@@ -4565,7 +4383,7 @@
    "topic": "Hummingbirds",
    "title": "Rainbow Starfrontlet",
    "subtitle": "Coeligena iris",
-   "caption": "Its natural habitats are subtropical or tropical moist montane forests, subtropical or tropical high-altitude shrubland, at elevations of 1500 – 3300 m, and heavily degraded former forest.",
+   "caption": "About hummingbirds: While most hummingbirds do not migrate, the rufous hummingbird has one of the longest migrations among birds, traveling twice per year between Alaska and Mexico, a distance of about 3,900 miles (6,300 km).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/43727465/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/43727465/original.jpg",
@@ -4583,7 +4401,7 @@
    "topic": "Hummingbirds",
    "title": "Mexican Violetear",
    "subtitle": "Colibri thalassinus",
-   "caption": "The Mexican violetear (Colibri thalassinus) is a medium-sized, metallic green hummingbird species commonly found in forested areas from Mexico to Nicaragua.",
+   "caption": "About violetears: They have loud persistent songs, often repetitions of double notes.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/160567351/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/160567351/original.jpeg",
@@ -4601,7 +4419,7 @@
    "topic": "Jellies and corals",
    "title": "Bassia bassensis",
    "subtitle": "",
-   "caption": "The genus only contains the bioluminescent species Bassia bassensis.",
+   "caption": "The genus contains the single species Bassia bassensis.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/234592208/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/234592208/original.jpeg",
@@ -4619,7 +4437,7 @@
    "topic": "Jellies and corals",
    "title": "Crimson Jelly",
    "subtitle": "Turritopsis rubra",
-   "caption": "An animal that is mostly water and light",
+   "caption": "The bell of the crimson jelly is transparent which allows for the bright red stomach and gonads to be visible from the outside.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/10893103/large.gif",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/10893103/original.gif",
@@ -4637,7 +4455,7 @@
    "topic": "Jellies and corals",
    "title": "Portuguese Man o' War",
    "subtitle": "Physalia physalis",
-   "caption": "An animal that is mostly water and light",
+   "caption": "Although they are morphologically quite different, all of the zooids in a single specimen are genetically identical.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/357451029/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/357451029/original.jpg",
@@ -4655,7 +4473,7 @@
    "topic": "Jellies and corals",
    "title": "Dofleinia armata",
    "subtitle": "",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About actiniid sea anemones: Actiniidae is the largest family of sea anemones, to which most common, temperate, shore species belong.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/351203466/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/351203466/original.jpg",
@@ -4673,7 +4491,7 @@
    "topic": "Jellies and corals",
    "title": "Jewel Anemone",
    "subtitle": "Corynactis viridis",
-   "caption": "Corynactis viridis, the jewel anemone, is a brightly coloured anthozoan similar in body form to a sea anemone or a scleractinian coral polyp, but in the order Corallimorpharia.",
+   "caption": "About corallimorphs: Many species occur together in large groups, although there are recorded instances of individuals.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/3474769/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/3474769/original.jpg",
@@ -4691,7 +4509,7 @@
    "topic": "Jellies and corals",
    "title": "Hula Skirt Siphonophore",
    "subtitle": "Physophora hydrostatica",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About siphonophores: While many sea animals produce blue and green bioluminescence, a siphonophore, Erenna sirena, was only the second life form found to produce a red light (the first being the scaleless dragonfish Chirostomias pliopterus).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/382083/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/382083/original.jpg",
@@ -4709,7 +4527,7 @@
    "topic": "Jellies and corals",
    "title": "Giant Phantom Jelly",
    "subtitle": "Stygiomedusa gigantea",
-   "caption": "An animal that is mostly water and light",
+   "caption": "With only around 118 sightings in 110 years, it is a jellyfish that is rarely seen, but believed to be widespread throughout the world, with the exception of the Arctic Ocean.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/478081778/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/478081778/original.jpg",
@@ -4727,7 +4545,7 @@
    "topic": "Jellies and corals",
    "title": "Big Red",
    "subtitle": "Tiburonia granrojo",
-   "caption": "It was discovered by a crew from MBARI led by George Matsumoto. Its genus name is Tiburonia because the ROV the crew were using was called Tiburon, meaning \"shark\" in Spanish.",
+   "caption": "It was reported in 2003, following the discovery of its only species yet identified, Tiburonia granrojo.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/26097084/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/26097084/original.jpg",
@@ -4745,7 +4563,7 @@
    "topic": "Jellies and corals",
    "title": "Giant Siphonophore",
    "subtitle": "Praya dubia",
-   "caption": "Praya dubia, or the giant siphonophore, is a deep sea siphonophore (living at 700 m to 1000 m below sea level), a member of the Hydrozoa.",
+   "caption": "Its length also rivals the blue whale, the sea's largest mammal, although Praya dubia is as thin as a broomstick.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/358942455/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/358942455/original.jpg",
@@ -4763,7 +4581,7 @@
    "topic": "Jellies and corals",
    "title": "Horned Stalked Jellyfish",
    "subtitle": "Lucernaria quadricornis",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About the order Stauromedusae: They are unique among medusa jellyfish in that they do not have an alternation of polyp and medusa life cycle phases, but are instead interpreted as an attached medusa stage, with a lifestyle more resembling that of polypoid…",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/138674872/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/138674872/original.jpg",
@@ -4781,7 +4599,7 @@
    "topic": "Jellies and corals",
    "title": "Sunburst Anemone",
    "subtitle": "Anthopleura sola",
-   "caption": "A. sola was previously considered the solitary form of the common aggregating anemone Anthopleura elegantissima, but was identified as a separate species in 2000.",
+   "caption": "The sunburst anemone was formerly considered the solitary form of the common aggregating anemone, but was identified as a separate species in 2000.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/27254893/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/27254893/original.jpg",
@@ -4799,7 +4617,7 @@
    "topic": "Jellies and corals",
    "title": "Pelagic sea-anemone",
    "subtitle": "Actinecta viridula",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About sea anemones: A typical sea anemone is a single polyp attached to a hard surface by its base, but some species live in soft sediment, and a few float near the surface of the water.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/281191671/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/281191671/original.jpg",
@@ -4817,7 +4635,7 @@
    "topic": "Jellies and corals",
    "title": "Blue Button",
    "subtitle": "Porpita porpita",
-   "caption": "Porpita porpita, or the blue button, is a marine organism consisting of a colony of hydroids found in the warmer, tropical and sub-tropical waters of the Pacific, Atlantic, and Indian oceans, as well as the…",
+   "caption": "Although it is superficially similar to a jellyfish, each apparent individual is actually a colony of hydrozoan polyps.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/22765593/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/22765593/original.jpg",
@@ -4835,7 +4653,7 @@
    "topic": "Jellies and corals",
    "title": "By-the-wind Sailor",
    "subtitle": "Velella velella",
-   "caption": "Its only known species is Velella velella, a cosmopolitan free-floating hydrozoa that lives on the surface of the open ocean.",
+   "caption": "Each apparent individual is a hydroid colony, and most are less than about 7 cm long.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/100386027/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/100386027/original.jpg",
@@ -4853,7 +4671,7 @@
    "topic": "Jellies and corals",
    "title": "Agulhas Sea Nettle",
    "subtitle": "Chrysaora agulhensis",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About cnidarians: Other fossils show that corals may have been present shortly before 490 million years ago and diversified a few million years later.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/106207996/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/106207996/original.jpeg",
@@ -4871,7 +4689,7 @@
    "topic": "Jellies and corals",
    "title": "Fried Egg Jelly",
    "subtitle": "Cotylorhiza tuberculata",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About cnidarians: Both forms are monostomatic, meaning they have a single orifice and body cavity that are used for digestion and respiration.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/2901372/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/2901372/original.jpg",
@@ -4889,7 +4707,7 @@
    "topic": "Jellies and corals",
    "title": "Sand Rose Anemone",
    "subtitle": "Urticina columbiana",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About actiniid sea anemones: Most members of this family do not participate in symbioses with fishes.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/341224314/large.png",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/341224314/original.png",
@@ -4907,7 +4725,7 @@
    "topic": "Jellies and corals",
    "title": "Vallentinia adherens",
    "subtitle": "",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About the family Olindiidae: In the largest species, the medusae can grow to 15 cm.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/82584795/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/82584795/original.jpg",
@@ -4943,7 +4761,7 @@
    "topic": "Jellies and corals",
    "title": "Purple Crowned Jelly",
    "subtitle": "Netrostoma setouchianum",
-   "caption": "It has been found in the Pacific Ocean off the coasts of Japan, China and Vietnam.",
+   "caption": "About cnidarians: Many cnidarian species produce colonies that are single organisms composed of medusa-like or polyp-like zooids, or both (hence they are trimorphic).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/8544818/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/8544818/original.jpg",
@@ -4955,31 +4773,13 @@
    "place": "Ra, Fiji"
   },
   {
-   "id": "inat-11580247",
-   "source": "iNaturalist",
-   "kind": "image",
-   "topic": "Jellies and corals",
-   "title": "Surf Jellyfish",
-   "subtitle": "Thysanostoma flagellatum",
-   "caption": "An animal that is mostly water and light",
-   "media": {
-    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/16540452/large.jpeg",
-    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/16540452/original.jpeg",
-    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/16540452/small.jpeg"
-   },
-   "credit": "Peter",
-   "license": "CC BY-NC",
-   "sourceUrl": "https://www.inaturalist.org/observations/11580247",
-   "place": "New South Wales, Australia"
-  },
-  {
    "id": "inat-126409309",
    "source": "iNaturalist",
    "kind": "image",
    "topic": "Jellies and corals",
    "title": "Helmet Jelly",
    "subtitle": "Periphylla periphylla",
-   "caption": "The helmet jellyfish (Periphylla periphylla) is a luminescent, red-colored jellyfish of the deep sea, belonging to the order Coronatae of the phylum Cnidaria.",
+   "caption": "Periphylla is intensely photophobic, and thus only seldom leaves the bathypelagic zone (likely only on particularly dark nights).",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/214477639/large.png",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/214477639/original.png",
@@ -4991,13 +4791,31 @@
    "place": "Valdivia, CL-LR, CL"
   },
   {
+   "id": "inat-11580247",
+   "source": "iNaturalist",
+   "kind": "image",
+   "topic": "Jellies and corals",
+   "title": "Surf Jellyfish",
+   "subtitle": "Thysanostoma flagellatum",
+   "caption": "About cnidarians: Many scleractinian corals—which form the structural foundation for coral reefs—possess polyps that are filled with symbiotic photo-synthetic zooxanthellae.",
+   "media": {
+    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/16540452/large.jpeg",
+    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/16540452/original.jpeg",
+    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/16540452/small.jpeg"
+   },
+   "credit": "Peter",
+   "license": "CC BY-NC",
+   "sourceUrl": "https://www.inaturalist.org/observations/11580247",
+   "place": "New South Wales, Australia"
+  },
+  {
    "id": "inat-5179740",
    "source": "iNaturalist",
    "kind": "image",
    "topic": "Jellies and corals",
    "title": "Bean Clam Hydroid",
    "subtitle": "Eucheilota bakeri",
-   "caption": "An animal that is mostly water and light",
+   "caption": "The life cycle includes both asexual and sexual stages; the species is capable of reproduction in both stages.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/6388269/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/6388269/original.jpeg",
@@ -5015,7 +4833,7 @@
    "topic": "Jellies and corals",
    "title": "Paracoryne huvei",
    "subtitle": "",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About athecate hydroids: Their hydranths grow either solitary or in colonies.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/199161219/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/199161219/original.jpg",
@@ -5033,7 +4851,7 @@
    "topic": "Jellies and corals",
    "title": "Pagoda Coral",
    "subtitle": "Duncanopsammia peltata",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About the genus Duncanopsammia: Individual polyps are fairly large with round skeletal bases (corallites) 10–14 millimetres in diameter and larger central discs from which multiple tentacles radiate; the polyps form a structure branching at irregular…",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/230354321/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/230354321/original.jpg",
@@ -5051,7 +4869,7 @@
    "topic": "Jellies and corals",
    "title": "Mauve Stinger",
    "subtitle": "Pelagia noctiluca",
-   "caption": "An animal that is mostly water and light",
+   "caption": "Additionally, swarms of Pelagia noctiluca have been recorded wiping out entire fish farms.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/405666497/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/405666497/original.jpeg",
@@ -5069,7 +4887,7 @@
    "topic": "Jellies and corals",
    "title": "Hydra oxycnida",
    "subtitle": "",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About the family Hydridae: Biologists are especially interested in Hydra because of their regenerative ability; they do not appear to die of old age, or to age at all.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/332824656/large.gif",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/332824656/original.gif",
@@ -5087,7 +4905,7 @@
    "topic": "Jellies and corals",
    "title": "One-armed Jelly",
    "subtitle": "Corymorpha pendula",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About athecate hydroids: Their hydranths grow either solitary or in colonies.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/224965745/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/224965745/original.jpg",
@@ -5105,7 +4923,7 @@
    "topic": "Jellies and corals",
    "title": "Lion's Mane Jelly",
    "subtitle": "Cyanea capillata",
-   "caption": "The lion's mane jellyfish (Cyanea capillata), also known as the giant jellyfish or the hair jelly, is the largest known species of jellyfish.",
+   "caption": "The largest recorded specimen was measured off the coast of Massachusetts in 1865 and had a bell with a diameter of 210 centimetres (7 feet) and tentacles around 36.6 m long.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/162788397/large.jpeg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/162788397/original.jpeg",
@@ -5123,7 +4941,7 @@
    "topic": "Jellies and corals",
    "title": "Southern Man-O-War",
    "subtitle": "Physalia megalista",
-   "caption": "An animal that is mostly water and light",
+   "caption": "About man o' wars: They are siphonophores, colonial organisms composed of specialized individual zooids that function together as a single unit.",
    "media": {
     "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/527075642/large.jpg",
     "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/527075642/original.jpg",
@@ -6585,7 +6403,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20180314_Aurora_m12865_Steve/GSFC_20180314_Aurora_m12865_Steve~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20180314_Aurora_m12865_Steve/GSFC_20180314_Aurora_m12865_Steve~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6607,7 +6425,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20090318_SED_m10411_Top_5_No_3/GSFC_20090318_SED_m10411_Top_5_No_3~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20090318_SED_m10411_Top_5_No_3/GSFC_20090318_SED_m10411_Top_5_No_3~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6629,7 +6447,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20090318_SED_m10411_Top_5_No_1/GSFC_20090318_SED_m10411_Top_5_No_1~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20090318_SED_m10411_Top_5_No_1/GSFC_20090318_SED_m10411_Top_5_No_1~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6651,7 +6469,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20090318_SED_m10411_Top_5_No_2/GSFC_20090318_SED_m10411_Top_5_No_2~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20090318_SED_m10411_Top_5_No_2/GSFC_20090318_SED_m10411_Top_5_No_2~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6673,7 +6491,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20171107_Ionosphere_m12532_ICON/GSFC_20171107_Ionosphere_m12532_ICON~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20171107_Ionosphere_m12532_ICON/GSFC_20171107_Ionosphere_m12532_ICON~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6695,7 +6513,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20090318_SED_m10411_Top_5_No_4/GSFC_20090318_SED_m10411_Top_5_No_4~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20090318_SED_m10411_Top_5_No_4/GSFC_20090318_SED_m10411_Top_5_No_4~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6717,7 +6535,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20090318_SED_m10411_Intro_and_No_5/GSFC_20090318_SED_m10411_Intro_and_No_5~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20090318_SED_m10411_Intro_and_No_5/GSFC_20090318_SED_m10411_Intro_and_No_5~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6739,7 +6557,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20160512_MMS_m12239_First_Results/GSFC_20160512_MMS_m12239_First_Results~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20160512_MMS_m12239_First_Results/GSFC_20160512_MMS_m12239_First_Results~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6761,7 +6579,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20170515_Sunglints_m12600/GSFC_20170515_Sunglints_m12600~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20170515_Sunglints_m12600/GSFC_20170515_Sunglints_m12600~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6783,7 +6601,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20180927_EPIC_m13056_Products/GSFC_20180927_EPIC_m13056_Products~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20180927_EPIC_m13056_Products/GSFC_20180927_EPIC_m13056_Products~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6805,7 +6623,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20170720_August_m12669_EPICEclipse/GSFC_20170720_August_m12669_EPICEclipse~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20170720_August_m12669_EPICEclipse/GSFC_20170720_August_m12669_EPICEclipse~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6827,7 +6645,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20160620_Venus_m12208_ElectricWind/GSFC_20160620_Venus_m12208_ElectricWind~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20160620_Venus_m12208_ElectricWind/GSFC_20160620_Venus_m12208_ElectricWind~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6849,7 +6667,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/art002m1200920156_ICPS-Separation_2/art002m1200920156_ICPS-Separation_2~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/art002m1200920156_ICPS-Separation_2/art002m1200920156_ICPS-Separation_2~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6871,7 +6689,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20121018_Gradient_m11112_Sun.en/GSFC_20121018_Gradient_m11112_Sun.en~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20121018_Gradient_m11112_Sun.en/GSFC_20121018_Gradient_m11112_Sun.en~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6893,7 +6711,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20160901_STEREO_m12329_SolarWind/GSFC_20160901_STEREO_m12329_SolarWind~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20160901_STEREO_m12329_SolarWind/GSFC_20160901_STEREO_m12329_SolarWind~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6915,7 +6733,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20180725_Parker_m12903_CoronalHeating_Short/GSFC_20180725_Parker_m12903_CoronalHeating_Short~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20180725_Parker_m12903_CoronalHeating_Short/GSFC_20180725_Parker_m12903_CoronalHeating_Short~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6937,7 +6755,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20110207_STEREO_m10720_Stonehenge/GSFC_20110207_STEREO_m10720_Stonehenge~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20110207_STEREO_m10720_Stonehenge/GSFC_20110207_STEREO_m10720_Stonehenge~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6959,7 +6777,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20141222_SDO_m11721_Lights/GSFC_20141222_SDO_m11721_Lights~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20141222_SDO_m11721_Lights/GSFC_20141222_SDO_m11721_Lights~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -6981,7 +6799,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20131217_ArgoSun_m11385/GSFC_20131217_ArgoSun_m11385~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20131217_ArgoSun_m11385/GSFC_20131217_ArgoSun_m11385~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7003,7 +6821,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20180328_Parker_m12899_Name/GSFC_20180328_Parker_m12899_Name~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20180328_Parker_m12899_Name/GSFC_20180328_Parker_m12899_Name~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7025,7 +6843,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20170330_Rossby_m12550_Waves/GSFC_20170330_Rossby_m12550_Waves~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20170330_Rossby_m12550_Waves/GSFC_20170330_Rossby_m12550_Waves~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7047,7 +6865,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20130314_Jupiter_m11204_HotSpots/GSFC_20130314_Jupiter_m11204_HotSpots~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20130314_Jupiter_m11204_HotSpots/GSFC_20130314_Jupiter_m11204_HotSpots~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7069,7 +6887,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20180313_Jupiter_m12878_GreatRedSpot/GSFC_20180313_Jupiter_m12878_GreatRedSpot~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20180313_Jupiter_m12878_GreatRedSpot/GSFC_20180313_Jupiter_m12878_GreatRedSpot~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7091,7 +6909,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20190808_HST_m13279_Jupiter/GSFC_20190808_HST_m13279_Jupiter~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20190808_HST_m13279_Jupiter/GSFC_20190808_HST_m13279_Jupiter~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7113,7 +6931,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/Europa%20Clipper%20-%20NASA%E2%80%99s%20Mission%20to%20Jupiter's%20Ocean%20Moon%20-%20Mission%20Trailer/Europa%20Clipper%20-%20NASA%E2%80%99s%20Mission%20to%20Jupiter's%20Ocean%20Moon%20-%20Mission%20Trailer~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/Europa%20Clipper%20-%20NASA%E2%80%99s%20Mission%20to%20Jupiter's%20Ocean%20Moon%20-%20Mission%20Trailer/Europa%20Clipper%20-%20NASA%E2%80%99s%20Mission%20to%20Jupiter's%20Ocean%20Moon%20-%20Mission%20Trailer~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7135,7 +6953,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/Lucy_EP4_Instruments/Lucy_EP4_Instruments~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/Lucy_EP4_Instruments/Lucy_EP4_Instruments~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7157,7 +6975,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/Lucy_EP6_Into_the_Unknown/Lucy_EP6_Into_the_Unknown~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/Lucy_EP6_Into_the_Unknown/Lucy_EP6_Into_the_Unknown~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7179,7 +6997,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/Lucy_EP7_Earth_Gravity_Assist/Lucy_EP7_Earth_Gravity_Assist~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/Lucy_EP7_Earth_Gravity_Assist/Lucy_EP7_Earth_Gravity_Assist~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7201,7 +7019,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/Lucy_EP5_First_Flyby/Lucy_EP5_First_Flyby~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/Lucy_EP5_First_Flyby/Lucy_EP5_First_Flyby~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7223,7 +7041,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20181217_Saturn_m12672_Rings/GSFC_20181217_Saturn_m12672_Rings~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20181217_Saturn_m12672_Rings/GSFC_20181217_Saturn_m12672_Rings~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7245,7 +7063,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20121025_Saturn_m11038_Storm/GSFC_20121025_Saturn_m11038_Storm~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20121025_Saturn_m11038_Storm/GSFC_20121025_Saturn_m11038_Storm~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7267,7 +7085,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20121025_Saturn_m11038_Hesman/GSFC_20121025_Saturn_m11038_Hesman~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20121025_Saturn_m11038_Hesman/GSFC_20121025_Saturn_m11038_Hesman~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7289,7 +7107,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20170728_Titan_m12467_Discovery_4k/GSFC_20170728_Titan_m12467_Discovery_4k~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20170728_Titan_m12467_Discovery_4k/GSFC_20170728_Titan_m12467_Discovery_4k~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7311,7 +7129,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/Evolution_of_Galaxies_H264/Evolution_of_Galaxies_H264~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/Evolution_of_Galaxies_H264/Evolution_of_Galaxies_H264~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7333,7 +7151,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/ARC-20200103-AAV3244-SOFIA-GalacticCenter-RptrPkg-NASAWeb/ARC-20200103-AAV3244-SOFIA-GalacticCenter-RptrPkg-NASAWeb~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/ARC-20200103-AAV3244-SOFIA-GalacticCenter-RptrPkg-NASAWeb/ARC-20200103-AAV3244-SOFIA-GalacticCenter-RptrPkg-NASAWeb~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7355,7 +7173,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/MIRI_Feature_Edit/MIRI_Feature_Edit~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/MIRI_Feature_Edit/MIRI_Feature_Edit~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7377,7 +7195,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/JPL-20231222-SOLSYSf-0001-NASA%20Telescopes%20Reveal%20Hidden%20Universe/JPL-20231222-SOLSYSf-0001-NASA%20Telescopes%20Reveal%20Hidden%20Universe~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/JPL-20231222-SOLSYSf-0001-NASA%20Telescopes%20Reveal%20Hidden%20Universe/JPL-20231222-SOLSYSf-0001-NASA%20Telescopes%20Reveal%20Hidden%20Universe~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7399,7 +7217,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20101028_JWST_m10660_Webb%20Deploy_Short/GSFC_20101028_JWST_m10660_Webb%20Deploy_Short~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20101028_JWST_m10660_Webb%20Deploy_Short/GSFC_20101028_JWST_m10660_Webb%20Deploy_Short~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7421,7 +7239,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20080822_HST_m10232_COS_Door_Open_A_008/GSFC_20080822_HST_m10232_COS_Door_Open_A_008~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20080822_HST_m10232_COS_Door_Open_A_008/GSFC_20080822_HST_m10232_COS_Door_Open_A_008~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7443,7 +7261,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20080822_HST_m10232_COS_Place_E_010/GSFC_20080822_HST_m10232_COS_Place_E_010~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20080822_HST_m10232_COS_Place_E_010/GSFC_20080822_HST_m10232_COS_Place_E_010~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7465,7 +7283,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20080822_HST_m10232_COS_Removal_Close_003/GSFC_20080822_HST_m10232_COS_Removal_Close_003~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20080822_HST_m10232_COS_Removal_Close_003/GSFC_20080822_HST_m10232_COS_Removal_Close_003~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7487,7 +7305,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/20190530-SPITZRf-0001-Stars%20of%20Cephus/20190530-SPITZRf-0001-Stars%20of%20Cephus~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/20190530-SPITZRf-0001-Stars%20of%20Cephus/20190530-SPITZRf-0001-Stars%20of%20Cephus~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7496,9 +7314,7 @@
    },
    "credit": "JPL",
    "license": "Public domain (NASA)",
-   "sourceUrl": "https://images.nasa.gov/details/20190530-SPITZRf-0001-Stars%20of%20Cephus",
-   "score": 0.333,
-   "votes": 1
+   "sourceUrl": "https://images.nasa.gov/details/20190530-SPITZRf-0001-Stars%20of%20Cephus"
   },
   {
    "id": "nasavid-ARC-20190417-AAV3194-SOFIA-HeHMolecule-NarratedAnimation-NASAWeb",
@@ -7511,7 +7327,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/ARC-20190417-AAV3194-SOFIA-HeHMolecule-NarratedAnimation-NASAWeb/ARC-20190417-AAV3194-SOFIA-HeHMolecule-NarratedAnimation-NASAWeb~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/ARC-20190417-AAV3194-SOFIA-HeHMolecule-NarratedAnimation-NASAWeb/ARC-20190417-AAV3194-SOFIA-HeHMolecule-NarratedAnimation-NASAWeb~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7533,7 +7349,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20140529_HS3_m11559_Kickoff/GSFC_20140529_HS3_m11559_Kickoff~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20140529_HS3_m11559_Kickoff/GSFC_20140529_HS3_m11559_Kickoff~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7555,7 +7371,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/NHQ_2019_0311_Go%20Forward%20to%20the%20Moon/NHQ_2019_0311_Go%20Forward%20to%20the%20Moon~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/NHQ_2019_0311_Go%20Forward%20to%20the%20Moon/NHQ_2019_0311_Go%20Forward%20to%20the%20Moon~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7577,7 +7393,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/NHQ_2020_0914_Observe%20the%20moon%20promo/NHQ_2020_0914_Observe%20the%20moon%20promo~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/NHQ_2020_0914_Observe%20the%20moon%20promo/NHQ_2020_0914_Observe%20the%20moon%20promo~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7599,7 +7415,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/Apollo_11_Introduction_720p/Apollo_11_Introduction_720p~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/Apollo_11_Introduction_720p/Apollo_11_Introduction_720p~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7621,7 +7437,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/Is%20There%20Weather%20on%20the%20Moon/Is%20There%20Weather%20on%20the%20Moon~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/Is%20There%20Weather%20on%20the%20Moon/Is%20There%20Weather%20on%20the%20Moon~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7643,7 +7459,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/NASA%20Explores%20the%20Moon%20and%20Beyond/NASA%20Explores%20the%20Moon%20and%20Beyond~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/NASA%20Explores%20the%20Moon%20and%20Beyond/NASA%20Explores%20the%20Moon%20and%20Beyond~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7665,7 +7481,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/Artemis_I_Orion_in_space_animation4K_2021/Artemis_I_Orion_in_space_animation4K_2021~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/Artemis_I_Orion_in_space_animation4K_2021/Artemis_I_Orion_in_space_animation4K_2021~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7687,7 +7503,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/GSFC_20190618_LRO_m13229_10Years/GSFC_20190618_LRO_m13229_10Years~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/GSFC_20190618_LRO_m13229_10Years/GSFC_20190618_LRO_m13229_10Years~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7709,7 +7525,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/ARC-20200610-AAV3276-VIPER-CLPSAnnounce-RptrPkg-NASAWeb-1080p/ARC-20200610-AAV3276-VIPER-CLPSAnnounce-RptrPkg-NASAWeb-1080p~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/ARC-20200610-AAV3276-VIPER-CLPSAnnounce-RptrPkg-NASAWeb-1080p/ARC-20200610-AAV3276-VIPER-CLPSAnnounce-RptrPkg-NASAWeb-1080p~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7731,7 +7547,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/JPL-20190606-TECHf-0001-Mars%20Chopper%20Ready%20for%20a%20Spin%20on%20Mars/JPL-20190606-TECHf-0001-Mars%20Chopper%20Ready%20for%20a%20Spin%20on%20Mars~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/JPL-20190606-TECHf-0001-Mars%20Chopper%20Ready%20for%20a%20Spin%20on%20Mars/JPL-20190606-TECHf-0001-Mars%20Chopper%20Ready%20for%20a%20Spin%20on%20Mars~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7753,7 +7569,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/JPL-20210222-M2020f-0002-NASA%E2%80%99S%20Perseverance%20Rover%E2%80%99s%20First%20360%20View%20of%20Mars/JPL-20210222-M2020f-0002-NASA%E2%80%99S%20Perseverance%20Rover%E2%80%99s%20First%20360%20View%20of%20Mars~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/JPL-20210222-M2020f-0002-NASA%E2%80%99S%20Perseverance%20Rover%E2%80%99s%20First%20360%20View%20of%20Mars/JPL-20210222-M2020f-0002-NASA%E2%80%99S%20Perseverance%20Rover%E2%80%99s%20First%20360%20View%20of%20Mars~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7775,7 +7591,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/JPL-20200429-TECHf-0002-Mars%20Helicopter%20Animation/JPL-20200429-TECHf-0002-Mars%20Helicopter%20Animation~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/JPL-20200429-TECHf-0002-Mars%20Helicopter%20Animation/JPL-20200429-TECHf-0002-Mars%20Helicopter%20Animation~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7797,7 +7613,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/JPL-20211115-MARSf-0001-Hows%20the%20Weather%20on%20Mars/JPL-20211115-MARSf-0001-Hows%20the%20Weather%20on%20Mars~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/JPL-20211115-MARSf-0001-Hows%20the%20Weather%20on%20Mars/JPL-20211115-MARSf-0001-Hows%20the%20Weather%20on%20Mars~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7819,7 +7635,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/JPL-20210222-M2020f-0003b-M2020_Audio_B_002/JPL-20210222-M2020f-0003b-M2020_Audio_B_002~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/JPL-20210222-M2020f-0003b-M2020_Audio_B_002/JPL-20210222-M2020f-0003b-M2020_Audio_B_002~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7841,7 +7657,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/JPL-20230516-M2020f-0002-Sounds%20of%20Mars%20NoVoiceOver/JPL-20230516-M2020f-0002-Sounds%20of%20Mars%20NoVoiceOver~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/JPL-20230516-M2020f-0002-Sounds%20of%20Mars%20NoVoiceOver/JPL-20230516-M2020f-0002-Sounds%20of%20Mars%20NoVoiceOver~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7863,7 +7679,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/JPL-20230403-Mars%20Report%20Ingenuity%20Updates%20April%202023_UHD/JPL-20230403-Mars%20Report%20Ingenuity%20Updates%20April%202023_UHD~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/JPL-20230403-Mars%20Report%20Ingenuity%20Updates%20April%202023_UHD/JPL-20230403-Mars%20Report%20Ingenuity%20Updates%20April%202023_UHD~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7885,7 +7701,7 @@
    "media": {
     "sources": [
      {
-      "src": "https://images-assets.nasa.gov/video/JPL-20200210-MARSf-0001-Mars%20Sample%20Return-1080/JPL-20200210-MARSf-0001-Mars%20Sample%20Return-1080~mobile.mp4",
+      "src": "https://images-assets.nasa.gov/video/JPL-20200210-MARSf-0001-Mars%20Sample%20Return-1080/JPL-20200210-MARSf-0001-Mars%20Sample%20Return-1080~small.mp4",
       "type": "video/mp4"
      }
     ],
@@ -7895,6 +7711,186 @@
    "credit": "JPL",
    "license": "Public domain (NASA)",
    "sourceUrl": "https://images.nasa.gov/details/JPL-20200210-MARSf-0001-Mars%20Sample%20Return-1080"
+  },
+  {
+   "id": "eso-eso2613",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Dead star and planetary bodies: astronomers spot unique disc of debris that foretells Solar System’s future",
+   "subtitle": "2026-10-27",
+   "caption": "Astronomers using the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have found a rare disc of debris around a dead star that provides a glimpse of what may happen to our Solar System.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2613a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2613a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2613a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2613/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2612",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Milky Way's fastest star orbits our supermassive black hole so closely it feels its spin",
+   "subtitle": "2026-08-19",
+   "caption": "Astronomers have discovered the fastest known star in our galaxy, the Milky Way, orbiting the black hole at its centre.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2612a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2612a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2612a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2612/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2611",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Astronomers find strongest evidence yet that Betelgeuse has a companion",
+   "subtitle": "2026-07-28",
+   "caption": "At long last, astronomers have firm evidence that Betelgeuse, one of the most famous stars in the night sky, is not alone.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2611a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2611a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2611a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2611/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2610",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "New ‘exomoon’ detection challenges cosmic labels",
+   "subtitle": "2026-07-22",
+   "caption": "Observations made with the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have revealed evidence for a moon-like object in the CD-35 2722 system.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2610a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2610a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2610a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2610/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2609",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Faintest planet ever imaged from Earth found after more than 10 years of hide-and-seek",
+   "subtitle": "2026-07-15",
+   "caption": "A team of astronomers have discovered a third planet orbiting the star Beta Pictoris.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2609a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2609a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2609a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2609/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2608",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Older than the Sun: Astronomers find new clues to the origin of interstellar comet 3I/ATLAS",
+   "subtitle": "2026-07-06",
+   "caption": "Astronomers have used the European Southern Observatory's Very Large Telescope (ESO's VLT) to study the composition of 3I/ATLAS, the brightest interstellar object ever seen, in detail.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2608a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2608a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2608a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2608/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2607",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "\"Beyond the limit\": one million satellites and mirrors in space pose grave threat to the night sky",
+   "subtitle": "2026-07-01",
+   "caption": "A new European Southern Observatory (ESO) study has found that current proposals to launch over 1.7 million satellites into orbit, including extremely bright ones, would have “devastating consequences for astronomy.” According to the study, no more than 100…",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2607a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2607a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2607a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2607/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2606",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Strange winds reveal strongest hints yet of magnetic activity in exoplanets",
+   "subtitle": "2026-06-02",
+   "caption": "A team of astronomers has found the strongest evidence yet that some planets outside our Solar System may be magnetic.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2606a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2606a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2606a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2606/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2605",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "First light for PoET: shining (sun)light on exoplanet research",
+   "subtitle": "2026-04-09",
+   "caption": "The Paranal solar ESPRESSO Telescope (PoET), installed at the European Southern Observatory's (ESO's) Paranal site in Chile, has made its first observations. The telescope will work with ESO's ESPRESSO instrument to study the Sun in detail.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2605a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2605a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2605a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2605/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2604",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "A Solar System in the making? Two planets spotted forming in disc around young star",
+   "subtitle": "2026-03-24",
+   "caption": "Astronomers have observed two planets forming in the disc around a young star named WISPIT 2. Having previously detected one planet, the team have now employed European Southern Observatory (ESO) telescopes to confirm the presence of another.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2604a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2604a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2604a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2604/",
+   "discovery": true
   },
   {
    "id": "commons-8890214",
@@ -8284,7 +8280,9 @@
    },
    "credit": "The Nature Box",
    "license": "CC BY 4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Time-lapse_of_cherry_tree_blossoms_in_Japan.webm"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Time-lapse_of_cherry_tree_blossoms_in_Japan.webm",
+   "score": 0.667,
+   "votes": 1
   },
   {
    "id": "commons-111693343",
@@ -10508,7 +10506,9 @@
    },
    "credit": "Nick Shilov",
    "license": "Public domain",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flock_of_birds_at_Rome.ogv"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flock_of_birds_at_Rome.ogv",
+   "score": 0.667,
+   "votes": 1
   },
   {
    "id": "commons-16647391",

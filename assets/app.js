@@ -169,13 +169,21 @@ function mount(card) {
     media.addEventListener('load', () => media.classList.add('ready'));
     media.addEventListener('error', () => dropCard(card));
   } else if (it.kind === 'video') {
-    media = el('video', { className: 'media', muted: true, loop: true, playsInline: true, preload: 'metadata', poster: it.media.poster || '' });
-    media.setAttribute('playsinline', '');
-    // Check the full codec string: Commons' .mov transcodes are MPEG-4 Part 2, which Chromium can't decode.
-    const playable = it.media.sources.filter(s => media.canPlayType(s.type))
-      .sort((a, b) => (media.canPlayType(b.type) === 'probably') - (media.canPlayType(a.type) === 'probably'));
+    media = el('video', { className: 'media', muted: true, defaultMuted: true, loop: true, playsInline: true, preload: 'metadata', poster: it.media.poster || '' });
+    // iOS Safari only autoplays when these are real attributes, not just properties.
+    for (const a of ['muted', 'playsinline', 'webkit-playsinline', 'loop']) media.setAttribute(a, '');
+    // Prefer sources the browser is sure about (full codec string): Chromium can't decode Commons' MPEG-4 Part 2
+    // .mov, so it must pick the WebM. Safari answers "" for some incomplete codec strings it can still play, so
+    // if nothing matches that way, fall back to the bare MIME type and let the browser try in order.
+    const full = s => media.canPlayType(s.type), bare = s => media.canPlayType(s.type.split(';')[0]);
+    let playable = it.media.sources.filter(full)
+      .sort((a, b) => (full(b) === 'probably') - (full(a) === 'probably'));
+    if (!playable.length) playable = it.media.sources.filter(bare);
     if (!playable.length) return dropCard(card);
     for (const s of playable) media.append(el('source', { src: s.src, type: s.type }));
+    // Show the poster right away: iOS doesn't load video data until playback starts, so waiting for
+    // 'loadeddata' would leave a blank card whenever autoplay is blocked.
+    if (it.media.poster) media.classList.add('ready');
     media.addEventListener('loadeddata', () => media.classList.add('ready'));
     media.lastElementChild.addEventListener('error', () => dropCard(card)); // every source failed
     media.addEventListener('click', () => setSound(!soundOn));
@@ -221,14 +229,44 @@ function activate(card) {
   active = card;
   mount(card);
   const m = card._media;
-  if (m?.tagName === 'VIDEO' && !reduceMotion) { m.muted = !soundOn; m.play().catch(() => {}); }
+  if (m?.tagName === 'VIDEO') playVideo(card, m);
   if (card._item.kind === 'embed' && !reduceMotion) mountEmbed(card, true);
   if (card.dataset.id) { history.replaceState(null, '', `#${card.dataset.id}`); markSeen(card.dataset.id); }
   // keep the feed topped up
   if (feedEl.lastElementChild === card || card.nextElementSibling === feedEl.lastElementChild) appendBatch();
 }
+// Autoplay can be refused (iPhone Low Power Mode, data saver, reduced motion): offer a tap-to-play button
+// instead of leaving a still frame. A video that hasn't loaded after a while gets the same button, since on
+// iOS a tap is sometimes what it takes to start loading.
+function playVideo(card, m) {
+  m.muted = !soundOn;
+  const offer = () => showTapToPlay(card, m);
+  if (reduceMotion) return offer();
+  m.play().then(() => hideTapToPlay(card)).catch(offer);
+  clearTimeout(card._stall);
+  card._stall = setTimeout(() => { if (active === card && m.readyState < 2) offer(); }, 8000);
+}
+function showTapToPlay(card, m) {
+  if (card._tap) return;
+  const btn = el('button', { className: 'tap-play', type: 'button', ariaLabel: `Play ${card._item.title}` });
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    m.muted = !soundOn;
+    m.play().then(() => hideTapToPlay(card)).catch(() => {});
+  });
+  card.insertBefore(btn, card.querySelector('.info'));
+  card._tap = btn;
+}
+function hideTapToPlay(card) { card._tap?.remove(); card._tap = null; }
+// Browsers hold back autoplay in hidden tabs; resume the current video when the page is shown again.
+document.addEventListener('visibilitychange', () => {
+  const m = active?._media;
+  if (document.visibilityState === 'visible' && m?.tagName === 'VIDEO' && m.paused && !reduceMotion) playVideo(active, m);
+});
+
 function deactivate(card) {
   const m = card._media;
+  clearTimeout(card._stall);
   if (m?.tagName === 'VIDEO') m.pause();
   if (card._item?.kind === 'embed') unmountEmbed(card);
 }
