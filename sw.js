@@ -1,6 +1,6 @@
 // Caches the app shell only. Media is never cached here; it stays with its source.
-const VERSION = 'ws-v1';
-const SHELL = ['./', 'index.html', 'assets/style.css', 'assets/app.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png'];
+const VERSION = 'ws-v2';
+const SHELL = ['./', 'assets/style.css', 'assets/app.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -17,6 +17,6 @@ self.addEventListener('fetch', e => {
     fetch(e.request).then(res => {
       if (res.ok) { const copy = res.clone(); caches.open(VERSION).then(c => c.put(e.request, copy)); }
       return res;
-    }).catch(() => caches.match(e.request).then(r => r || caches.match('index.html')))
+    }).catch(() => caches.match(e.request).then(r => r || caches.match('./')))
   );
 });

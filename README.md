@@ -26,7 +26,7 @@ If you made something shown here and want it removed, or spot something that sho
 
 ## How it works
 
-It's a static site with no framework and no build step, hosted on [Cloudflare Pages](https://pages.cloudflare.com/), which deploys every push to `main`. Two small Pages Functions and a [D1](https://developers.cloudflare.com/d1/) database hold the anonymous vote counts.
+It's a static site with no framework and no build step, deployed as a [Cloudflare Worker with static assets](https://developers.cloudflare.com/workers/static-assets/) on every push to `main`. A few lines of Worker code and a [D1](https://developers.cloudflare.com/d1/) database hold the anonymous vote counts; everything else is plain files.
 
 ```
 index.html, assets/      the feed web app (vanilla JS, CSS scroll-snap)
@@ -38,10 +38,11 @@ sources.config.json      what to pull from each open source, and the calm filter
 scripts/build-feed.mjs   builds feed.json from the sources above
 scripts/add-curated.mjs  adds a YouTube/Vimeo video to curated.json
 scripts/vote-report.mjs  what helps most, by source, topic and kind
-functions/api/vote.js    POST /api/vote: one anonymous up/down for an item
-functions/api/totals.js  GET /api/totals: vote counts per item (public)
-lib/db.js, schema.sql    the votes table (created automatically on first use)
-_headers                 cache and security headers for Cloudflare Pages
+src/worker.js            POST /api/vote (one anonymous up/down) and GET /api/totals (public counts)
+schema.sql               the votes table (the Worker creates it automatically on first use)
+wrangler.jsonc           Worker config: static assets, D1 binding
+.assetsignore            repo files that are not part of the website
+_headers                 cache and security headers
 .github/workflows/       weekly rebuild of feed.json
 ```
 
@@ -82,10 +83,10 @@ In `sources.config.json`:
 
 ### Run it locally
 
-With the vote API (uses a local D1 database, no Cloudflare account needed):
+With the vote API (uses a local D1 database; no Cloudflare account needed), at <http://localhost:8787>:
 
 ```sh
-npx wrangler pages dev . --d1 DB=wundersnack-votes
+npx wrangler dev
 ```
 
 Or just the static site, without votes:
@@ -98,10 +99,9 @@ The service worker only registers over HTTPS, so local runs are never cached.
 
 ### Deploying your own copy
 
-1. In Cloudflare, create a D1 database (any name).
-2. Create a Pages project from this repository: no build command, build output directory `/`.
-3. In the Pages project's settings, add a D1 binding named `DB` pointing at that database, then redeploy.
-4. Point `votes.totalsUrl` in `sources.config.json` at your site's `/api/totals`.
+1. In Cloudflare, create a D1 database and put its id in `wrangler.jsonc` (`d1_databases[0].database_id`).
+2. Create a Worker from this repository (Workers & Pages → Create → Import a repository). The defaults work: Cloudflare runs `npx wrangler deploy`, which reads `wrangler.jsonc`. The Worker's name must match `name` in `wrangler.jsonc`.
+3. Point `votes.totalsUrl` in `sources.config.json` at your site's `/api/totals`.
 
 ## License
 

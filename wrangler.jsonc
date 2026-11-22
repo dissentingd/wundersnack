@@ -1,0 +1,23 @@
+// Cloudflare Workers config: static site + the "Helped?" vote API (src/worker.js) + a D1 database.
+// Cloudflare's GitHub integration runs `npx wrangler deploy` with this file on every push to main.
+{
+  "name": "wundersnack",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    // The site lives in the repo root (so it can also be served by any static host);
+    // .assetsignore keeps scripts, config and docs from being published.
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "wundersnack-votes",
+      // From Cloudflare dashboard → Storage & Databases → D1 → wundersnack-votes. Not a secret.
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "observability": { "enabled": true }
+}

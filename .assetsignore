@@ -1,0 +1,23 @@
+# Files in the repo root that must NOT be served as part of the website (gitignore syntax).
+.git
+.github
+.wrangler
+.claude
+node_modules
+src
+scripts
+lib
+functions
+wrangler.jsonc
+wrangler.json
+wrangler.toml
+schema.sql
+sources.config.json
+curated.json
+README.md
+CLAUDE.md
+LICENSE
+CNAME
+.nojekyll
+.gitignore
+.assetsignore
