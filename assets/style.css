@@ -147,3 +147,21 @@ dialog h2 { margin-top: 0; }
 .break .break-note { font-size: .85rem; margin: 0; }
 @keyframes break-in { from { opacity: 0; } to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .break { animation: none; } }
+
+/* ---------- icon buttons (sound, gross-but-cool) and toast ---------- */
+.pill.icon { width: 36px; height: 32px; padding: 0; display: inline-grid; place-items: center; }
+.pill.icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pill.icon svg ellipse, .pill.icon svg circle { fill: none; }
+#sound svg .speaker { fill: currentColor; stroke: none; }
+#sound[aria-pressed="false"] svg .waves { display: none; }
+#sound[aria-pressed="true"] svg .mute { display: none; }
+#gross[aria-pressed="false"] { opacity: .75; }
+#gross[aria-pressed="false"] svg { stroke-dasharray: 2.5 2; }
+.toast {
+  position: fixed; z-index: 30; left: 50%; top: calc(56px + var(--safe-top)); transform: translateX(-50%);
+  max-width: calc(100% - 32px); padding: 8px 14px; border-radius: 999px; font-size: .88rem; text-align: center;
+  background: var(--glass); border: 1px solid var(--line); color: var(--fg);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); animation: toast-in .25s ease both;
+}
+@keyframes toast-in { from { opacity: 0; transform: translate(-50%, -6px); } to { opacity: 1; transform: translate(-50%, 0); } }
+@media (prefers-reduced-motion: reduce) { .toast { animation: none; } }

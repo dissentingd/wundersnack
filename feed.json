@@ -1,7 +1,187 @@
 {
- "generated": "2026-11-22T22:12:41.086Z",
+ "generated": "2026-11-22T22:36:01.206Z",
  "count": 605,
  "items": [
+  {
+   "id": "eso-eso2613",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Dead star and planetary bodies: astronomers spot unique disc of debris that foretells Solar System’s future",
+   "subtitle": "2026-10-27",
+   "caption": "Astronomers using the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have found a rare disc of debris around a dead star that provides a glimpse of what may happen to our Solar System.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2613a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2613a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2613a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2613/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2612",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Milky Way's fastest star orbits our supermassive black hole so closely it feels its spin",
+   "subtitle": "2026-08-19",
+   "caption": "Astronomers have discovered the fastest known star in our galaxy, the Milky Way, orbiting the black hole at its centre.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2612a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2612a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2612a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2612/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2611",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Astronomers find strongest evidence yet that Betelgeuse has a companion",
+   "subtitle": "2026-07-28",
+   "caption": "At long last, astronomers have firm evidence that Betelgeuse, one of the most famous stars in the night sky, is not alone.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2611a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2611a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2611a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2611/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2610",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "New ‘exomoon’ detection challenges cosmic labels",
+   "subtitle": "2026-07-22",
+   "caption": "Observations made with the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have revealed evidence for a moon-like object in the CD-35 2722 system.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2610a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2610a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2610a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2610/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2609",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Faintest planet ever imaged from Earth found after more than 10 years of hide-and-seek",
+   "subtitle": "2026-07-15",
+   "caption": "A team of astronomers have discovered a third planet orbiting the star Beta Pictoris.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2609a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2609a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2609a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2609/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2608",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Older than the Sun: Astronomers find new clues to the origin of interstellar comet 3I/ATLAS",
+   "subtitle": "2026-07-06",
+   "caption": "Astronomers have used the European Southern Observatory's Very Large Telescope (ESO's VLT) to study the composition of 3I/ATLAS, the brightest interstellar object ever seen, in detail.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2608a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2608a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2608a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2608/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2607",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "\"Beyond the limit\": one million satellites and mirrors in space pose grave threat to the night sky",
+   "subtitle": "2026-07-01",
+   "caption": "A new European Southern Observatory (ESO) study has found that current proposals to launch over 1.7 million satellites into orbit, including extremely bright ones, would have “devastating consequences for astronomy.” According to the study, no more than 100…",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2607a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2607a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2607a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2607/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2606",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Strange winds reveal strongest hints yet of magnetic activity in exoplanets",
+   "subtitle": "2026-06-02",
+   "caption": "A team of astronomers has found the strongest evidence yet that some planets outside our Solar System may be magnetic.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2606a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2606a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2606a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2606/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2605",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "First light for PoET: shining (sun)light on exoplanet research",
+   "subtitle": "2026-04-09",
+   "caption": "The Paranal solar ESPRESSO Telescope (PoET), installed at the European Southern Observatory's (ESO's) Paranal site in Chile, has made its first observations. The telescope will work with ESO's ESPRESSO instrument to study the Sun in detail.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2605a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2605a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2605a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2605/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2604",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "A Solar System in the making? Two planets spotted forming in disc around young star",
+   "subtitle": "2026-03-24",
+   "caption": "Astronomers have observed two planets forming in the disc around a young star named WISPIT 2. Having previously detected one planet, the team have now employed European Southern Observatory (ESO) telescopes to confirm the presence of another.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2604a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2604a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2604a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2604/",
+   "discovery": true
+  },
   {
    "id": "inat-150906376",
    "source": "iNaturalist",
@@ -129,24 +309,6 @@
    "place": "South Coast Track"
   },
   {
-   "id": "inat-188728693",
-   "source": "iNaturalist",
-   "kind": "image",
-   "topic": "Fungi",
-   "title": "Blue Roundhead",
-   "subtitle": "Stropharia caerulea",
-   "caption": "A fungus in its fruiting moment",
-   "media": {
-    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/330405159/large.jpg",
-    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/330405159/original.jpg",
-    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/330405159/small.jpg"
-   },
-   "credit": "Alan Rockefeller",
-   "license": "CC BY",
-   "sourceUrl": "https://www.inaturalist.org/observations/188728693",
-   "place": "Grace, Woodinville, WA 98072, USA"
-  },
-  {
    "id": "inat-231189537",
    "source": "iNaturalist",
    "kind": "image",
@@ -163,6 +325,24 @@
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/231189537",
    "place": "Hulu Langat, Selangor, Malaysia"
+  },
+  {
+   "id": "inat-188728693",
+   "source": "iNaturalist",
+   "kind": "image",
+   "topic": "Fungi",
+   "title": "Blue Roundhead",
+   "subtitle": "Stropharia caerulea",
+   "caption": "A fungus in its fruiting moment",
+   "media": {
+    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/330405159/large.jpg",
+    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/330405159/original.jpg",
+    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/330405159/small.jpg"
+   },
+   "credit": "Alan Rockefeller",
+   "license": "CC BY",
+   "sourceUrl": "https://www.inaturalist.org/observations/188728693",
+   "place": "Grace, Woodinville, WA 98072, USA"
   },
   {
    "id": "inat-4991838",
@@ -558,7 +738,8 @@
    "credit": "Alexis Tinker-Tsavalas",
    "license": "CC BY",
    "sourceUrl": "https://www.inaturalist.org/observations/105275177",
-   "place": "Charlottenburg-Wilmersdorf, Berlin, Germany"
+   "place": "Charlottenburg-Wilmersdorf, Berlin, Germany",
+   "gross": true
   },
   {
    "id": "inat-329195316",
@@ -576,7 +757,8 @@
    "credit": "Ludivine Lamare",
    "license": "CC BY",
    "sourceUrl": "https://www.inaturalist.org/observations/329195316",
-   "place": "64310 Sare, France"
+   "place": "64310 Sare, France",
+   "gross": true
   },
   {
    "id": "inat-156136038",
@@ -594,7 +776,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/156136038",
-   "place": "Isla Escondida, Putumayo, Colombia"
+   "place": "Isla Escondida, Putumayo, Colombia",
+   "gross": true
   },
   {
    "id": "inat-50942703",
@@ -612,7 +795,8 @@
    "credit": "Bea Leiderman",
    "license": "CC BY",
    "sourceUrl": "https://www.inaturalist.org/observations/50942703",
-   "place": "Tomahawk Creek Rd, Midlothian, VA, US"
+   "place": "Tomahawk Creek Rd, Midlothian, VA, US",
+   "gross": true
   },
   {
    "id": "inat-73866129",
@@ -630,7 +814,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/73866129",
-   "place": "Samuel P Taylor"
+   "place": "Samuel P Taylor",
+   "gross": true
   },
   {
    "id": "inat-201202454",
@@ -648,7 +833,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/201202454",
-   "place": "Marin County, CA, USA"
+   "place": "Marin County, CA, USA",
+   "gross": true
   },
   {
    "id": "inat-154042386",
@@ -666,7 +852,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/154042386",
-   "place": "San Rafael, CA, USA"
+   "place": "San Rafael, CA, USA",
+   "gross": true
   },
   {
    "id": "inat-87457453",
@@ -684,7 +871,8 @@
    "credit": "",
    "license": "CC0",
    "sourceUrl": "https://www.inaturalist.org/observations/87457453",
-   "place": "Wissahickon Valley Park, Philadelphia, PA, US"
+   "place": "Wissahickon Valley Park, Philadelphia, PA, US",
+   "gross": true
   },
   {
    "id": "inat-8915416",
@@ -702,7 +890,8 @@
    "credit": "Alexander Shirokikh",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/8915416",
-   "place": "Серпуховский р-н, Московская обл., Россия"
+   "place": "Серпуховский р-н, Московская обл., Россия",
+   "gross": true
   },
   {
    "id": "inat-143702279",
@@ -720,7 +909,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/143702279",
-   "place": "Island, Coron, Palawan, Philippines"
+   "place": "Island, Coron, Palawan, Philippines",
+   "gross": true
   },
   {
    "id": "inat-137245022",
@@ -738,7 +928,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/137245022",
-   "place": "6MG2+H7C, Ternate, Cavite, Philippines"
+   "place": "6MG2+H7C, Ternate, Cavite, Philippines",
+   "gross": true
   },
   {
    "id": "inat-20379678",
@@ -756,7 +947,8 @@
    "credit": "Katja Schulz",
    "license": "CC BY",
    "sourceUrl": "https://www.inaturalist.org/observations/20379678",
-   "place": "Washington, District of Columbia, United States"
+   "place": "Washington, District of Columbia, United States",
+   "gross": true
   },
   {
    "id": "inat-140265761",
@@ -774,7 +966,8 @@
    "credit": "Alexis Tinker-Tsavalas",
    "license": "CC BY",
    "sourceUrl": "https://www.inaturalist.org/observations/140265761",
-   "place": "Berlin, Berlin, Germany"
+   "place": "Berlin, Berlin, Germany",
+   "gross": true
   },
   {
    "id": "inat-95327959",
@@ -792,7 +985,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/95327959",
-   "place": "Sand Lake, Anchorage, AK, USA"
+   "place": "Sand Lake, Anchorage, AK, USA",
+   "gross": true
   },
   {
    "id": "inat-253853249",
@@ -810,7 +1004,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/253853249",
-   "place": "Plumas County, CA, USA"
+   "place": "Plumas County, CA, USA",
+   "gross": true
   },
   {
    "id": "inat-234968561",
@@ -828,7 +1023,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/234968561",
-   "place": "Marin County, CA, USA"
+   "place": "Marin County, CA, USA",
+   "gross": true
   },
   {
    "id": "inat-194721193",
@@ -846,7 +1042,8 @@
    "credit": "Alan Rockefeller",
    "license": "CC BY",
    "sourceUrl": "https://www.inaturalist.org/observations/194721193",
-   "place": "Half Moon Bay, CA 94019, USA"
+   "place": "Half Moon Bay, CA 94019, USA",
+   "gross": true
   },
   {
    "id": "inat-141635415",
@@ -864,7 +1061,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/141635415",
-   "place": "Forest Road 09, Sierra County, CA, USA"
+   "place": "Forest Road 09, Sierra County, CA, USA",
+   "gross": true
   },
   {
    "id": "inat-221747271",
@@ -882,7 +1080,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/221747271",
-   "place": "Sierra County, CA, USA"
+   "place": "Sierra County, CA, USA",
+   "gross": true
   },
   {
    "id": "inat-148825167",
@@ -900,7 +1099,8 @@
    "credit": "Seymour Burgess",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/148825167",
-   "place": "Ken maunder"
+   "place": "Ken maunder",
+   "gross": true
   },
   {
    "id": "inat-115981892",
@@ -918,7 +1118,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/115981892",
-   "place": "17400, Peru"
+   "place": "17400, Peru",
+   "gross": true
   },
   {
    "id": "inat-134388780",
@@ -936,7 +1137,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/134388780",
-   "place": "Turnagain Pass, Alaska 99631, USA"
+   "place": "Turnagain Pass, Alaska 99631, USA",
+   "gross": true
   },
   {
    "id": "inat-202066791",
@@ -954,7 +1156,8 @@
    "credit": "Jan Thornhill",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/202066791",
-   "place": "Eels Lake Rd. Peterborough County, ON, Canada"
+   "place": "Eels Lake Rd. Peterborough County, ON, Canada",
+   "gross": true
   },
   {
    "id": "inat-106223117",
@@ -972,7 +1175,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/106223117",
-   "place": "Marin County, CA, USA"
+   "place": "Marin County, CA, USA",
+   "gross": true
   },
   {
    "id": "inat-134384980",
@@ -990,7 +1194,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/134384980",
-   "place": "Blister Run, West Virginia 26273, USA"
+   "place": "Blister Run, West Virginia 26273, USA",
+   "gross": true
   },
   {
    "id": "inat-329566634",
@@ -1008,7 +1213,8 @@
    "credit": "Elan Trybuch",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/329566634",
-   "place": "Upper Manhattan, New York, NY, USA"
+   "place": "Upper Manhattan, New York, NY, USA",
+   "gross": true
   },
   {
    "id": "inat-143120889",
@@ -1026,7 +1232,8 @@
    "credit": "Alison Pollack",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/143120889",
-   "place": "Abbott Loop, Anchorage, AK 99507, USA"
+   "place": "Abbott Loop, Anchorage, AK 99507, USA",
+   "gross": true
   },
   {
    "id": "inat-181414652",
@@ -1044,7 +1251,8 @@
    "credit": "Cho Fungi",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/181414652",
-   "place": "111, Taiwan, Taipei City, Shilin District, 台北市士林區"
+   "place": "111, Taiwan, Taipei City, Shilin District, 台北市士林區",
+   "gross": true
   },
   {
    "id": "inat-151887228",
@@ -1062,7 +1270,8 @@
    "credit": "Ethan Saso",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/151887228",
-   "place": "Berkeley, CA, USA"
+   "place": "Berkeley, CA, USA",
+   "gross": true
   },
   {
    "id": "inat-100860942",
@@ -1080,7 +1289,8 @@
    "credit": "Bo Valeur",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/100860942",
-   "place": "2800 Kongens Lyngby, Danmark"
+   "place": "2800 Kongens Lyngby, Danmark",
+   "gross": true
   },
   {
    "id": "inat-2670813",
@@ -4179,24 +4389,6 @@
    "place": "23019 B.C.S., México"
   },
   {
-   "id": "inat-63211946",
-   "source": "iNaturalist",
-   "kind": "image",
-   "topic": "Hummingbirds",
-   "title": "Shining Sunbeam",
-   "subtitle": "Aglaeactis cupripennis",
-   "caption": "About hummingbirds: The oldest known fossil hummingbird is Eurotrochilus, from the Rupelian Stage of Early Oligocene Europe.",
-   "media": {
-    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/large.jpg",
-    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/original.jpg",
-    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/small.jpg"
-   },
-   "credit": "John Eppler",
-   "license": "CC BY-NC",
-   "sourceUrl": "https://www.inaturalist.org/observations/63211946",
-   "place": "Metropolitan District of Quito, Ecuador"
-  },
-  {
    "id": "inat-139071374",
    "source": "iNaturalist",
    "kind": "image",
@@ -4213,6 +4405,24 @@
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/139071374",
    "place": "Latacunga, Ecuador"
+  },
+  {
+   "id": "inat-63211946",
+   "source": "iNaturalist",
+   "kind": "image",
+   "topic": "Hummingbirds",
+   "title": "Shining Sunbeam",
+   "subtitle": "Aglaeactis cupripennis",
+   "caption": "About hummingbirds: The oldest known fossil hummingbird is Eurotrochilus, from the Rupelian Stage of Early Oligocene Europe.",
+   "media": {
+    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/large.jpg",
+    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/original.jpg",
+    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/101412422/small.jpg"
+   },
+   "credit": "John Eppler",
+   "license": "CC BY-NC",
+   "sourceUrl": "https://www.inaturalist.org/observations/63211946",
+   "place": "Metropolitan District of Quito, Ecuador"
   },
   {
    "id": "inat-6177441",
@@ -4323,24 +4533,6 @@
    "place": "15100 Marindia, Departamento de Canelones, Uruguay"
   },
   {
-   "id": "inat-86681472",
-   "source": "iNaturalist",
-   "kind": "image",
-   "topic": "Hummingbirds",
-   "title": "Chestnut-breasted Coronet",
-   "subtitle": "Boissonneaua matthewsii",
-   "caption": "About hummingbirds: Hummingbirds split from their sister group, the swifts and treeswifts, around 42 million years ago.",
-   "media": {
-    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/142840237/large.jpg",
-    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/142840237/original.jpg",
-    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/142840237/small.jpg"
-   },
-   "credit": "eric gofreed",
-   "license": "CC BY-NC",
-   "sourceUrl": "https://www.inaturalist.org/observations/86681472",
-   "place": "Ecuador"
-  },
-  {
    "id": "inat-28895941",
    "source": "iNaturalist",
    "kind": "image",
@@ -4357,6 +4549,24 @@
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/28895941",
    "place": "Los Madrones, Hamilton Pool Rd, Dripping Springs, TX, USA"
+  },
+  {
+   "id": "inat-86681472",
+   "source": "iNaturalist",
+   "kind": "image",
+   "topic": "Hummingbirds",
+   "title": "Chestnut-breasted Coronet",
+   "subtitle": "Boissonneaua matthewsii",
+   "caption": "About hummingbirds: Hummingbirds split from their sister group, the swifts and treeswifts, around 42 million years ago.",
+   "media": {
+    "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/142840237/large.jpg",
+    "hi": "https://inaturalist-open-data.s3.amazonaws.com/photos/142840237/original.jpg",
+    "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/142840237/small.jpg"
+   },
+   "credit": "eric gofreed",
+   "license": "CC BY-NC",
+   "sourceUrl": "https://www.inaturalist.org/observations/86681472",
+   "place": "Ecuador"
   },
   {
    "id": "inat-199822409",
@@ -7717,186 +7927,6 @@
    "sourceUrl": "https://images.nasa.gov/details/JPL-20200210-MARSf-0001-Mars%20Sample%20Return-1080"
   },
   {
-   "id": "eso-eso2613",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Dead star and planetary bodies: astronomers spot unique disc of debris that foretells Solar System’s future",
-   "subtitle": "2026-10-27",
-   "caption": "Astronomers using the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have found a rare disc of debris around a dead star that provides a glimpse of what may happen to our Solar System.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2613a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2613a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2613a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2613/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2612",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Milky Way's fastest star orbits our supermassive black hole so closely it feels its spin",
-   "subtitle": "2026-08-19",
-   "caption": "Astronomers have discovered the fastest known star in our galaxy, the Milky Way, orbiting the black hole at its centre.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2612a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2612a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2612a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2612/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2611",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Astronomers find strongest evidence yet that Betelgeuse has a companion",
-   "subtitle": "2026-07-28",
-   "caption": "At long last, astronomers have firm evidence that Betelgeuse, one of the most famous stars in the night sky, is not alone.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2611a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2611a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2611a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2611/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2610",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "New ‘exomoon’ detection challenges cosmic labels",
-   "subtitle": "2026-07-22",
-   "caption": "Observations made with the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have revealed evidence for a moon-like object in the CD-35 2722 system.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2610a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2610a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2610a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2610/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2609",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Faintest planet ever imaged from Earth found after more than 10 years of hide-and-seek",
-   "subtitle": "2026-07-15",
-   "caption": "A team of astronomers have discovered a third planet orbiting the star Beta Pictoris.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2609a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2609a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2609a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2609/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2608",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Older than the Sun: Astronomers find new clues to the origin of interstellar comet 3I/ATLAS",
-   "subtitle": "2026-07-06",
-   "caption": "Astronomers have used the European Southern Observatory's Very Large Telescope (ESO's VLT) to study the composition of 3I/ATLAS, the brightest interstellar object ever seen, in detail.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2608a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2608a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2608a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2608/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2607",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "\"Beyond the limit\": one million satellites and mirrors in space pose grave threat to the night sky",
-   "subtitle": "2026-07-01",
-   "caption": "A new European Southern Observatory (ESO) study has found that current proposals to launch over 1.7 million satellites into orbit, including extremely bright ones, would have “devastating consequences for astronomy.” According to the study, no more than 100…",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2607a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2607a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2607a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2607/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2606",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Strange winds reveal strongest hints yet of magnetic activity in exoplanets",
-   "subtitle": "2026-06-02",
-   "caption": "A team of astronomers has found the strongest evidence yet that some planets outside our Solar System may be magnetic.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2606a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2606a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2606a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2606/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2605",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "First light for PoET: shining (sun)light on exoplanet research",
-   "subtitle": "2026-04-09",
-   "caption": "The Paranal solar ESPRESSO Telescope (PoET), installed at the European Southern Observatory's (ESO's) Paranal site in Chile, has made its first observations. The telescope will work with ESO's ESPRESSO instrument to study the Sun in detail.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2605a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2605a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2605a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2605/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2604",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "A Solar System in the making? Two planets spotted forming in disc around young star",
-   "subtitle": "2026-03-24",
-   "caption": "Astronomers have observed two planets forming in the disc around a young star named WISPIT 2. Having previously detected one planet, the team have now employed European Southern Observatory (ESO) telescopes to confirm the presence of another.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2604a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2604a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2604a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2604/",
-   "discovery": true
-  },
-  {
    "id": "commons-8890214",
    "source": "Wikimedia Commons",
    "kind": "video",
@@ -9720,7 +9750,8 @@
    },
    "credit": "Pristurus",
    "license": "CC BY-SA 3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volucella_zonaria_-_2018-07-12.webm"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volucella_zonaria_-_2018-07-12.webm",
+   "gross": true
   },
   {
    "id": "commons-77821488",
@@ -9944,7 +9975,8 @@
    },
    "credit": "Pristurus",
    "license": "CC BY-SA 3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chrysogaster_solstitialis.ogv"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chrysogaster_solstitialis.ogv",
+   "gross": true
   },
   {
    "id": "commons-11990844",
@@ -10358,7 +10390,8 @@
    },
    "credit": "Pristurus",
    "license": "CC BY-SA 3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hercostomus_rogenhoferi_-_2018-07-19.webm"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hercostomus_rogenhoferi_-_2018-07-19.webm",
+   "gross": true
   },
   {
    "id": "commons-73777223",
@@ -13198,7 +13231,8 @@
    },
    "credit": "Pristurus",
    "license": "CC BY-SA 3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dioctria_atricapilla,_(Balz3).ogv"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dioctria_atricapilla,_(Balz3).ogv",
+   "gross": true
   },
   {
    "id": "commons-15397902",
@@ -13294,7 +13328,8 @@
    },
    "credit": "The Nature Box",
    "license": "CC BY-SA 3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robber_fly_(Cophinopoda_chinensis).webm"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robber_fly_(Cophinopoda_chinensis).webm",
+   "gross": true
   },
   {
    "id": "commons-34840807",

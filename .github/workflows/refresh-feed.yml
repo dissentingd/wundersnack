@@ -43,6 +43,16 @@ jobs:
           else
             node scripts/cache-media.mjs
           fi
+      - name: "Vote report (shown on the run's summary page)"
+        continue-on-error: true
+        run: |
+          {
+            echo "## Helped? votes"
+            echo
+            echo '```'
+            node scripts/vote-report.mjs
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
       - name: Commit feed.json if it changed
         run: |
           if git diff --quiet -- feed.json; then echo "No changes"; exit 0; fi

@@ -9,6 +9,7 @@ The natural world is full of wonder most people never get to see. wundersnack pu
 - **Swipe or scroll** through photos, videos and short facts. On a phone, use *Add to Home Screen* to install it like an app.
 - **Calm first.** Sources are filtered to leave out predation, death, disease, disasters and other distressing material.
 - **A snack, not a meal.** After five minutes of looking, a break card suggests stopping. You can take one more five-minute snack; after that the feed pauses for an hour and offers a small offline suggestion instead ("Look up. What's the sky doing right now?"). Only time with the page visible counts, and the timer lives in your browser. Add `?snack=20` to the URL to try it with a 20-second snack.
+- **"Gross, but cool" is opt-in.** Slime molds and creepy-crawlies (flies, wasps, spiders, larvae, worms and similar) are flagged when the feed is built and hidden unless the viewer taps the bug button. The choice is remembered in the browser.
 - **No social layer.** No accounts, likes, comments, follower counts, ads or tracking.
 - **"Helped?"** Each card asks whether it helped, with a thumbs up or down. A thumbs-up keeps you on the card; a thumbs-down moves on. Votes are counted anonymously per item, with no account, device id, cookie or IP stored, and they help the project rank and find content that actually helps. Your own votes and what you've already seen stay in your browser, so your feed adapts to you and keeps showing you new things first.
 - **Credit always travels with the content.** Photos load from where they live. Videos from Wikimedia Commons are converted once to a format every phone can play and served from our own storage (`media.wundersnack.com`), with the original as automatic fallback. Every card shows the creator, license and a link back to the source. YouTube and Vimeo videos are embedded with their own players.
@@ -63,7 +64,7 @@ Then attach the cached video copies (no credentials needed; it reads the public 
 node scripts/cache-media.mjs
 ```
 
-A source that fails or returns nothing keeps its items from the previous `feed.json`. The [refresh workflow](.github/workflows/refresh-feed.yml) runs this every Monday and commits the result; you can also run it by hand from the Actions tab.
+A source that fails or returns nothing keeps its items from the previous `feed.json`. The [refresh workflow](.github/workflows/refresh-feed.yml) runs this every Monday and commits the result; you can also run it by hand from the Actions tab. Each run's summary page includes the vote report.
 
 ### Video copies (Cloudflare R2)
 
@@ -85,6 +86,7 @@ In `sources.config.json`:
 
 - `calmBlocklist`: words that drop an item. Each entry is a case-insensitive regex matched at the start of a word, so `war\b` blocks "war" but not "warbler".
 - `commons.natureAllowlist`: a Commons video is kept only if its title, description or categories match one of these.
+- `grossButCool.patterns`: names that flag an item as "gross, but cool" (checked against titles, and captions for videos; space sources are skipped). Whole iNaturalist taxa can be flagged with `grossButCool: true`.
 - `exclude.ids`: feed item ids (for example `commons-12345` or `inat-67890`) to always leave out.
 - `votes`: where to read vote totals, and when to drop an item (by default, 8 or more votes and under 25% helpful).
 - Taxa, queries and per-source counts for each source.

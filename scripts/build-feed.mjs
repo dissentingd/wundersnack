@@ -148,7 +148,7 @@ async function fromINaturalist() {
   for (const taxon of c.taxa) {
     const q = new URLSearchParams({
       taxon_id: taxon.id, quality_grade: 'research', photos: 'true',
-      photo_license: c.photoLicenses.join(','), order_by: 'votes', per_page: String(c.perTaxon * 2),
+      photo_license: c.photoLicenses.join(','), order_by: 'votes', per_page: String((taxon.perTaxon ?? c.perTaxon) * 2),
       locale: 'en',
     });
     let res;
@@ -164,7 +164,7 @@ async function fromINaturalist() {
       if (seen.has(o.taxon.id)) continue;
       seen.add(o.taxon.id);
       out.push({ o, taxon });
-      if (seen.size >= c.perTaxon) break;
+      if (seen.size >= (taxon.perTaxon ?? c.perTaxon)) break;
     }
   }
   // Facts: the species' Wikipedia lead, else its genus's, else its family's (via iNat's taxon links).
@@ -218,6 +218,7 @@ async function fromINaturalist() {
       source: 'iNaturalist',
       kind: 'image',
       topic: taxon.label,
+      ...(taxon.weight != null && taxon.weight !== 1 ? { weight: taxon.weight } : {}),
       title: common ? common[0].toUpperCase() + common.slice(1) : o.taxon.name,
       subtitle: common ? o.taxon.name : '',
       caption: fact ? snippet(fact, 260) : taxon.wonder,
@@ -444,6 +445,20 @@ for (const name of Object.keys(runners)) {
 const items = [...curated.map(i => ({ ...i, curated: true })), ...Object.values(bySource).flat()];
 const ids = new Set(cfg.exclude?.ids || []);
 let unique = items.filter(i => !ids.has(i.id) && ids.add(i.id));
+
+// "Gross, but cool": flag creepy-crawlies (and whole taxa marked grossButCool) so the app can hide them by default.
+const grossRe = (cfg.grossButCool?.patterns || []).map(w => new RegExp(`\\b${w}`, 'i'));
+const grossTopics = new Set((cfg.inaturalist?.taxa || []).filter(t => t.grossButCool).map(t => t.label));
+unique = unique.map(i => {
+  const { gross: _g, ...rest } = i;
+  // Species photos are judged by their names (a caption like "mimics a wasp" isn't gross); videos also by
+  // caption, since their titles are often bare Latin names.
+  const text = [i.title, i.subtitle, i.topic, i.kind === 'video' ? i.caption : ''].filter(Boolean).join(' ');
+  const gross = (i.source === 'iNaturalist' && grossTopics.has(i.topic))
+    || (!(cfg.grossButCool?.skipSources || []).includes(i.source) && grossRe.some(re => re.test(text)));
+  return gross ? { ...rest, gross: true } : rest;
+});
+console.log(`gross-but-cool: ${unique.filter(i => i.gross).length} items flagged`);
 
 // Anonymous "Helped?" totals: score every voted item, leave out the ones that consistently don't help.
 const v = cfg.votes;

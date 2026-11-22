@@ -93,7 +93,8 @@
       {
         "id": 47685,
         "label": "Slime molds",
-        "wonder": "A slime mold: no brain, yet it solves mazes"
+        "wonder": "A slime mold: no brain, yet it solves mazes",
+        "grossButCool": true
       },
       {
         "id": 47113,
@@ -135,7 +136,8 @@
         "label": "Jellies and corals",
         "wonder": "An animal that is mostly water and light"
       }
-    ]
+    ],
+    "_taxaDoc": "Per taxon: optional perTaxon (overrides the default count), weight (0-1, how often the app shows this group relative to others; default 1) and grossButCool (every item of this taxon is hidden unless the viewer turns on \"Gross, but cool\")."
   },
   "nasa": {
     "perQuery": 12,
@@ -354,5 +356,43 @@
     "_doc": "Our own H.264 copies of Wikimedia Commons videos (see scripts/cache-media.mjs). Served publicly from baseUrl (an R2 bucket's custom domain).",
     "bucket": "wundersnack-media",
     "baseUrl": "https://media.wundersnack.com"
+  },
+  "grossButCool": {
+    "_doc": "Items whose title, subtitle, caption or topic match one of these (case-insensitive regex at a word start) are flagged gross: true. The app hides them unless the viewer turns on \"Gross, but cool\". Taxa can also be flagged wholesale with grossButCool in inaturalist.taxa. Items from skipSources are never flagged.",
+    "patterns": [
+      "(a|the|long-legged|house|hover|crane|robber|blow|horse|fruit|bee|soldier|snipe|flesh|dance|stable|bot|deer|sand|black|march|scorpion|stilt|thick-headed|picture-winged)[ -]?fl(y|ies)\\b",
+      "maggots?\\b",
+      "larva(e|l)?\\b",
+      "grubs?\\b",
+      "worms?\\b",
+      "spiders?\\b(?! ?webs?)",
+      "tarantulas?\\b",
+      "wasps?\\b",
+      "hornets?\\b",
+      "cockroach(es)?\\b",
+      "roach(es)?\\b",
+      "centipedes?\\b",
+      "millipedes?\\b",
+      "earwigs?\\b",
+      "ticks?\\b",
+      "mites?\\b",
+      "leech(es)?\\b",
+      "lice\\b",
+      "louse\\b",
+      "fleas?\\b",
+      "bed ?bugs?\\b",
+      "(?<!sea )slugs?\\b",
+      "locusts?\\b",
+      "mosquito(e?s)?\\b",
+      "gnats?\\b",
+      "midges?\\b",
+      "termites?\\b",
+      "scorpions?\\b",
+      "earthworms?\\b"
+    ],
+    "skipSources": [
+      "NASA",
+      "ESO"
+    ]
   }
 }

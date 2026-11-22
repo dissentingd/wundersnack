@@ -4,6 +4,7 @@ const soundBtn = document.getElementById('sound');
 const BATCH = 8;
 
 let items = [];
+let allItems = [];      // the whole feed as loaded, before filtering
 let cursor = 0;
 let soundOn = false;
 let active = null;
@@ -17,6 +18,7 @@ const store = {
 };
 const myVotes = store.get('ws.votes', {});   // { itemId: 1 | -1 }
 const seen = store.get('ws.seen', {});       // { itemId: lastSeenMs }
+let showGross = store.get('ws.gross', false); // "Gross, but cool" opt-in
 const SEEN_MAX = 4000;
 function markSeen(id) {
   seen[id] = Date.now();
@@ -65,8 +67,12 @@ function roundRobin(pool, keyOf, rank) {
   }
   const lists = [...groups.values()].map(l => l.sort((a, b) => a[0] - b[0])), out = [];
   while (lists.some(l => l.length)) {
-    // each round, groups whose next item ranks higher go first
-    for (const l of lists.filter(l => l.length).sort((a, b) => b.at(-1)[0] - a.at(-1)[0])) out.push(l.pop()[1]);
+    // each round, groups whose next item ranks higher go first; a group with weight < 1 (e.g. slime molds)
+    // only takes part in that share of rounds
+    const open = lists.filter(l => l.length);
+    let round = open.filter(l => Math.random() < (l.at(-1)[1].weight ?? 1));
+    if (!round.length) round = open;
+    for (const l of round.sort((a, b) => b.at(-1)[0] - a.at(-1)[0])) out.push(l.pop()[1]);
   }
   return out;
 }
@@ -74,7 +80,7 @@ function roundRobin(pool, keyOf, rank) {
 // Items this device voted down are left out.
 function arrange(all) {
   const rank = ranker(all);
-  const pool = all.filter(i => myVotes[i.id] !== -1);
+  const pool = all.filter(i => myVotes[i.id] !== -1 && (showGross || !i.gross));
   const isMotion = i => i.kind === 'video' || i.kind === 'embed';
   const byRank = list => list.map(i => [rank(i), i]).sort((a, b) => b[0] - a[0]).map(x => x[1]);
   const motion = [...byRank(pool.filter(i => i.curated && isMotion(i))),
@@ -299,13 +305,41 @@ function appendBatch() {
 function setSound(on) {
   soundOn = on;
   soundBtn.setAttribute('aria-pressed', String(on));
-  soundBtn.textContent = on ? 'Sound on' : 'Sound off';
+  soundBtn.setAttribute('aria-label', on ? 'Sound on' : 'Sound off');
   if (active?._media?.tagName === 'VIDEO') active._media.muted = !on;
   if (active?._item.kind === 'embed' && active._media?.tagName === 'IFRAME') {
     active._media.src = embedSrc(active._item.media, true);
   }
 }
 soundBtn.addEventListener('click', () => setSound(!soundOn));
+
+// "Gross, but cool": slime molds and creepy-crawlies are hidden unless this browser opts in.
+const grossBtn = document.getElementById('gross');
+function toast(text) {
+  document.querySelector('.toast')?.remove();
+  const t = el('div', { className: 'toast', role: 'status', textContent: text });
+  document.body.append(t);
+  setTimeout(() => t.remove(), 2800);
+}
+function paintGross() {
+  grossBtn.setAttribute('aria-pressed', String(showGross));
+  grossBtn.setAttribute('aria-label', `Gross, but cool: ${showGross ? 'shown' : 'hidden'}`);
+}
+grossBtn.addEventListener('click', () => {
+  showGross = !showGross;
+  store.set('ws.gross', showGross);
+  paintGross();
+  toast(showGross ? 'Gross, but cool: on. Slime molds and creepy-crawlies included.' : 'Gross, but cool: off. Creepy-crawlies hidden.');
+  if (!allItems.length) return;
+  // Rebuild everything after the current card with the new setting.
+  let next = active ? active.nextElementSibling : feedEl.querySelector('.card:not(.intro)');
+  while (next) { const n = next.nextElementSibling; nearObserver.unobserve(next); activeObserver.unobserve(next); next.remove(); next = n; }
+  items = arrange(allItems);
+  cursor = 0;
+  appendBatch();
+  if (active?._item?.gross && !showGross) step(1);
+});
+paintGross();
 
 const about = document.getElementById('about');
 document.getElementById('about-open').addEventListener('click', () => about.showModal());
@@ -423,7 +457,8 @@ activeObserver.observe(feedEl.querySelector('.intro'));
 try {
   const res = await fetch('feed.json', { cache: 'no-cache' });
   const data = await res.json();
-  items = arrange(data.items);
+  allItems = data.items;
+  items = arrange(allItems);
   // shared link (#id): show that item first
   const want = decodeURIComponent(location.hash.slice(1));
   const idx = want ? items.findIndex(i => i.id === want) : -1;
