@@ -38,6 +38,18 @@ const CACHED_TYPE = 'video/mp4; codecs="avc1.4D401F, mp4a.40.2"'; // H.264 Main@
 
 // ---------- manifest: { "<item id>": { "v": "v/<key>.mp4", "p": "p/<key>.jpg", "at": "..." } } ----------
 async function loadManifest() {
+  if (UPLOAD) {
+    // Read it straight from the bucket: the authoritative copy, and independent of the public domain.
+    // Anything other than "doesn't exist yet" aborts, so a hiccup can never reset (and overwrite) the manifest.
+    try {
+      const { stdout } = await run('aws', ['s3', 'cp', `s3://${cfg.bucket}/manifest.json`, '-',
+        '--endpoint-url', `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`], { env: awsEnv(), maxBuffer: 1 << 26 });
+      return JSON.parse(stdout);
+    } catch (e) {
+      if (/NoSuchKey|Not Found|404/.test(`${e.stderr || ''}${e.message}`)) { console.warn('manifest: not in bucket yet, starting empty'); return {}; }
+      throw new Error(`could not read manifest from the bucket: ${(e.stderr || e.message).trim()}`);
+    }
+  }
   try {
     const res = await fetch(`${base}/manifest.json`, { headers: { 'User-Agent': UA }, cache: 'no-store' });
     if (res.ok) return await res.json();
