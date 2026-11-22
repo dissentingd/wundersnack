@@ -10,6 +10,21 @@ let active = null;
 
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+// ---------- this device's memory (localStorage only; never sent anywhere) ----------
+const store = {
+  get(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } },
+  set(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch {} },
+};
+const myVotes = store.get('ws.votes', {});   // { itemId: 1 | -1 }
+const seen = store.get('ws.seen', {});       // { itemId: lastSeenMs }
+const SEEN_MAX = 4000;
+function markSeen(id) {
+  seen[id] = Date.now();
+  const ids = Object.keys(seen);
+  if (ids.length > SEEN_MAX) ids.sort((a, b) => seen[a] - seen[b]).slice(0, ids.length - SEEN_MAX).forEach(k => delete seen[k]);
+  store.set('ws.seen', seen);
+}
+
 // ---------- ordering ----------
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
@@ -18,31 +33,89 @@ function shuffle(a) {
   }
   return a;
 }
-// Round-robin across groups so a pool stays varied.
-function roundRobin(pool, keyOf) {
+// This device's taste, learned from its own votes: per topic, source and kind.
+function tasteModel(all) {
+  const byId = new Map(all.map(i => [i.id, i]));
+  const t = new Map();
+  const add = (k, v) => t.set(k, (t.get(k) || 0) + v);
+  for (const [id, v] of Object.entries(myVotes)) {
+    const it = byId.get(id);
+    if (!it) continue;
+    add(`topic:${it.topic}`, v); add(`source:${it.source}`, v * 0.5); add(`kind:${it.kind}`, v * 0.5);
+  }
+  return it => Math.tanh(((t.get(`topic:${it.topic}`) || 0) + (t.get(`source:${it.source}`) || 0) + (t.get(`kind:${it.kind}`) || 0)) / 3);
+}
+// Higher = sooner. Unseen first; among those, everyone's votes (feed score) + this device's taste + randomness,
+// so repeat visitors keep meeting new things and nobody gets the same "top" list.
+function ranker(all) {
+  const taste = tasteModel(all);
+  return it => {
+    if (seen[it.id]) return -10 - (seen[it.id] / 1e13) + Math.random() * 0.5; // seen: oldest-seen first
+    const global = typeof it.score === 'number' ? (it.score - 0.5) * 1.2 : 0;
+    return Math.random() + global + taste(it) * 0.6;
+  };
+}
+// Round-robin across groups so a pool stays varied; within a group, best-ranked first.
+function roundRobin(pool, keyOf, rank) {
   const groups = new Map();
-  for (const it of shuffle(pool)) {
+  for (const it of pool) {
     const key = keyOf(it);
     if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(it);
+    groups.get(key).push([rank(it), it]);
   }
-  const lists = [...groups.values()], out = [];
-  while (lists.some(l => l.length)) for (const l of shuffle(lists)) if (l.length) out.push(l.pop());
+  const lists = [...groups.values()].map(l => l.sort((a, b) => a[0] - b[0])), out = [];
+  while (lists.some(l => l.length)) {
+    // each round, groups whose next item ranks higher go first
+    for (const l of lists.filter(l => l.length).sort((a, b) => b.at(-1)[0] - a.at(-1)[0])) out.push(l.pop()[1]);
+  }
   return out;
 }
 // Alternate motion (video/embeds) and stills one-for-one while motion lasts; curated picks lead each pool.
+// Items this device voted down are left out.
 function arrange(all) {
+  const rank = ranker(all);
+  const pool = all.filter(i => myVotes[i.id] !== -1);
   const isMotion = i => i.kind === 'video' || i.kind === 'embed';
-  const motion = [...shuffle(all.filter(i => i.curated && isMotion(i))),
-    ...roundRobin(all.filter(i => !i.curated && isMotion(i)), i => i.id.split('-')[0])];
-  const stills = [...shuffle(all.filter(i => i.curated && !isMotion(i))),
-    ...roundRobin(all.filter(i => !i.curated && !isMotion(i)), i => i.source === 'iNaturalist' ? `inat:${i.topic}` : i.source)];
+  const byRank = list => list.map(i => [rank(i), i]).sort((a, b) => b[0] - a[0]).map(x => x[1]);
+  const motion = [...byRank(pool.filter(i => i.curated && isMotion(i))),
+    ...roundRobin(pool.filter(i => !i.curated && isMotion(i)), i => i.id.split('-')[0], rank)];
+  const stills = [...byRank(pool.filter(i => i.curated && !isMotion(i))),
+    ...roundRobin(pool.filter(i => !i.curated && !isMotion(i)), i => i.source === 'iNaturalist' ? `inat:${i.topic}` : i.source, rank)];
   const out = [];
   while (motion.length || stills.length) {
     if (motion.length) out.push(motion.shift());
     if (stills.length) out.push(stills.shift());
   }
   return out;
+}
+
+// ---------- "Helped?" votes ----------
+function sendVote(id, v, prev) {
+  // text/plain keeps this a "simple" request (no CORS preflight); nothing identifying is sent.
+  fetch('api/vote', { method: 'POST', body: JSON.stringify({ id, v, prev }), keepalive: true, headers: { 'Content-Type': 'text/plain' } })
+    .catch(() => {});
+}
+function helpedBlock(it) {
+  const up = el('button', { className: 'vote up', type: 'button', ariaLabel: 'Yes, this helped', title: 'Helped', textContent: '👍' });
+  const down = el('button', { className: 'vote down', type: 'button', ariaLabel: "No, this didn't help", title: "Didn't help", textContent: '👎' });
+  const paint = () => {
+    up.setAttribute('aria-pressed', String(myVotes[it.id] === 1));
+    down.setAttribute('aria-pressed', String(myVotes[it.id] === -1));
+  };
+  const vote = clicked => {
+    const prev = myVotes[it.id] || 0;
+    const v = prev === clicked ? 0 : clicked; // tapping the same thumb again undoes it
+    if (v) myVotes[it.id] = v; else delete myVotes[it.id];
+    store.set('ws.votes', myVotes);
+    paint();
+    sendVote(it.id, v, prev);
+    if (v === -1) setTimeout(() => step(1), 450); // didn't help: move on
+  };
+  up.addEventListener('click', () => vote(1));
+  down.addEventListener('click', () => vote(-1));
+  paint();
+  return el('div', { className: 'helped', role: 'group', ariaLabel: 'Did this help?' },
+    el('span', { textContent: 'Helped?' }), up, down);
 }
 
 // ---------- rendering ----------
@@ -62,6 +135,7 @@ function infoBlock(it) {
     el('h2', { textContent: it.title }),
     it.subtitle ? el('p', { className: 'sub', textContent: it.subtitle }) : null,
     it.caption ? el('p', { className: 'caption', textContent: it.caption }) : null,
+    helpedBlock(it),
     credit);
 }
 
@@ -150,7 +224,7 @@ function activate(card) {
   const m = card._media;
   if (m?.tagName === 'VIDEO' && !reduceMotion) { m.muted = !soundOn; m.play().catch(() => {}); }
   if (card._item.kind === 'embed' && !reduceMotion) mountEmbed(card, true);
-  if (card.dataset.id) history.replaceState(null, '', `#${card.dataset.id}`);
+  if (card.dataset.id) { history.replaceState(null, '', `#${card.dataset.id}`); markSeen(card.dataset.id); }
   // keep the feed topped up
   if (feedEl.lastElementChild === card || card.nextElementSibling === feedEl.lastElementChild) appendBatch();
 }
@@ -206,7 +280,7 @@ function step(dir) {
   next?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
 }
 document.addEventListener('keydown', e => {
-  if (about.open || e.target.closest?.('input, textarea')) return;
+  if (about.open || e.target.closest?.('input, textarea, button')) return;
   if (['ArrowDown', 'j', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); step(1); }
   if (['ArrowUp', 'k', 'PageUp'].includes(e.key)) { e.preventDefault(); step(-1); }
   if (e.key === 'm') setSound(!soundOn);

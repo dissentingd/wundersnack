@@ -341,6 +341,27 @@ for (const name of Object.keys(runners)) {
 
 const items = [...curated.map(i => ({ ...i, curated: true })), ...Object.values(bySource).flat()];
 const ids = new Set(cfg.exclude?.ids || []);
-const unique = items.filter(i => !ids.has(i.id) && ids.add(i.id));
+let unique = items.filter(i => !ids.has(i.id) && ids.add(i.id));
+
+// Anonymous "Helped?" totals: score every voted item, leave out the ones that consistently don't help.
+const v = cfg.votes;
+const totalsUrl = process.env.WS_TOTALS_URL || v?.totalsUrl; // env override for local testing
+if (totalsUrl) {
+  try {
+    const totals = (await getJSON(totalsUrl)).items || {};
+    let scored = 0, dropped = 0;
+    unique = unique.flatMap(i => {
+      const t = totals[i.id];
+      const { score: _s, votes: _v, ...rest } = i;
+      if (!t) return [rest];
+      const n = t.up + t.down, score = Math.round(((t.up + 1) / (n + 2)) * 1000) / 1000;
+      if (n >= v.minVotes && score < v.dropBelow && !i.curated) { dropped++; return []; }
+      scored++;
+      return [{ ...rest, score, votes: n }];
+    });
+    console.log(`votes: ${scored} items scored, ${dropped} dropped as unhelpful`);
+  } catch (e) { console.warn(`votes: totals unavailable (${e.message}); feed built without them`); }
+}
+
 await writeFile(path.join(root, 'feed.json'), JSON.stringify({ generated: new Date().toISOString(), count: unique.length, items: unique }, null, 1) + '\n');
 console.log(`feed.json: ${unique.length} items`);

@@ -83,6 +83,16 @@ a { color: var(--accent); }
 .info h2 { margin: 0 0 2px; font-size: clamp(1.2rem, 4.6vw, 1.6rem); line-height: 1.2; }
 .info .sub { margin: 0 0 8px; color: var(--muted); font-style: italic; font-size: .9rem; }
 .info .caption { margin: 0 0 10px; font-size: clamp(.98rem, 3.8vw, 1.08rem); line-height: 1.45; }
+.helped { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; font-size: .9rem; color: var(--muted); }
+.helped span { margin-right: 2px; }
+.vote {
+  font-size: 1.15rem; line-height: 1; padding: 8px 12px; min-width: 44px; min-height: 40px; cursor: pointer;
+  background: var(--glass); border: 1px solid var(--line); border-radius: 999px; color: var(--fg);
+  filter: grayscale(.6); transition: transform .15s ease, filter .15s ease, border-color .15s ease;
+}
+.vote:hover { filter: none; }
+.vote[aria-pressed="true"] { filter: none; border-color: var(--accent); background: rgba(255, 207, 107, .18); transform: scale(1.06); }
+.vote:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .info .credit { margin: 0; font-size: .75rem; color: var(--muted); }
 .info .credit a { color: var(--muted); }
 

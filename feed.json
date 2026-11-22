@@ -1,7 +1,187 @@
 {
- "generated": "2026-11-22T18:52:17.077Z",
+ "generated": "2026-11-22T19:20:30.483Z",
  "count": 605,
  "items": [
+  {
+   "id": "eso-eso2613",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Dead star and planetary bodies: astronomers spot unique disc of debris that foretells Solar System’s future",
+   "subtitle": "2026-10-27",
+   "caption": "Astronomers using the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have found a rare disc of debris around a dead star that provides a glimpse of what may happen to our Solar System.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2613a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2613a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2613a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2613/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2612",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Milky Way's fastest star orbits our supermassive black hole so closely it feels its spin",
+   "subtitle": "2026-08-19",
+   "caption": "Astronomers have discovered the fastest known star in our galaxy, the Milky Way, orbiting the black hole at its centre.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2612a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2612a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2612a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2612/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2611",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Astronomers find strongest evidence yet that Betelgeuse has a companion",
+   "subtitle": "2026-07-28",
+   "caption": "At long last, astronomers have firm evidence that Betelgeuse, one of the most famous stars in the night sky, is not alone.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2611a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2611a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2611a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2611/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2610",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "New ‘exomoon’ detection challenges cosmic labels",
+   "subtitle": "2026-07-22",
+   "caption": "Observations made with the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have revealed evidence for a moon-like object in the CD-35 2722 system.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2610a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2610a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2610a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2610/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2609",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Faintest planet ever imaged from Earth found after more than 10 years of hide-and-seek",
+   "subtitle": "2026-07-15",
+   "caption": "A team of astronomers have discovered a third planet orbiting the star Beta Pictoris.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2609a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2609a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2609a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2609/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2608",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Older than the Sun: Astronomers find new clues to the origin of interstellar comet 3I/ATLAS",
+   "subtitle": "2026-07-06",
+   "caption": "Astronomers have used the European Southern Observatory's Very Large Telescope (ESO's VLT) to study the composition of 3I/ATLAS, the brightest interstellar object ever seen, in detail.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2608a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2608a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2608a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2608/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2607",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "\"Beyond the limit\": one million satellites and mirrors in space pose grave threat to the night sky",
+   "subtitle": "2026-07-01",
+   "caption": "A new European Southern Observatory (ESO) study has found that current proposals to launch over 1.7 million satellites into orbit, including extremely bright ones, would have “devastating consequences for astronomy.” According to the study, no more than 100…",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2607a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2607a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2607a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2607/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2606",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "Strange winds reveal strongest hints yet of magnetic activity in exoplanets",
+   "subtitle": "2026-06-02",
+   "caption": "A team of astronomers has found the strongest evidence yet that some planets outside our Solar System may be magnetic.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2606a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2606a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2606a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2606/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2605",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "First light for PoET: shining (sun)light on exoplanet research",
+   "subtitle": "2026-04-09",
+   "caption": "The Paranal solar ESPRESSO Telescope (PoET), installed at the European Southern Observatory's (ESO's) Paranal site in Chile, has made its first observations. The telescope will work with ESO's ESPRESSO instrument to study the Sun in detail.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2605a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2605a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2605a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2605/",
+   "discovery": true
+  },
+  {
+   "id": "eso-eso2604",
+   "source": "ESO",
+   "kind": "image",
+   "topic": "New discovery",
+   "title": "A Solar System in the making? Two planets spotted forming in disc around young star",
+   "subtitle": "2026-03-24",
+   "caption": "Astronomers have observed two planets forming in the disc around a young star named WISPIT 2. Having previously detected one planet, the team have now employed European Southern Observatory (ESO) telescopes to confirm the presence of another.",
+   "media": {
+    "src": "https://cdn.eso.org/images/screen/eso2604a.jpg",
+    "hi": "https://cdn.eso.org/images/large/eso2604a.jpg",
+    "thumb": "https://cdn.eso.org/images/thumb300y/eso2604a.jpg"
+   },
+   "credit": "ESO",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://www.eso.org/public/news/eso2604/",
+   "discovery": true
+  },
   {
    "id": "inat-150906376",
    "source": "iNaturalist",
@@ -18,7 +198,9 @@
    "credit": "Cho Fungi",
    "license": "CC BY-NC",
    "sourceUrl": "https://www.inaturalist.org/observations/150906376",
-   "place": "Zhishan Road Section 3 Lane 150, TW"
+   "place": "Zhishan Road Section 3 Lane 150, TW",
+   "score": 0.333,
+   "votes": 1
   },
   {
    "id": "inat-68967630",
@@ -6393,186 +6575,6 @@
    "sourceUrl": "https://images.nasa.gov/details/iss040e123845"
   },
   {
-   "id": "eso-eso2613",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Dead star and planetary bodies: astronomers spot unique disc of debris that foretells Solar System’s future",
-   "subtitle": "2026-10-27",
-   "caption": "Astronomers using the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have found a rare disc of debris around a dead star that provides a glimpse of what may happen to our Solar System.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2613a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2613a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2613a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2613/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2612",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Milky Way's fastest star orbits our supermassive black hole so closely it feels its spin",
-   "subtitle": "2026-08-19",
-   "caption": "Astronomers have discovered the fastest known star in our galaxy, the Milky Way, orbiting the black hole at its centre.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2612a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2612a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2612a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2612/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2611",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Astronomers find strongest evidence yet that Betelgeuse has a companion",
-   "subtitle": "2026-07-28",
-   "caption": "At long last, astronomers have firm evidence that Betelgeuse, one of the most famous stars in the night sky, is not alone.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2611a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2611a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2611a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2611/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2610",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "New ‘exomoon’ detection challenges cosmic labels",
-   "subtitle": "2026-07-22",
-   "caption": "Observations made with the European Southern Observatory’s Very Large Telescope (ESO’s VLT) have revealed evidence for a moon-like object in the CD-35 2722 system.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2610a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2610a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2610a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2610/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2609",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Faintest planet ever imaged from Earth found after more than 10 years of hide-and-seek",
-   "subtitle": "2026-07-15",
-   "caption": "A team of astronomers have discovered a third planet orbiting the star Beta Pictoris.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2609a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2609a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2609a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2609/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2608",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Older than the Sun: Astronomers find new clues to the origin of interstellar comet 3I/ATLAS",
-   "subtitle": "2026-07-06",
-   "caption": "Astronomers have used the European Southern Observatory's Very Large Telescope (ESO's VLT) to study the composition of 3I/ATLAS, the brightest interstellar object ever seen, in detail.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2608a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2608a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2608a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2608/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2607",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "\"Beyond the limit\": one million satellites and mirrors in space pose grave threat to the night sky",
-   "subtitle": "2026-07-01",
-   "caption": "A new European Southern Observatory (ESO) study has found that current proposals to launch over 1.7 million satellites into orbit, including extremely bright ones, would have “devastating consequences for astronomy.” According to the study, no more than 100…",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2607a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2607a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2607a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2607/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2606",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "Strange winds reveal strongest hints yet of magnetic activity in exoplanets",
-   "subtitle": "2026-06-02",
-   "caption": "A team of astronomers has found the strongest evidence yet that some planets outside our Solar System may be magnetic.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2606a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2606a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2606a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2606/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2605",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "First light for PoET: shining (sun)light on exoplanet research",
-   "subtitle": "2026-04-09",
-   "caption": "The Paranal solar ESPRESSO Telescope (PoET), installed at the European Southern Observatory's (ESO's) Paranal site in Chile, has made its first observations. The telescope will work with ESO's ESPRESSO instrument to study the Sun in detail.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2605a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2605a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2605a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2605/",
-   "discovery": true
-  },
-  {
-   "id": "eso-eso2604",
-   "source": "ESO",
-   "kind": "image",
-   "topic": "New discovery",
-   "title": "A Solar System in the making? Two planets spotted forming in disc around young star",
-   "subtitle": "2026-03-24",
-   "caption": "Astronomers have observed two planets forming in the disc around a young star named WISPIT 2. Having previously detected one planet, the team have now employed European Southern Observatory (ESO) telescopes to confirm the presence of another.",
-   "media": {
-    "src": "https://cdn.eso.org/images/screen/eso2604a.jpg",
-    "hi": "https://cdn.eso.org/images/large/eso2604a.jpg",
-    "thumb": "https://cdn.eso.org/images/thumb300y/eso2604a.jpg"
-   },
-   "credit": "ESO",
-   "license": "CC BY 4.0",
-   "sourceUrl": "https://www.eso.org/public/news/eso2604/",
-   "discovery": true
-  },
-  {
    "id": "nasavid-GSFC_20180314_Aurora_m12865_Steve",
    "source": "NASA",
    "kind": "video",
@@ -7494,7 +7496,9 @@
    },
    "credit": "JPL",
    "license": "Public domain (NASA)",
-   "sourceUrl": "https://images.nasa.gov/details/20190530-SPITZRf-0001-Stars%20of%20Cephus"
+   "sourceUrl": "https://images.nasa.gov/details/20190530-SPITZRf-0001-Stars%20of%20Cephus",
+   "score": 0.333,
+   "votes": 1
   },
   {
    "id": "nasavid-ARC-20190417-AAV3194-SOFIA-HeHMolecule-NarratedAnimation-NASAWeb",

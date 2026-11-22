@@ -343,5 +343,11 @@
     "_doc": "Feed item ids to always drop (vetoed by hand).",
     "ids": []
   },
-  "_blocklistDoc": "Each entry is a case-insensitive regex matched at the start of a word (e.g. 'war\\b' blocks 'war' but not 'warbler')."
+  "_blocklistDoc": "Each entry is a case-insensitive regex matched at the start of a word (e.g. 'war\\b' blocks 'war' but not 'warbler').",
+  "votes": {
+    "_doc": "Anonymous 'Helped?' totals from the site's /api/totals. score = (up+1)/(up+down+2); items with at least minVotes votes and a score below dropBelow are left out of the feed.",
+    "totalsUrl": "https://wundersnack.com/api/totals",
+    "minVotes": 8,
+    "dropBelow": 0.25
+  }
 }
