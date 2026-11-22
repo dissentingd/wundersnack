@@ -53,6 +53,9 @@ a { color: var(--accent); }
   opacity: 0; transition: opacity .6s ease;
 }
 .card .media.ready { opacity: 1; }
+/* Pin stills and videos to the card box so object-fit: contain always shows the whole frame
+   (a grid row has no definite height, so height: 100% alone let tall images overflow and crop). */
+.card img.media, .card video.media { position: absolute; inset: 0; }
 .card iframe.media { opacity: 1; max-width: min(100%, 177.78dvh); aspect-ratio: 16 / 9; height: auto; }
 .card iframe.media.vertical { aspect-ratio: 9 / 16; height: 100%; width: auto; max-width: 100%; }
 .card .facade {

@@ -9,7 +9,14 @@ import path from 'node:path';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const UA = 'wundersnack-feed/0.1 (+https://wundersnack.com)';
 const cfg = JSON.parse(await readFile(path.join(root, 'sources.config.json'), 'utf8'));
-const onlyArg = process.argv.find(a => a.startsWith('--only='));
+// A JSON "\b" is a backspace character, not a regex word boundary ("\\b" is). Fail loudly rather than
+// silently weakening the calm filter.
+(function checkPatterns(node, where) {
+  if (typeof node === 'string') {
+    if (/[\x00-\x1f]/.test(node)) throw new Error(`sources.config.json ${where}: "${JSON.stringify(node)}" has a control character; write regex \\b as "\\\\b" in JSON`);
+  } else if (node && typeof node === 'object') for (const [k, v] of Object.entries(node)) checkPatterns(v, `${where}.${k}`);
+})(cfg, 'config');
+const onlyArg =process.argv.find(a => a.startsWith('--only='));
 const only = onlyArg ? new Set(onlyArg.slice(7).split(',')) : null;
 const want = s => !only || only.has(s);
 
@@ -113,7 +120,7 @@ async function fromINaturalist() {
       title: common ? common[0].toUpperCase() + common.slice(1) : o.taxon.name,
       subtitle: common ? o.taxon.name : '',
       caption: fact ? snippet(fact) : taxon.wonder,
-      media: { src: p.url.replace('/square.', '/large.'), thumb: p.url.replace('/square.', '/small.') },
+      media: { src: p.url.replace('/square.', '/large.'), hi: p.url.replace('/square.', '/original.'), thumb: p.url.replace('/square.', '/small.') },
       credit: cleanCredit(p.attribution),
       license: LICENSES[p.license_code] || p.license_code,
       sourceUrl: `https://www.inaturalist.org/observations/${o.id}`,
@@ -138,11 +145,13 @@ async function fromNASA() {
       if (desc.length < 40) continue; // skip bare catalogue entries
       seen.add(d.nasa_id);
       // Not every asset has a ~medium rendition; read the manifest and take the best web size.
-      let src;
+      let src, hi;
       try {
         const m = await getJSON(`https://images-api.nasa.gov/asset/${encodeURIComponent(d.nasa_id)}`, { delay: 150 });
         const hrefs = m.collection.items.map(x => x.href.replace(/^http:/, 'https:'));
-        src = ['~medium.', '~large.', '~small.', '~orig.'].map(k => hrefs.find(h => h.includes(k) && /\.(jpe?g|png)$/i.test(h))).find(Boolean);
+        const pickImg = keys => keys.map(k => hrefs.find(h => h.includes(k) && /\.(jpe?g|png)$/i.test(h))).find(Boolean);
+        src = pickImg(['~medium.', '~large.', '~small.', '~orig.']);
+        hi = pickImg(['~large.', '~orig.']);
       } catch (e) { console.warn('NASA asset', d.nasa_id, e.message); }
       if (!src) continue;
       out.push({
@@ -153,12 +162,71 @@ async function fromNASA() {
         title: stripHtml(d.title),
         subtitle: '',
         caption: snippet(desc),
-        media: { src, thumb: href },
+        media: { src, ...(hi && hi !== src ? { hi } : {}), thumb: href },
         credit: stripHtml(d.secondary_creator || d.photographer || d.center || 'NASA'),
         license: 'Public domain (NASA)',
         sourceUrl: `https://images.nasa.gov/details/${encodeURIComponent(d.nasa_id)}`,
       });
       if (++n >= c.perQuery) break;
+    }
+  }
+  return out;
+}
+
+// ---------- NASA videos: short clips only ----------
+// Duration lives in each asset's metadata.json ("QuickTime:Duration": "0:02:12" or "12.5 s").
+function parseDuration(v) {
+  if (v == null) return NaN;
+  const s = String(v).trim();
+  if (/^\d+(\.\d+)?\s*s$/.test(s)) return parseFloat(s);
+  const parts = s.split(':').map(Number);
+  return parts.some(isNaN) ? NaN : parts.reduce((a, b) => a * 60 + b, 0);
+}
+async function fromNASAVideo() {
+  const c = cfg.nasaVideo, out = [], seen = new Set();
+  const titleBlock = (c.titleBlocklist || []).map(w => new RegExp(`\\b${w}`, 'i'));
+  for (const query of c.queries) {
+    let res;
+    try {
+      res = await getJSON(`https://images-api.nasa.gov/search?${new URLSearchParams({ q: query, media_type: 'video', page_size: String(c.perQuery * 4) })}`, { delay: 300 });
+    } catch (e) { console.warn('NASA video', query, e.message); continue; }
+    let n = 0;
+    for (const item of res.collection.items) {
+      if (n >= c.perQuery) break;
+      const d = item.data?.[0];
+      if (!d || seen.has(d.nasa_id)) continue;
+      seen.add(d.nasa_id);
+      const title = stripHtml(d.title).replace(/_\d{3,4}p$/i, '').replace(/_/g, ' '), desc = stripHtml(d.description);
+      const titleKey = title.toLowerCase().replace(/\s*[-–:]\s*(a|b|wide shot|close up|horizontal|vertical)$/i, '');
+      if (seen.has(titleKey)) continue;
+      seen.add(titleKey);
+      if (titleBlock.some(re => re.test(title)) || !isCalm(title, desc) || desc.length < 40) continue;
+      let hrefs, meta;
+      try {
+        const m = await getJSON(`https://images-api.nasa.gov/asset/${encodeURIComponent(d.nasa_id)}`, { delay: 150 });
+        hrefs = m.collection.items.map(x => x.href.replace(/^http:/, 'https:'));
+        const metaUrl = hrefs.find(h => h.endsWith('/metadata.json'));
+        meta = metaUrl ? await getJSON(metaUrl.replace(/ /g, '%20'), { delay: 150 }) : {};
+      } catch (e) { console.warn('NASA video asset', d.nasa_id, e.message); continue; }
+      const duration = parseDuration(meta['QuickTime:Duration'] ?? meta['QuickTime:TrackDuration']);
+      if (!(duration > 3 && duration <= c.maxDurationSeconds)) continue;
+      const src = ['~mobile.mp4', '~small.mp4', '~preview.mp4', '~medium.mp4'].map(k => hrefs.find(h => h.endsWith(k))).find(Boolean);
+      const poster = ['~medium.jpg', '~large.jpg', '~small.jpg', '~thumb.jpg'].map(k => hrefs.find(h => h.endsWith(k))).find(Boolean);
+      if (!src) continue;
+      const enc = u => u && encodeURI(decodeURI(u));
+      out.push({
+        id: `nasavid-${d.nasa_id}`,
+        source: 'NASA',
+        kind: 'video',
+        topic: 'Space',
+        title, subtitle: '',
+        caption: snippet(desc),
+        media: { sources: [{ src: enc(src), type: 'video/mp4' }], poster: enc(poster) || '', duration: Math.round(duration) },
+        credit: stripHtml(d.secondary_creator || d.center || 'NASA'),
+        license: 'Public domain (NASA)',
+        sourceUrl: `https://images.nasa.gov/details/${encodeURIComponent(d.nasa_id)}`,
+      });
+      n++;
     }
   }
   return out;
@@ -184,7 +252,7 @@ async function fromESO() {
       title: stripHtml(tag(it, 'title')),
       subtitle: isNaN(date) ? '' : date.toISOString().slice(0, 10),
       caption: snippet(tag(it, 'description'), 260),
-      media: { src: img, thumb: img.replace('/screen/', '/thumb300y/') },
+      media: { src: img, hi: img.replace('/screen/', '/large/'), thumb: img.replace('/screen/', '/thumb300y/') },
       credit: 'ESO',
       license: 'CC BY 4.0',
       sourceUrl: link,
@@ -253,7 +321,7 @@ const curated = JSON.parse(await readFile(path.join(root, 'curated.json'), 'utf8
 let previous = { items: [] };
 try { previous = JSON.parse(await readFile(path.join(root, 'feed.json'), 'utf8')); } catch {}
 
-const runners = { inaturalist: fromINaturalist, nasa: fromNASA, eso: fromESO, commons: fromCommons };
+const runners = { inaturalist: fromINaturalist, nasa: fromNASA, nasaVideo: fromNASAVideo, eso: fromESO, commons: fromCommons };
 const bySource = {};
 for (const [name, fn] of Object.entries(runners)) {
   if (!want(name)) continue;
@@ -262,10 +330,11 @@ for (const [name, fn] of Object.entries(runners)) {
   bySource[name] = items;
 }
 // Sources not rebuilt this run (or that came back empty) keep their previous items.
-const sourceOf = { inaturalist: 'iNaturalist', nasa: 'NASA', eso: 'ESO', commons: 'Wikimedia Commons' };
+// Items are matched to their runner by id prefix (NASA stills and videos share a source name).
+const prefixOf = { inaturalist: 'inat-', nasa: 'nasa-', nasaVideo: 'nasavid-', eso: 'eso-', commons: 'commons-' };
 for (const name of Object.keys(runners)) {
   if (!bySource[name]?.length) {
-    bySource[name] = previous.items.filter(i => i.source === sourceOf[name] && !i.curated);
+    bySource[name] = previous.items.filter(i => i.id.startsWith(prefixOf[name]) && !i.curated);
     if (want(name)) console.warn(`${name}: nothing fetched, keeping ${bySource[name].length} previous items`);
   }
 }

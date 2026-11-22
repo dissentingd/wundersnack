@@ -18,27 +18,31 @@ function shuffle(a) {
   }
   return a;
 }
-// Round-robin across sources/topics so the feed stays varied; curated items lead.
-function arrange(all) {
-  const curated = shuffle(all.filter(i => i.curated));
+// Round-robin across groups so a pool stays varied.
+function roundRobin(pool, keyOf) {
   const groups = new Map();
-  for (const it of shuffle(all.filter(i => !i.curated))) {
-    const key = it.source === 'iNaturalist' ? `inat:${it.topic}` : it.source;
+  for (const it of shuffle(pool)) {
+    const key = keyOf(it);
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(it);
   }
-  const lists = shuffle([...groups.values()]);
+  const lists = [...groups.values()], out = [];
+  while (lists.some(l => l.length)) for (const l of shuffle(lists)) if (l.length) out.push(l.pop());
+  return out;
+}
+// Alternate motion (video/embeds) and stills one-for-one while motion lasts; curated picks lead each pool.
+function arrange(all) {
+  const isMotion = i => i.kind === 'video' || i.kind === 'embed';
+  const motion = [...shuffle(all.filter(i => i.curated && isMotion(i))),
+    ...roundRobin(all.filter(i => !i.curated && isMotion(i)), i => i.id.split('-')[0])];
+  const stills = [...shuffle(all.filter(i => i.curated && !isMotion(i))),
+    ...roundRobin(all.filter(i => !i.curated && !isMotion(i)), i => i.source === 'iNaturalist' ? `inat:${i.topic}` : i.source)];
   const out = [];
-  while (lists.some(l => l.length)) {
-    for (const l of shuffle(lists)) if (l.length) out.push(l.pop());
+  while (motion.length || stills.length) {
+    if (motion.length) out.push(motion.shift());
+    if (stills.length) out.push(stills.shift());
   }
-  // weave curated picks in every few cards
-  const result = [];
-  out.forEach((it, idx) => {
-    if (idx % 4 === 1 && curated.length) result.push(curated.pop());
-    result.push(it);
-  });
-  return result.concat(curated);
+  return out;
 }
 
 // ---------- rendering ----------
@@ -84,6 +88,11 @@ function mount(card) {
   let media;
   if (it.kind === 'image') {
     media = el('img', { className: 'media', alt: it.title, decoding: 'async', src: it.media.src });
+    // Larger screens (wider than ~1200 device px: desktops, iPads) get the high-res rendition; phones keep the lighter one.
+    if (it.media.hi) {
+      media.srcset = `${it.media.src} 1200w, ${it.media.hi} 2048w`;
+      media.sizes = '100vw';
+    }
     media.addEventListener('load', () => media.classList.add('ready'));
     media.addEventListener('error', () => dropCard(card));
   } else if (it.kind === 'video') {
