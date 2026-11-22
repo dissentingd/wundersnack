@@ -135,7 +135,6 @@ function infoBlock(it) {
     el('h2', { textContent: it.title }),
     it.subtitle ? el('p', { className: 'sub', textContent: it.subtitle }) : null,
     it.caption ? el('p', { className: 'caption', textContent: it.caption }) : null,
-    helpedBlock(it),
     credit);
 }
 
@@ -145,7 +144,7 @@ function makeCard(it) {
   card._item = it;
   const thumb = it.media.thumb || it.media.poster || it.media.src;
   if (thumb) card.append(el('div', { className: 'backdrop', style: `background-image:url("${thumb}")` }));
-  card.append(infoBlock(it));
+  card.append(infoBlock(it), helpedBlock(it));
   return card;
 }
 
