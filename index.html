@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>wundersnack</title>
+  <meta name="description" content="A quick snack of wonder: amazing animals, plants, tiny worlds and new discoveries, one swipe at a time.">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="color-scheme" content="dark">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta property="og:title" content="wundersnack">
+  <meta property="og:description" content="A quick snack of wonder, one swipe at a time.">
+  <meta property="og:image" content="https://wundersnack.com/icons/icon-512.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="./" aria-label="wundersnack home">wunder<span>snack</span></a>
+    <div class="bar-actions">
+      <button id="sound" class="pill" aria-pressed="false" title="Sound">Sound off</button>
+      <button id="about-open" class="pill" aria-haspopup="dialog">About</button>
+    </div>
+  </header>
+
+  <main id="feed" class="feed" aria-live="polite" tabindex="-1">
+    <section class="card intro">
+      <div class="intro-inner">
+        <h1>wunder<span>snack</span></h1>
+        <p>A small break, full of wonder.</p>
+        <p class="hint">Swipe up</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="about" aria-labelledby="about-title">
+    <h2 id="about-title">About wundersnack</h2>
+    <p>The natural world is full of wonder most of us never get to see: a mushroom that glows, a single cell with a glass skeleton, a star orbiting a black hole. wundersnack is a quick break to meet some of it.</p>
+    <p>No accounts, no likes, no comments, no tracking. Just look for a minute and feel a bit better.</p>
+    <p>Every picture and video stays where it lives and is shown with its creator's credit and license. Sources: <a href="https://www.inaturalist.org/">iNaturalist</a> observers, <a href="https://images.nasa.gov/">NASA</a>, <a href="https://www.eso.org/public/">ESO</a>, <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>, and hand-picked videos embedded from their original channels. Species facts come from Wikipedia (CC BY-SA).</p>
+    <p>Something here you made and want removed, or something that shouldn't be here? <a href="https://github.com/dissentingd/wundersnack/issues">Open an issue</a>.</p>
+    <form method="dialog"><button class="pill">Back to wonder</button></form>
+  </dialog>
+
+  <noscript><p class="noscript">wundersnack needs JavaScript to show its feed.</p></noscript>
+  <script src="assets/app.js" type="module"></script>
+</body>
+</html>

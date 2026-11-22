@@ -1,0 +1,4 @@
+{
+  "_doc": "Hand-picked items, always included. Add YouTube/Vimeo links with `node scripts/add-curated.mjs <url> \"<why it's amazing>\"`, which checks the video via oEmbed. Fields match feed.json items; kind is image | video | embed.",
+  "items": []
+}
