@@ -129,3 +129,21 @@ dialog h2 { margin-top: 0; }
   .intro .hint { animation: none; }
   .card .media { transition: none; }
 }
+
+/* ---------- snack break and pause ---------- */
+.break {
+  position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 24px;
+  background: radial-gradient(ellipse at 50% 35%, #263a2f 0%, var(--bg) 72%);
+  animation: break-in .5s ease both;
+}
+.break.pause { background: radial-gradient(ellipse at 50% 40%, #1f2f3a 0%, var(--bg) 72%); }
+.break-inner { max-width: 440px; text-align: center; }
+.break h2 { margin: 0 0 12px; font-size: clamp(1.6rem, 7vw, 2.2rem); letter-spacing: -.01em; }
+.break p { margin: 0 0 22px; color: var(--muted); font-size: 1.08rem; line-height: 1.5; }
+.break .offline-prompt { color: var(--fg); font-size: clamp(1.15rem, 5vw, 1.35rem); line-height: 1.45; }
+.break-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 16px; }
+.break .pill { font-size: 1rem; padding: 10px 18px; }
+.break .pill.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
+.break .break-note { font-size: .85rem; margin: 0; }
+@keyframes break-in { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .break { animation: none; } }

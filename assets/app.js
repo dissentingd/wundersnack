@@ -317,13 +317,108 @@ function step(dir) {
   next?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
 }
 document.addEventListener('keydown', e => {
-  if (about.open || e.target.closest?.('input, textarea, button')) return;
+  if (about.open || breakEl || e.target.closest?.('input, textarea, button')) return;
   if (['ArrowDown', 'j', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); step(1); }
   if (['ArrowUp', 'k', 'PageUp'].includes(e.key)) { e.preventDefault(); step(-1); }
   if (e.key === 'm') setSound(!soundOn);
 });
 
+// ---------- snack limit ----------
+// A snack is 5 minutes of looking (only while the page is visible). Then a break card: stop, or one more snack.
+// After the extra snack the feed pauses for an hour, with a small offline suggestion instead. State lives in this
+// browser only. `?snack=20` shortens the snack to 20 seconds for trying it out.
+const SNACK_SECONDS = Math.max(5, Number(new URLSearchParams(location.search).get('snack')) || 300);
+const PAUSE_MS = 60 * 60 * 1000;      // feed reopens after an hour
+const FRESH_AFTER_MS = 60 * 60 * 1000; // an unfinished snack resets after an hour away
+const OFFLINE_PROMPTS = [
+  "Look out a window for a minute. What's the farthest thing you can see?",
+  'Notice three things you can hear right now.',
+  'Take one slow breath in, and an even slower one out.',
+  "Find something nearby with a texture you've never really looked at.",
+  "Look up. What's the sky doing right now?",
+  'Stretch your hands open wide, then let them rest.',
+  'Drink a glass of water, slowly.',
+  'Find a plant, real or pictured, and look at it for ten seconds.',
+  'Let your eyes rest on something far away for twenty seconds.',
+  'Think of one small thing that went right today.',
+  'Step outside for a moment, if you can, and feel the air.',
+  'Notice where the light in the room is coming from.',
+];
+const snack = Object.assign({ seconds: 0, extra: false, lastActive: 0, pausedUntil: 0 }, store.get('ws.snack', {}));
+const saveSnack = () => store.set('ws.snack', snack);
+let breakEl = null;
+
+function resetSnackIfStale() {
+  const now = Date.now();
+  if (snack.pausedUntil && now >= snack.pausedUntil) Object.assign(snack, { seconds: 0, extra: false, pausedUntil: 0 });
+  if (!snack.pausedUntil && snack.lastActive && now - snack.lastActive > FRESH_AFTER_MS)
+    Object.assign(snack, { seconds: 0, extra: false });
+  saveSnack();
+}
+function quietFeed() {
+  if (active) deactivate(active);
+  feedEl.inert = true;
+  feedEl.setAttribute('aria-hidden', 'true');
+}
+function openFeed() {
+  feedEl.inert = false;
+  feedEl.removeAttribute('aria-hidden');
+  breakEl?.remove(); breakEl = null;
+  const card = active; // resume what was on screen
+  active = null;
+  if (card) activate(card);
+}
+function showBreak() {
+  quietFeed();
+  breakEl?.remove();
+  const done = el('button', { className: 'pill primary', type: 'button', textContent: "I'm done for now" });
+  const more = el('button', { className: 'pill', type: 'button', textContent: 'One more snack' });
+  done.addEventListener('click', showPause);
+  more.addEventListener('click', () => { snack.extra = true; snack.seconds = 0; saveSnack(); openFeed(); });
+  breakEl = el('section', { className: 'break', role: 'dialog', ariaModal: 'true', ariaLabel: "That's your snack" },
+    el('div', { className: 'break-inner' },
+      el('h2', { textContent: "That's your snack" }),
+      el('p', { textContent: 'Five minutes of wonder. This is a good moment to look up from the screen.' }),
+      el('div', { className: 'break-actions' }, done, more),
+      el('p', { className: 'break-note', textContent: 'You can have one more snack; after that, wundersnack rests for a while.' })));
+  document.body.append(breakEl);
+  done.focus();
+}
+function showPause() {
+  if (!snack.pausedUntil) { snack.pausedUntil = Date.now() + PAUSE_MS; saveSnack(); }
+  quietFeed();
+  breakEl?.remove();
+  const prompt = OFFLINE_PROMPTS[Math.floor(Math.random() * OFFLINE_PROMPTS.length)];
+  breakEl = el('section', { className: 'break pause', role: 'dialog', ariaModal: 'true', ariaLabel: 'Time for a pause' },
+    el('div', { className: 'break-inner' },
+      el('h2', { textContent: "That's enough wonder for now" }),
+      el('p', { className: 'offline-prompt', textContent: prompt }),
+      el('p', { className: 'break-note', textContent: 'Come back later for more.' })));
+  document.body.append(breakEl);
+  breakEl.tabIndex = -1;
+  breakEl.focus();
+}
+// Count a second whenever the page is visible, a card is on screen and no break is showing.
+setInterval(() => {
+  if (document.visibilityState !== 'visible' || breakEl || !active) return;
+  resetSnackIfStale();
+  if (snack.pausedUntil) return showPause();
+  snack.seconds++;
+  snack.lastActive = Date.now();
+  if (snack.seconds % 5 === 0) saveSnack();
+  if (snack.seconds >= SNACK_SECONDS) { saveSnack(); snack.extra ? showPause() : showBreak(); }
+}, 1000);
+// Reopen automatically if the page is still open when the pause ends.
+setInterval(() => {
+  if (breakEl?.classList.contains('pause') && snack.pausedUntil && Date.now() >= snack.pausedUntil) {
+    resetSnackIfStale();
+    openFeed();
+  }
+}, 30000);
+
 // ---------- boot ----------
+resetSnackIfStale();
+if (snack.pausedUntil) showPause();
 activeObserver.observe(feedEl.querySelector('.intro'));
 try {
   const res = await fetch('feed.json', { cache: 'no-cache' });
