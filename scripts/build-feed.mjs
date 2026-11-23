@@ -526,19 +526,20 @@ for (const name of Object.keys(runners)) {
 // WS_FACTS / WS_TRIVIA point at other files, for testing the build against fixtures without touching the real ones.
 const readJSON = async (f, fallback) => { try { return JSON.parse(await readFile(path.resolve(root, f), 'utf8')); } catch { return fallback; } };
 const factCards = ((await readJSON(process.env.WS_FACTS || 'facts.json', {})).items || [])
-  .filter(f => f.status === 'approved' && f.footage?.sources?.length)
+  .filter(f => f.status === 'approved' && (f.footage?.sources?.length || f.footage?.media?.src))
   .map(f => ({
     id: `fact-${f.id}`,
     source: f.footage.provider,
-    kind: 'video',
+    kind: f.footage.kind === 'image' ? 'image' : 'video', // a photo (Pexafy) or a clip behind the fact
     topic: f.topic,
     title: f.title,
     subtitle: '',
     caption: '',
     fact: { text: f.text, cite: f.cite.title, url: f.cite.url },
     media: {
-      sources: f.footage.sources.map(s => ({ src: s.src, type: s.type })),
-      poster: f.footage.poster || '', duration: f.footage.duration || 0,
+      ...(f.footage.kind === 'image'
+        ? { src: f.footage.media.src, ...(f.footage.media.hi ? { hi: f.footage.media.hi } : {}), thumb: f.footage.media.thumb || f.footage.media.src }
+        : { sources: f.footage.sources.map(s => ({ src: s.src, type: s.type })), poster: f.footage.poster || '', duration: f.footage.duration || 0 }),
       ...(f.footage.requiresCache ? { requiresCache: true } : {}),
     },
     credit: f.footage.credit,

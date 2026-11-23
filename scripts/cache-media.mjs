@@ -174,7 +174,8 @@ const feed = JSON.parse(await readFile(feedPath, 'utf8'));
 const manifest = await loadManifest();
 // Commons videos, plus fact-card footage that isn't NASA's (NASA already serves phone-friendly H.264).
 const videos = feed.items.filter(i => i.kind === 'video' && (i.id.startsWith('commons-') || (i.id.startsWith('fact-') && i.source !== 'NASA')));
-const pictures = feed.items.filter(i => i.kind === 'image' && i.id.startsWith('commonsimg-'));
+// Commons photos, plus fact-card photos whose library asks not to be hotlinked (Pixabay, found via Pexafy).
+const pictures = feed.items.filter(i => i.kind === 'image' && (i.id.startsWith('commonsimg-') || (i.id.startsWith('fact-') && i.media.requiresCache)));
 const todo = videos.filter(i => !manifest[i.id]).slice(0, LIMIT);
 
 if (UPLOAD || DRY) {
@@ -266,7 +267,11 @@ for (const it of pictures) {
   const m = manifest[it.id];
   const origSrc = it.media.originalSrc || it.media.src, origHi = it.media.originalHi ?? it.media.hi;
   delete it.media.originalSrc; delete it.media.originalHi; delete it.media.fallback;
-  if (!m?.i) { it.media.src = origSrc; if (origHi) it.media.hi = origHi; else delete it.media.hi; continue; }
+  if (!m?.i) {
+    it.media.src = origSrc; if (origHi) it.media.hi = origHi; else delete it.media.hi;
+    if (it.media.requiresCache) { it.held = true; held++; }
+    continue;
+  }
   it.media.originalSrc = origSrc;
   if (origHi) it.media.originalHi = origHi;
   it.media.src = `${base}/${m.i}`;

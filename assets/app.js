@@ -165,7 +165,7 @@ const citeLink = (c, label = 'Source') => el('a', { className: 'cite', href: c.u
 function infoBlock(it) {
   const topic = el('span', { className: 'topic' + (it.discovery ? ' discovery' : '') + (it.fact ? ' fact' : ''), textContent: it.topic || it.source });
   const credit = el('p', { className: 'credit' },
-    (it.fact ? 'Footage: ' : '') + [it.credit, it.license].filter(Boolean).join(' · ') + ' · ',
+    (it.fact ? (it.kind === 'image' ? 'Photo: ' : 'Footage: ') : '') + [it.credit, it.license].filter(Boolean).join(' · ') + ' · ',
     el('a', { href: it.sourceUrl, target: '_blank', rel: 'noopener', textContent: `${it.source} ↗` }));
   if (it.fact) {
     // Fact card: the fact is the star; the footage is a calm backdrop.

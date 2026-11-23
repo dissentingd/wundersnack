@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Local review tool for trivia.json and facts.json: approve or edit drafted lines, and pick footage for fact cards.
 //   node scripts/review.mjs            then open http://127.0.0.1:8790
-// Footage search covers NASA and Wikimedia Commons (no keys), plus Pexels and Pixabay when PEXELS_API_KEY /
-// PIXABAY_API_KEY are set (environment, or a gitignored .env file in the repo root). Keys are only used here, on
+// Footage search covers NASA and Wikimedia Commons (no keys), plus Pexels, Pixabay (videos) and Pexafy
+// (photos) when PEXELS_API_KEY / PIXABAY_API_KEY / PEXAFY_API_KEY are set (environment, or a gitignored .env file in the repo root). Keys are only used here, on
 // your machine: a picked clip is saved into facts.json with its file URL, credit and license, so the feed build
 // needs no keys. Listens on 127.0.0.1 only.
 import { createServer } from 'node:http';
@@ -21,7 +21,7 @@ try {
     if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, '');
   }
 } catch {}
-const keys = { pexels: process.env.PEXELS_API_KEY, pixabay: process.env.PIXABAY_API_KEY };
+const keys = { pexels: process.env.PEXELS_API_KEY, pixabay: process.env.PIXABAY_API_KEY, pexafy: process.env.PEXAFY_API_KEY };
 
 const FILES = { trivia: 'trivia.json', facts: 'facts.json' };
 const load = async name => { try { return JSON.parse(await readFile(path.join(root, FILES[name]), 'utf8')); } catch { return { items: [] }; } };
@@ -104,7 +104,25 @@ async function pixabay(q, n) {
       license: 'Pixabay Content License', sourceUrl: h.pageURL, requiresCache: true }];
   });
 }
-const PROVIDERS = { nasa, commons, pexels, pixabay };
+// Pexafy: one search over free photo libraries (Pexels, Unsplash, Pixabay, ...). Photos only; a fact card with a
+// photo shows it dimmed behind the text, like footage. Credit and link go to the original library and photographer.
+const PHOTO_LICENSES = { pexels: 'Pexels License', unsplash: 'Unsplash License', pixabay: 'Pixabay Content License' };
+async function pexafy(q, n) {
+  if (!keys.pexafy) return [];
+  const r = await getJSON(`https://api.pexafy.com/api/v1/search/photos?${new URLSearchParams({ q, per_page: String(n), license_type: 'free' })}`, { 'x-api-key': keys.pexafy });
+  return (r.data || []).flatMap(p => {
+    const u = p.urls || {};
+    const src = u.regular || u.large || p.image_url;
+    if (!src) return [];
+    const lib = String(p.source || 'Pexafy');
+    return [{ kind: 'image', provider: lib, id: String(p.photo_id), title: p.alt_description || p.description || '',
+      media: { src, ...(u.large && u.large !== src ? { hi: u.large } : {}), thumb: u.small || u.thumb || src },
+      poster: u.small || u.thumb || src, credit: p.photographer_full_name || p.photographer_username || lib,
+      license: PHOTO_LICENSES[lib.toLowerCase()] || `${lib} license`, sourceUrl: p.source_image_url || p.image_url,
+      via: 'Pexafy', ...(lib.toLowerCase() === 'pixabay' ? { requiresCache: true } : {}) }];
+  });
+}
+const PROVIDERS = { nasa, commons, pexels, pixabay, pexafy };
 
 // ---------- page ----------
 const PAGE = String.raw`<!doctype html><html lang="en"><head><meta charset="utf-8"><title>wundersnack review</title>
@@ -149,7 +167,7 @@ function render(){
       const m=Object.entries(o.match).map(([k,v])=>k+': '+v).join(', ');
       row.append(el('div',{className:'meta',textContent:o.id+'  ·  matches '+m+(o.note?'  ·  '+o.note:'')}),field(o,'text'),citeLine(o),el('div',{className:'line'},'Status:',statusSel(o,row)));main.append(row)}
   } else {
-    main.append(el('p',{className:'meta',textContent:'Footage: NASA and Commons always; Pexels '+(data.keys.pexels?'on':'off (no PEXELS_API_KEY)')+'; Pixabay '+(data.keys.pixabay?'on':'off (no PIXABAY_API_KEY)')+'. Pick a calm clip that suits the fact; it plays muted and dimmed behind the text.'}));
+    main.append(el('p',{className:'meta',textContent:'Footage: NASA and Commons always; Pexels '+(data.keys.pexels?'on':'off (no PEXELS_API_KEY)')+'; Pixabay '+(data.keys.pixabay?'on':'off (no PIXABAY_API_KEY)')+'; Pexafy photos '+(data.keys.pexafy?'on':'off (no PEXAFY_API_KEY)')+'. Pick a calm clip or photo that suits the fact; it shows muted and dimmed behind the text.'}));
     for(const o of list){const row=el('div',{className:'row '+o.status});
       const title=el('input',{type:'text',value:o.title,size:50});title.oninput=()=>{o.title=title.value;mark()};
       const q=el('input',{type:'text',value:o.query||'',size:40});q.oninput=()=>{o.query=q.value;mark()};
@@ -161,12 +179,14 @@ function render(){
       find.onclick=async()=>{cands.replaceChildren(el('span',{textContent:'Searching…'}));
         const r=await fetch('/api/footage?q='+encodeURIComponent(q.value)).then(r=>r.json());cands.replaceChildren();
         for(const e of r.errors||[])cands.append(el('div',{className:'meta',textContent:e}));
-        for(const c of r.items){const v=el('video',{muted:true,loop:true,controls:true,preload:'none',poster:c.poster||''});
+        for(const c of r.items){let v;
+          if(c.kind==='image')v=el('img',{src:c.media.thumb,alt:c.title,loading:'lazy',style:'width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px'});
+          else{v=el('video',{muted:true,loop:true,controls:true,preload:'none',poster:c.poster||''});
           for(const s of c.sources)v.append(el('source',{src:s.src,type:s.type.split(';')[0]}));
-          v.onmouseenter=()=>v.play().catch(()=>{});v.onmouseleave=()=>v.pause();
+          v.onmouseenter=()=>v.play().catch(()=>{});v.onmouseleave=()=>v.pause();}
           const use=el('button',{textContent:'Use this'});
           const box=el('div',{className:'cand'+(o.footage&&o.footage.provider===c.provider&&o.footage.id===c.id?' picked':'')},v,
-            el('div',{textContent:c.provider+(c.duration?' · '+c.duration+'s':'')+' · '+c.title}),
+            el('div',{textContent:(c.kind==='image'?'Photo · ':'')+c.provider+(c.via?' (via '+c.via+')':'')+(c.duration?' · '+c.duration+'s':'')+' · '+c.title}),
             el('div',{className:'meta'},c.credit+' · '+c.license+' · ',el('a',{href:c.sourceUrl,target:'_blank',rel:'noopener',textContent:'page ↗'})),use);
           use.onclick=()=>{o.footage=c;mark();showPick();cands.querySelectorAll('.cand').forEach(x=>x.classList.remove('picked'));box.classList.add('picked')};
           cands.append(box)}
@@ -194,7 +214,7 @@ createServer(async (req, res) => {
   try {
     if (req.method === 'GET' && url.pathname === '/') return send(res, 200, PAGE, 'text/html; charset=utf-8');
     if (req.method === 'GET' && url.pathname === '/api/data')
-      return send(res, 200, { trivia: await load('trivia'), facts: await load('facts'), keys: { pexels: !!keys.pexels, pixabay: !!keys.pixabay } });
+      return send(res, 200, { trivia: await load('trivia'), facts: await load('facts'), keys: { pexels: !!keys.pexels, pixabay: !!keys.pixabay, pexafy: !!keys.pexafy } });
     if (req.method === 'GET' && url.pathname === '/api/footage') {
       const q = (url.searchParams.get('q') || '').trim();
       if (!q) return send(res, 400, { items: [], errors: ['Type some search words first.'] });
@@ -219,5 +239,5 @@ createServer(async (req, res) => {
   } catch (e) { send(res, 500, e.message, 'text/plain'); }
 }).listen(PORT, '127.0.0.1', () => {
   console.log(`wundersnack review: http://127.0.0.1:${PORT}`);
-  console.log(`Pexels ${keys.pexels ? 'on' : 'off (set PEXELS_API_KEY)'}, Pixabay ${keys.pixabay ? 'on' : 'off (set PIXABAY_API_KEY)'}`);
+  console.log(`Pexels ${keys.pexels ? 'on' : 'off (set PEXELS_API_KEY)'}, Pixabay ${keys.pixabay ? 'on' : 'off (set PIXABAY_API_KEY)'}, Pexafy ${keys.pexafy ? 'on' : 'off (set PEXAFY_API_KEY)'}`);
 });
