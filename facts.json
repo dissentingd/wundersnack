@@ -1,163 +1,811 @@
 {
  "about": "Fact cards: a reviewed fact over muted footage. Pick footage and approve in: node scripts/review.mjs. Only status 'approved' with footage goes live.",
  "items": [
-  { "id": "red-blood-cells", "topic": "Human body", "status": "draft", "query": "blood cells microscope",
-    "title": "You are being rebuilt right now",
-    "text": "Your body makes about 2.4 million new red blood cells every second.",
-    "cite": { "title": "Wikipedia: Red blood cell", "url": "https://en.wikipedia.org/wiki/Red_blood_cell" } },
-  { "id": "made-in-stars", "topic": "Deep time", "status": "draft", "query": "stars night sky timelapse",
-    "title": "Made of starlight",
-    "text": "The Big Bang made only the lightest elements. The carbon, oxygen and iron in you were forged later, inside stars.",
-    "cite": { "title": "Wikipedia: Nucleosynthesis", "url": "https://en.wikipedia.org/wiki/Nucleosynthesis" } },
-  { "id": "cosmic-calendar", "topic": "Deep time", "status": "draft", "query": "galaxy",
-    "title": "If the universe were one year old",
-    "text": "Squeeze the universe's whole history into one calendar year, and the time since the last ice age fits into the final 23 seconds of December 31st.",
-    "cite": { "title": "Wikipedia: Cosmic Calendar", "url": "https://en.wikipedia.org/wiki/Cosmic_Calendar" } },
-  { "id": "sunlight-8-minutes", "topic": "Physics", "status": "draft", "query": "sunrise",
-    "title": "Old light",
-    "text": "The sunlight on your skin left the Sun about 8 minutes ago.",
-    "cite": { "title": "Wikipedia: Sunlight", "url": "https://en.wikipedia.org/wiki/Sunlight" } },
-  { "id": "trees-vs-stars", "topic": "Earth", "status": "draft", "query": "forest aerial",
-    "title": "More trees than stars",
-    "text": "Earth has about three trillion trees: more than the 100 to 400 billion stars in the whole Milky Way.",
-    "cite": { "title": "Wikipedia: Tree", "url": "https://en.wikipedia.org/wiki/Tree" } },
-  { "id": "octopus-hearts", "topic": "Biology", "status": "draft", "query": "octopus",
-    "title": "Three hearts",
-    "text": "An octopus has three hearts, and its blood carries oxygen with a copper-rich protein instead of iron.",
-    "cite": { "title": "Wikipedia: Octopus", "url": "https://en.wikipedia.org/wiki/Octopus" } },
-  { "id": "waggle-dance", "topic": "Biology", "status": "draft", "query": "honey bees",
-    "title": "Directions, by dance",
-    "text": "A honey bee that finds flowers dances back at the hive, and the angle and length of her waggle tell the others which way to fly and how far.",
-    "cite": { "title": "Wikipedia: Waggle dance", "url": "https://en.wikipedia.org/wiki/Waggle_dance" } },
-  { "id": "snowflake-six", "topic": "Physics", "status": "draft", "query": "snow falling",
-    "title": "Why six arms?",
-    "text": "Snowflakes tend toward six-fold symmetry because ice itself is built as a hexagonal crystal.",
-    "cite": { "title": "Wikipedia: Snowflake", "url": "https://en.wikipedia.org/wiki/Snowflake" } },
-  { "id": "moon-drifting", "topic": "Space", "status": "draft", "query": "moon",
-    "title": "The Moon is slowly leaving",
-    "text": "Lasers bounced off mirrors left on the Moon show it moving about 3.8 cm farther from Earth every year.",
-    "cite": { "title": "Wikipedia: Lunar Laser Ranging experiments", "url": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiments" } },
-  { "id": "gravitational-waves", "topic": "New discovery", "status": "draft", "query": "black hole merger",
-    "title": "Hearing space ripple",
-    "text": "On 14 September 2015, detectors on Earth first caught ripples in spacetime itself, from two black holes merging about 1.4 billion light-years away.",
-    "cite": { "title": "Wikipedia: First observation of gravitational waves", "url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves" } },
-  { "id": "brain-energy", "topic": "Human body", "status": "draft", "query": "neurons",
-    "title": "Thinking is hungry work",
-    "text": "Your brain is about 2% of your body weight, yet it uses up to 20% of your body's energy.",
-    "cite": { "title": "Wikipedia: Human brain", "url": "https://en.wikipedia.org/wiki/Human_brain" } },
-  { "id": "methuselah", "topic": "Deep time", "status": "draft", "query": "bristlecone pine",
-    "title": "Still growing",
-    "text": "A Great Basin bristlecone pine in California called Methuselah is more than 4,800 years old.",
-    "cite": { "title": "Wikipedia: Pinus longaeva", "url": "https://en.wikipedia.org/wiki/Pinus_longaeva" } },
-  { "id": "sea-otter-fur", "topic": "Biology", "status": "draft", "query": "sea otter",
-    "title": "The softest coat",
-    "text": "Sea otters have the densest fur of any animal: up to 150,000 hairs in every square centimetre.",
-    "cite": { "title": "Wikipedia: Sea otter", "url": "https://en.wikipedia.org/wiki/Sea_otter" } },
-  { "id": "rainbow-circle", "topic": "Physics", "status": "draft", "query": "rainbow",
-    "title": "Half a rainbow",
-    "text": "From the ground a rainbow looks like an arc, but from a plane, with enough mist below, you can see it as a full circle.",
-    "cite": { "title": "Wikipedia: Rainbow", "url": "https://en.wikipedia.org/wiki/Rainbow" } },
-  { "id": "soil-teaspoon", "topic": "Earth", "status": "draft", "query": "forest floor",
-    "title": "A crowded teaspoon",
-    "text": "A single teaspoon of productive soil can hold anywhere from 100 million to 3 billion bacteria.",
-    "cite": { "title": "Wikipedia: Soil biology", "url": "https://en.wikipedia.org/wiki/Soil_biology" } },
-
-  { "id": "arctic-tern", "topic": "Animals", "status": "draft", "query": "arctic tern",
-    "title": "Two summers a year",
-    "text": "Arctic terns fly from the Arctic to the Antarctic and back every year, seeing two summers. Birds from Iceland and Greenland average about 70,900 km a round trip.",
-    "cite": { "title": "Wikipedia: Arctic tern", "url": "https://en.wikipedia.org/wiki/Arctic_tern" } },
-  { "id": "sloth-algae", "topic": "Animals", "status": "draft", "query": "sloth",
-    "title": "A coat that grows a garden",
-    "text": "A sloth's grooved hair hosts green algae, which tint its coat to blend into the trees.",
-    "cite": { "title": "Wikipedia: Sloth", "url": "https://en.wikipedia.org/wiki/Sloth" } },
-  { "id": "axolotl", "topic": "Animals", "status": "draft", "query": "axolotl",
-    "title": "Regrowing what's lost",
-    "text": "Axolotls can regrow whole limbs, gills, and even parts of their eyes and brain.",
-    "cite": { "title": "Wikipedia: Axolotl", "url": "https://en.wikipedia.org/wiki/Axolotl" } },
-  { "id": "sea-turtle-magnetic", "topic": "Animals", "status": "draft", "query": "sea turtle swimming",
-    "title": "A map in the magnetic field",
-    "text": "Sea turtles find their way across open ocean using Earth's magnetic field. Some females come back to nest on the very beach where they hatched.",
-    "cite": { "title": "Wikipedia: Sea turtle", "url": "https://en.wikipedia.org/wiki/Sea_turtle" } },
-  { "id": "elephant-mirror", "topic": "Animals", "status": "draft", "query": "elephant",
-    "title": "Who's that in the mirror?",
-    "text": "Elephants recognise themselves in a mirror, a sign of self-awareness shown by only a few animals, including some apes and dolphins.",
-    "cite": { "title": "Wikipedia: Elephant", "url": "https://en.wikipedia.org/wiki/Elephant" } },
-  { "id": "crow-hooks", "topic": "Animals", "status": "draft", "query": "crow",
-    "title": "Toolmakers",
-    "text": "New Caledonian crows make their own tools, and can even shape twigs into hooks.",
-    "cite": { "title": "Wikipedia: New Caledonian crow", "url": "https://en.wikipedia.org/wiki/New_Caledonian_crow" } },
-  { "id": "mantis-shrimp", "topic": "Animals", "status": "draft", "query": "mantis shrimp reef",
-    "note": "Pixabay 'mantis shrimp' returns sushi and cooking clips; use photos or Commons.",
-    "title": "Colours we can't imagine",
-    "text": "Our eyes have four types of light-sensing cell. A mantis shrimp's have between 12 and 16.",
-    "cite": { "title": "Wikipedia: Mantis shrimp", "url": "https://en.wikipedia.org/wiki/Mantis_shrimp" } },
-  { "id": "humpback-song", "topic": "Animals", "status": "draft", "query": "humpback whale",
-    "title": "Songs that change",
-    "text": "Male humpback whales sing complex songs up to half an hour long, and when one changes his song, others nearby pick up the change.",
-    "cite": { "title": "Wikipedia: Humpback whale", "url": "https://en.wikipedia.org/wiki/Humpback_whale" } },
-  { "id": "godwit", "topic": "Animals", "status": "draft", "query": "bar-tailed godwit",
-    "note": "No Pixabay video; photos and Commons only.",
-    "title": "The longest flight",
-    "text": "Bar-tailed godwits fly from Alaska to New Zealand across the Pacific without stopping: the longest known non-stop flight of any bird.",
-    "cite": { "title": "Wikipedia: Bar-tailed godwit", "url": "https://en.wikipedia.org/wiki/Bar-tailed_godwit" } },
-  { "id": "wood-frog", "topic": "Animals", "status": "draft", "query": "wood frog",
-    "title": "Frozen, then fine",
-    "text": "Wood frogs survive winter with 65 to 70% of their body water frozen, using glucose as a natural antifreeze.",
-    "cite": { "title": "Wikipedia: Wood frog", "url": "https://en.wikipedia.org/wiki/Wood_frog" } },
-  { "id": "dolphin-sleep", "topic": "Animals", "status": "draft", "query": "dolphins",
-    "title": "Sleeping with one eye open",
-    "text": "Dolphins can sleep with one half of the brain at a time, keeping the other half alert, and the eye on the sleeping side closed.",
-    "cite": { "title": "Wikipedia: Unihemispheric slow-wave sleep", "url": "https://en.wikipedia.org/wiki/Unihemispheric_slow-wave_sleep" } },
-  { "id": "synchronous-fireflies", "topic": "Animals", "status": "draft", "query": "fireflies night",
-    "title": "Fireflies in sync",
-    "text": "Each June in the Great Smoky Mountains, one firefly species flashes in unison, sending waves of light and dark through the forest.",
-    "cite": { "title": "Wikipedia: Photinus carolinus", "url": "https://en.wikipedia.org/wiki/Photinus_carolinus" } },
-
-  { "id": "pando", "topic": "Plants", "status": "draft", "query": "aspen forest",
-    "title": "A forest that is one tree",
-    "text": "Pando, in Utah, looks like a grove of about 47,000 aspens. They're all one tree, connected by a single root system.",
-    "cite": { "title": "Wikipedia: Pando (tree)", "url": "https://en.wikipedia.org/wiki/Pando_(tree)" } },
-  { "id": "mimosa", "topic": "Plants", "status": "draft", "query": "mimosa pudica",
-    "title": "The shy plant",
-    "text": "Touch a sensitive plant and its leaves fold inward and droop, then open again a few minutes later.",
-    "cite": { "title": "Wikipedia: Mimosa pudica", "url": "https://en.wikipedia.org/wiki/Mimosa_pudica" } },
-  { "id": "bamboo", "topic": "Plants", "status": "draft", "query": "bamboo forest",
-    "title": "Watch it grow",
-    "text": "Some bamboo can grow 91 cm in a single day: about a millimetre every 90 seconds.",
-    "cite": { "title": "Wikipedia: Bamboo", "url": "https://en.wikipedia.org/wiki/Bamboo" } },
-  { "id": "welwitschia", "topic": "Plants", "status": "draft", "query": "welwitschia",
-    "note": "No Pixabay video; photos only.",
-    "title": "Two leaves, a thousand years",
-    "text": "Welwitschia grows just two leaves in its whole life, and some plants are thousands of years old. In Afrikaans its name means 'two leaves, can't die'.",
-    "cite": { "title": "Wikipedia: Welwitschia", "url": "https://en.wikipedia.org/wiki/Welwitschia" } },
-  { "id": "general-sherman", "topic": "Plants", "status": "draft", "query": "giant sequoia",
-    "title": "The biggest tree",
-    "text": "General Sherman, a giant sequoia in California, is the largest known living single-stem tree on Earth by volume.",
-    "cite": { "title": "Wikipedia: General Sherman Tree", "url": "https://en.wikipedia.org/wiki/General_Sherman_(tree)" } },
-  { "id": "dandelion-vortex", "topic": "Plants", "status": "draft", "query": "dandelion seeds",
-    "title": "Riding a ring of air",
-    "text": "A dandelion seed's fluffy parachute creates a special ring of swirling air that stays attached above it, carrying it far on the wind.",
-    "cite": { "title": "Wikipedia: Taraxacum", "url": "https://en.wikipedia.org/wiki/Taraxacum" } },
-  { "id": "judean-date-palm", "topic": "Plants", "status": "draft", "query": "date palm",
-    "title": "A 2,000-year-old seed",
-    "text": "In 2005, scientists sprouted a 2,000-year-old date palm seed: the oldest seed ever germinated with human help.",
-    "cite": { "title": "Wikipedia: Judean date palm", "url": "https://en.wikipedia.org/wiki/Judean_date_palm" } },
-  { "id": "rafflesia", "topic": "Plants", "status": "draft", "query": "rafflesia",
-    "note": "No Pixabay video; photos only.",
-    "title": "The biggest flower",
-    "text": "Rafflesia arnoldii produces the largest individual flower on Earth.",
-    "cite": { "title": "Wikipedia: Rafflesia arnoldii", "url": "https://en.wikipedia.org/wiki/Rafflesia_arnoldii" } },
-  { "id": "mycorrhiza", "topic": "Plants", "status": "draft", "query": "mushrooms forest floor",
-    "title": "Roots holding hands with fungi",
-    "text": "About 70% of plant species partner with fungi whose threads grow right into their roots, trading sugar for water and nutrients.",
-    "cite": { "title": "Wikipedia: Mycorrhiza", "url": "https://en.wikipedia.org/wiki/Mycorrhiza" } },
-  { "id": "lotus-effect", "topic": "Plants", "status": "draft", "query": "lotus leaf water drop",
-    "title": "Self-cleaning leaves",
-    "text": "Water beads up on a lotus leaf and rolls off, picking up dirt as it goes, thanks to a microscopic surface texture.",
-    "cite": { "title": "Wikipedia: Lotus effect", "url": "https://en.wikipedia.org/wiki/Lotus_effect" } },
-  { "id": "hyperion", "topic": "Plants", "status": "draft", "query": "redwood forest",
-    "title": "The tallest tree",
-    "text": "Hyperion, a coast redwood in California, is the tallest known living tree: 116.22 metres when measured in 2026.",
-    "cite": { "title": "Wikipedia: Hyperion (tree)", "url": "https://en.wikipedia.org/wiki/Hyperion_(tree)" } }
+  {
+   "id": "red-blood-cells",
+   "topic": "Human body",
+   "status": "draft",
+   "query": "blood cells microscope",
+   "title": "You are being rebuilt right now",
+   "text": "Your body makes about 2.4 million new red blood cells every second.",
+   "cite": {
+    "title": "Wikipedia: Red blood cell",
+    "url": "https://en.wikipedia.org/wiki/Red_blood_cell"
+   }
+  },
+  {
+   "id": "made-in-stars",
+   "topic": "Deep time",
+   "status": "draft",
+   "query": "stars night sky timelapse",
+   "title": "Made of starlight",
+   "text": "The Big Bang made only the lightest elements. The carbon, oxygen and iron in you were forged later, inside stars.",
+   "cite": {
+    "title": "Wikipedia: Nucleosynthesis",
+    "url": "https://en.wikipedia.org/wiki/Nucleosynthesis"
+   }
+  },
+  {
+   "id": "cosmic-calendar",
+   "topic": "Deep time",
+   "status": "draft",
+   "query": "galaxy",
+   "title": "If the universe were one year old",
+   "text": "Squeeze the universe's whole history into one calendar year, and the time since the last ice age fits into the final 23 seconds of December 31st.",
+   "cite": {
+    "title": "Wikipedia: Cosmic Calendar",
+    "url": "https://en.wikipedia.org/wiki/Cosmic_Calendar"
+   }
+  },
+  {
+   "id": "sunlight-8-minutes",
+   "topic": "Physics",
+   "status": "draft",
+   "query": "sunrise",
+   "title": "Old light",
+   "text": "The sunlight on your skin left the Sun about 8 minutes ago.",
+   "cite": {
+    "title": "Wikipedia: Sunlight",
+    "url": "https://en.wikipedia.org/wiki/Sunlight"
+   }
+  },
+  {
+   "id": "trees-vs-stars",
+   "topic": "Earth",
+   "status": "draft",
+   "query": "forest aerial",
+   "title": "More trees than stars",
+   "text": "Earth has about three trillion trees: more than the 100 to 400 billion stars in the whole Milky Way.",
+   "cite": {
+    "title": "Wikipedia: Tree",
+    "url": "https://en.wikipedia.org/wiki/Tree"
+   }
+  },
+  {
+   "id": "octopus-hearts",
+   "topic": "Biology",
+   "status": "draft",
+   "query": "octopus",
+   "title": "Three hearts",
+   "text": "An octopus has three hearts, and its blood carries oxygen with a copper-rich protein instead of iron.",
+   "cite": {
+    "title": "Wikipedia: Octopus",
+    "url": "https://en.wikipedia.org/wiki/Octopus"
+   }
+  },
+  {
+   "id": "waggle-dance",
+   "topic": "Biology",
+   "status": "draft",
+   "query": "honey bees",
+   "title": "Directions, by dance",
+   "text": "A honey bee that finds flowers dances back at the hive, and the angle and length of her waggle tell the others which way to fly and how far.",
+   "cite": {
+    "title": "Wikipedia: Waggle dance",
+    "url": "https://en.wikipedia.org/wiki/Waggle_dance"
+   }
+  },
+  {
+   "id": "snowflake-six",
+   "topic": "Physics",
+   "status": "draft",
+   "query": "snow falling",
+   "title": "Why six arms?",
+   "text": "Snowflakes tend toward six-fold symmetry because ice itself is built as a hexagonal crystal.",
+   "cite": {
+    "title": "Wikipedia: Snowflake",
+    "url": "https://en.wikipedia.org/wiki/Snowflake"
+   }
+  },
+  {
+   "id": "moon-drifting",
+   "topic": "Space",
+   "status": "draft",
+   "query": "moon",
+   "title": "The Moon is slowly leaving",
+   "text": "Lasers bounced off mirrors left on the Moon show it moving about 3.8 cm farther from Earth every year.",
+   "cite": {
+    "title": "Wikipedia: Lunar Laser Ranging experiments",
+    "url": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiments"
+   }
+  },
+  {
+   "id": "gravitational-waves",
+   "topic": "New discovery",
+   "status": "draft",
+   "query": "black hole merger",
+   "title": "Hearing space ripple",
+   "text": "On 14 September 2015, detectors on Earth first caught ripples in spacetime itself, from two black holes merging about 1.4 billion light-years away.",
+   "cite": {
+    "title": "Wikipedia: First observation of gravitational waves",
+    "url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves"
+   }
+  },
+  {
+   "id": "brain-energy",
+   "topic": "Human body",
+   "status": "draft",
+   "query": "neurons",
+   "title": "Thinking is hungry work",
+   "text": "Your brain is about 2% of your body weight, yet it uses up to 20% of your body's energy.",
+   "cite": {
+    "title": "Wikipedia: Human brain",
+    "url": "https://en.wikipedia.org/wiki/Human_brain"
+   }
+  },
+  {
+   "id": "methuselah",
+   "topic": "Deep time",
+   "status": "draft",
+   "query": "bristlecone pine",
+   "title": "Still growing",
+   "text": "A Great Basin bristlecone pine in California called Methuselah is more than 4,800 years old.",
+   "cite": {
+    "title": "Wikipedia: Pinus longaeva",
+    "url": "https://en.wikipedia.org/wiki/Pinus_longaeva"
+   }
+  },
+  {
+   "id": "sea-otter-fur",
+   "topic": "Biology",
+   "status": "draft",
+   "query": "sea otter",
+   "title": "The softest coat",
+   "text": "Sea otters have the densest fur of any animal: up to 150,000 hairs in every square centimetre.",
+   "cite": {
+    "title": "Wikipedia: Sea otter",
+    "url": "https://en.wikipedia.org/wiki/Sea_otter"
+   }
+  },
+  {
+   "id": "rainbow-circle",
+   "topic": "Physics",
+   "status": "draft",
+   "query": "rainbow",
+   "title": "Half a rainbow",
+   "text": "From the ground a rainbow looks like an arc, but from a plane, with enough mist below, you can see it as a full circle.",
+   "cite": {
+    "title": "Wikipedia: Rainbow",
+    "url": "https://en.wikipedia.org/wiki/Rainbow"
+   }
+  },
+  {
+   "id": "soil-teaspoon",
+   "topic": "Earth",
+   "status": "draft",
+   "query": "forest floor",
+   "title": "A crowded teaspoon",
+   "text": "A single teaspoon of productive soil can hold anywhere from 100 million to 3 billion bacteria.",
+   "cite": {
+    "title": "Wikipedia: Soil biology",
+    "url": "https://en.wikipedia.org/wiki/Soil_biology"
+   }
+  },
+  {
+   "id": "arctic-tern",
+   "topic": "Animals",
+   "status": "draft",
+   "query": "arctic tern",
+   "title": "Two summers a year",
+   "text": "Arctic terns fly from the Arctic to the Antarctic and back every year, seeing two summers. Birds from Iceland and Greenland average about 70,900 km a round trip.",
+   "cite": {
+    "title": "Wikipedia: Arctic tern",
+    "url": "https://en.wikipedia.org/wiki/Arctic_tern"
+   }
+  },
+  {
+   "id": "sloth-algae",
+   "topic": "Animals",
+   "status": "draft",
+   "query": "sloth",
+   "title": "A coat that grows a garden",
+   "text": "A sloth's grooved hair hosts green algae, which tint its coat to blend into the trees.",
+   "cite": {
+    "title": "Wikipedia: Sloth",
+    "url": "https://en.wikipedia.org/wiki/Sloth"
+   }
+  },
+  {
+   "id": "axolotl",
+   "topic": "Animals",
+   "status": "approved",
+   "query": "axolotl",
+   "title": "Regrowing what's lost",
+   "text": "Axolotls can regrow whole limbs, gills, and even parts of their eyes and brain.",
+   "cite": {
+    "title": "Wikipedia: Axolotl",
+    "url": "https://en.wikipedia.org/wiki/Axolotl"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "30803865",
+    "title": "Axolotl (Ambystoma mexicanum)",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2b/Axolotl_%28Ambystoma_mexicanum%29.webm/Axolotl_%28Ambystoma_mexicanum%29.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2b/Axolotl_%28Ambystoma_mexicanum%29.webm/Axolotl_%28Ambystoma_mexicanum%29.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Axolotl_%28Ambystoma_mexicanum%29.webm/500px--Axolotl_%28Ambystoma_mexicanum%29.webm.jpg",
+    "duration": 0,
+    "credit": "kori monster from portland",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Axolotl_(Ambystoma_mexicanum).webm"
+   }
+  },
+  {
+   "id": "sea-turtle-magnetic",
+   "topic": "Animals",
+   "status": "approved",
+   "query": "sea turtle swimming",
+   "title": "A map in the magnetic field",
+   "text": "Sea turtles find their way across open ocean using Earth's magnetic field. Some females come back to nest on the very beach where they hatched.",
+   "cite": {
+    "title": "Wikipedia: Sea turtle",
+    "url": "https://en.wikipedia.org/wiki/Sea_turtle"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "35427",
+    "title": "turtle, ocean, sea, animal, caretta caretta, water, swimming, under water, diving",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2020/04/08/35427-407130886_medium.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2020/04/08/35427-407130886_medium.jpg",
+    "duration": 6,
+    "credit": "JancickaL",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-35427/",
+    "requiresCache": true
+   }
+  },
+  {
+   "id": "elephant-mirror",
+   "topic": "Animals",
+   "status": "approved",
+   "query": "elephant",
+   "title": "Who's that in the mirror?",
+   "text": "Elephants recognise themselves in a mirror, a sign of self-awareness shown by only a few animals, including some apes and dolphins.",
+   "cite": {
+    "title": "Wikipedia: Elephant",
+    "url": "https://en.wikipedia.org/wiki/Elephant"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "215845",
+    "title": "elephants, elephant, animals, africa, family, happy, nature",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2024/06/08/215845_small.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2024/06/08/215845_small.jpg",
+    "duration": 13,
+    "credit": "KunalKapoor7",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-215845/",
+    "requiresCache": true
+   }
+  },
+  {
+   "id": "crow-hooks",
+   "topic": "Animals",
+   "status": "approved",
+   "query": "crow tool",
+   "title": "Toolmakers",
+   "text": "New Caledonian crows make their own tools, and can even shape twigs into hooks.",
+   "cite": {
+    "title": "Wikipedia: New Caledonian crow",
+    "url": "https://en.wikipedia.org/wiki/New_Caledonian_crow"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "20974759",
+    "title": "Cognitive-Processes-Associated-with-Sequential-Tool-Use-in-New-Caledonian-Crows-pone.0006471.s001",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/9c/Cognitive-Processes-Associated-with-Sequential-Tool-Use-in-New-Caledonian-Crows-pone.0006471.s001.ogv/Cognitive-Processes-Associated-with-Sequential-Tool-Use-in-New-Caledonian-Crows-pone.0006471.s001.ogv.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/9c/Cognitive-Processes-Associated-with-Sequential-Tool-Use-in-New-Caledonian-Crows-pone.0006471.s001.ogv/Cognitive-Processes-Associated-with-Sequential-Tool-Use-in-New-Caledonian-Crows-pone.0006471.s001.ogv.240p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Cognitive-Processes-Associated-with-Sequential-Tool-Use-in-New-Caledonian-Crows-pone.0006471.s001.ogv/250px--Cognitive-Processes-Associated-with-Sequential-Tool-Use-in-New-Caledonian-Crows-pone.0006471.s001.ogv.jpg",
+    "duration": 0,
+    "credit": "Wimpenny J, Weir A, Clayton L, Rutz C, Kacelnik A, Clayton N",
+    "license": "CC BY 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cognitive-Processes-Associated-with-Sequential-Tool-Use-in-New-Caledonian-Crows-pone.0006471.s001.ogv"
+   }
+  },
+  {
+   "id": "mantis-shrimp",
+   "topic": "Animals",
+   "status": "approved",
+   "query": "mantis shrimp reef",
+   "note": "Pixabay 'mantis shrimp' returns sushi and cooking clips; use photos or Commons.",
+   "title": "Colours we can't imagine",
+   "text": "Our eyes have four types of light-sensing cell. A mantis shrimp's have between 12 and 16.",
+   "cite": {
+    "title": "Wikipedia: Mantis shrimp",
+    "url": "https://en.wikipedia.org/wiki/Mantis_shrimp"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pixabay",
+    "id": "019e159b-610c-76c6-aaf7-9b4bd3380901",
+    "title": "Mantis shrimp with vibrant orange and white body colors and green eyes prominently displayed",
+    "media": {
+     "src": "https://cdn.pixabay.com/photo/2024/09/03/19/23/shrimp-9020073_1280.jpg",
+     "thumb": "https://cdn.pixabay.com/photo/2024/09/03/19/23/shrimp-9020073_640.jpg"
+    },
+    "poster": "https://cdn.pixabay.com/photo/2024/09/03/19/23/shrimp-9020073_640.jpg",
+    "credit": "Bandiwage",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com//photos/shrimp-fish-nature-animal-9020073/",
+    "via": "Pexafy",
+    "requiresCache": true
+   }
+  },
+  {
+   "id": "humpback-song",
+   "topic": "Animals",
+   "status": "approved",
+   "query": "humpback whale",
+   "title": "Songs that change",
+   "text": "Male humpback whales sing complex songs up to half an hour long, and when one changes his song, others nearby pick up the change.",
+   "cite": {
+    "title": "Wikipedia: Humpback whale",
+    "url": "https://en.wikipedia.org/wiki/Humpback_whale"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "335486",
+    "title": "whale, humpback, nature, mammal, animal, wildlife, sea, ocean, water, travel, tourism, breaching, marine, leaping, jumping, leap, aquatic, splash, ai generated",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2026/02/19/335486_medium.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2026/02/19/335486_medium.jpg",
+    "duration": 7,
+    "credit": "flutie8211",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-335486/",
+    "requiresCache": true
+   }
+  },
+  {
+   "id": "godwit",
+   "topic": "Animals",
+   "status": "approved",
+   "query": "bar-tailed godwit",
+   "note": "No Pixabay video; photos and Commons only.",
+   "title": "The longest flight",
+   "text": "Bar-tailed godwits fly from Alaska to New Zealand across the Pacific without stopping: the longest known non-stop flight of any bird.",
+   "cite": {
+    "title": "Wikipedia: Bar-tailed godwit",
+    "url": "https://en.wikipedia.org/wiki/Bar-tailed_godwit"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "5057288",
+    "title": "Bar-tailed Godwit95",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c4/Bar-tailed_Godwit95.ogv/Bar-tailed_Godwit95.ogv.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c4/Bar-tailed_Godwit95.ogv/Bar-tailed_Godwit95.ogv.240p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Bar-tailed_Godwit95.ogv/330px--Bar-tailed_Godwit95.ogv.jpg",
+    "duration": 0,
+    "credit": "Aviceda",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bar-tailed_Godwit95.ogv"
+   }
+  },
+  {
+   "id": "wood-frog",
+   "topic": "Animals",
+   "status": "draft",
+   "query": "\"wood frog\"",
+   "title": "Frozen, then fine",
+   "text": "Wood frogs survive winter with 65 to 70% of their body water frozen, using glucose as a natural antifreeze.",
+   "cite": {
+    "title": "Wikipedia: Wood frog",
+    "url": "https://en.wikipedia.org/wiki/Wood_frog"
+   }
+  },
+  {
+   "id": "dolphin-sleep",
+   "topic": "Animals",
+   "status": "approved",
+   "query": "dolphin ",
+   "title": "Sleeping with one eye open",
+   "text": "Dolphins can sleep with one half of the brain at a time, keeping the other half alert, and the eye on the sleeping side closed.",
+   "cite": {
+    "title": "Wikipedia: Unihemispheric slow-wave sleep",
+    "url": "https://en.wikipedia.org/wiki/Unihemispheric_slow-wave_sleep"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "30968",
+    "title": "aquarium, dolphin, exhibit, zoo, tourist, fish, sea, ocean, dolphins, mammal, aquatic, marine, wildlife, nature, sight, cool, animal, crowd, people, pictures",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2020/01/06/30968-384234019_medium.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2020/01/06/30968-384234019_medium.jpg",
+    "duration": 11,
+    "credit": "caelan",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-30968/",
+    "requiresCache": true
+   }
+  },
+  {
+   "id": "synchronous-fireflies",
+   "topic": "Animals",
+   "status": "approved",
+   "query": "fireflies",
+   "title": "Fireflies in sync",
+   "text": "Each June in the Great Smoky Mountains, one firefly species flashes in unison, sending waves of light and dark through the forest.",
+   "cite": {
+    "title": "Wikipedia: Photinus carolinus",
+    "url": "https://en.wikipedia.org/wiki/Photinus_carolinus"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "41124964",
+    "title": "Fireflies in New York City",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0f/Fireflies_in_New_York_City.webm/Fireflies_in_New_York_City.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0f/Fireflies_in_New_York_City.webm/Fireflies_in_New_York_City.webm.240p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Fireflies_in_New_York_City.webm/500px--Fireflies_in_New_York_City.webm.jpg",
+    "duration": 0,
+    "credit": "Rex Sorgatz",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fireflies_in_New_York_City.webm"
+   }
+  },
+  {
+   "id": "pando",
+   "topic": "Plants",
+   "status": "approved",
+   "query": "fall pando",
+   "title": "A forest that is one tree",
+   "text": "Pando, in Utah, looks like a grove of about 47,000 aspens. They're all one tree, connected by a single root system.",
+   "cite": {
+    "title": "Wikipedia: Pando (tree)",
+    "url": "https://en.wikipedia.org/wiki/Pando_(tree)"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "898102",
+    "title": "Quaking aspen in light breeze",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/Quaking_aspen_in_light_breeze.ogv/Quaking_aspen_in_light_breeze.ogv.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5d/Quaking_aspen_in_light_breeze.ogv/Quaking_aspen_in_light_breeze.ogv.240p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Quaking_aspen_in_light_breeze.ogv/250px--Quaking_aspen_in_light_breeze.ogv.jpg",
+    "duration": 0,
+    "credit": "Mark Wagner",
+    "license": "CC BY 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quaking_aspen_in_light_breeze.ogv"
+   }
+  },
+  {
+   "id": "mimosa",
+   "topic": "Plants",
+   "status": "approved",
+   "query": "mimosa pudica",
+   "title": "The shy plant",
+   "text": "Touch a sensitive plant and its leaves fold inward and droop, then open again a few minutes later.",
+   "cite": {
+    "title": "Wikipedia: Mimosa pudica",
+    "url": "https://en.wikipedia.org/wiki/Mimosa_pudica"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "9449272",
+    "title": "Mimosa pudica leaves folding when touched 1",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b1/Mimosa_pudica_leaves_folding_when_touched_1.ogv/Mimosa_pudica_leaves_folding_when_touched_1.ogv.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b1/Mimosa_pudica_leaves_folding_when_touched_1.ogv/Mimosa_pudica_leaves_folding_when_touched_1.ogv.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Mimosa_pudica_leaves_folding_when_touched_1.ogv/500px--Mimosa_pudica_leaves_folding_when_touched_1.ogv.jpg",
+    "duration": 0,
+    "credit": "User:Brandizzi",
+    "license": "CC BY 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mimosa_pudica_leaves_folding_when_touched_1.ogv"
+   }
+  },
+  {
+   "id": "bamboo",
+   "topic": "Plants",
+   "status": "approved",
+   "query": "bamboo timelapse",
+   "title": "Watch it grow",
+   "text": "Some bamboo can grow 91 cm in a single day: about a millimetre every 90 seconds.",
+   "cite": {
+    "title": "Wikipedia: Bamboo",
+    "url": "https://en.wikipedia.org/wiki/Bamboo"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "71390275",
+    "title": "Black Bamboo New Culms Timelapse",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/32/Black_Bamboo_New_Culms_Timelapse.webm/Black_Bamboo_New_Culms_Timelapse.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/32/Black_Bamboo_New_Culms_Timelapse.webm/Black_Bamboo_New_Culms_Timelapse.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Black_Bamboo_New_Culms_Timelapse.webm/500px--Black_Bamboo_New_Culms_Timelapse.webm.jpg",
+    "duration": 0,
+    "credit": "ahennen69",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Bamboo_New_Culms_Timelapse.webm"
+   }
+  },
+  {
+   "id": "welwitschia",
+   "topic": "Plants",
+   "status": "approved",
+   "query": "welwitschia",
+   "note": "No Pixabay video; photos only.",
+   "title": "Two leaves, a thousand years",
+   "text": "Welwitschia grows just two leaves in its whole life, and some plants are thousands of years old. In Afrikaans its name means 'two leaves, can't die'.",
+   "cite": {
+    "title": "Wikipedia: Welwitschia",
+    "url": "https://en.wikipedia.org/wiki/Welwitschia"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pixabay",
+    "id": "019e1b04-8d10-7143-aad4-3bf7cec1521d",
+    "title": "Large, vibrant green plant with dried leaves grows wild on sandy ground in desert",
+    "media": {
+     "src": "https://cdn.pixabay.com/photo/2021/07/15/16/04/welwitschia-6468869_1280.jpg",
+     "thumb": "https://cdn.pixabay.com/photo/2021/07/15/16/04/welwitschia-6468869_640.jpg"
+    },
+    "poster": "https://cdn.pixabay.com/photo/2021/07/15/16/04/welwitschia-6468869_640.jpg",
+    "credit": "RobboK",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com//photos/welwitschia-plant-desert-6468869/",
+    "via": "Pexafy",
+    "requiresCache": true
+   }
+  },
+  {
+   "id": "general-sherman",
+   "topic": "Plants",
+   "status": "approved",
+   "query": "general sherman",
+   "title": "The biggest tree",
+   "text": "General Sherman, a giant sequoia in California, is the largest known living single-stem tree on Earth by volume.",
+   "cite": {
+    "title": "Wikipedia: General Sherman Tree",
+    "url": "https://en.wikipedia.org/wiki/General_Sherman_(tree)"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "98371347",
+    "title": "Sequoia National Park - The GENERAL SHERMAN TREE (HD)",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/cf/Sequoia_National_Park_-_The_GENERAL_SHERMAN_TREE_%28HD%29.webm/Sequoia_National_Park_-_The_GENERAL_SHERMAN_TREE_%28HD%29.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/cf/Sequoia_National_Park_-_The_GENERAL_SHERMAN_TREE_%28HD%29.webm/Sequoia_National_Park_-_The_GENERAL_SHERMAN_TREE_%28HD%29.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Sequoia_National_Park_-_The_GENERAL_SHERMAN_TREE_%28HD%29.webm/960px--Sequoia_National_Park_-_The_GENERAL_SHERMAN_TREE_%28HD%29.webm.jpg",
+    "duration": 0,
+    "credit": "Kauko Helavuo",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sequoia_National_Park_-_The_GENERAL_SHERMAN_TREE_(HD).webm"
+   }
+  },
+  {
+   "id": "dandelion-vortex",
+   "topic": "Plants",
+   "status": "approved",
+   "query": "dandelion seeds",
+   "title": "Riding a ring of air",
+   "text": "A dandelion seed's fluffy parachute creates a special ring of swirling air that stays attached above it, carrying it far on the wind.",
+   "cite": {
+    "title": "Wikipedia: Taraxacum",
+    "url": "https://en.wikipedia.org/wiki/Taraxacum"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "28942046",
+    "title": "Dandelion-seedhead-wind-slomo",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2a/Dandelion-seedhead-wind-slomo.ogv/Dandelion-seedhead-wind-slomo.ogv.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2a/Dandelion-seedhead-wind-slomo.ogv/Dandelion-seedhead-wind-slomo.ogv.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Dandelion-seedhead-wind-slomo.ogv/960px--Dandelion-seedhead-wind-slomo.ogv.jpg",
+    "duration": 0,
+    "credit": "Nesnad",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dandelion-seedhead-wind-slomo.ogv"
+   }
+  },
+  {
+   "id": "judean-date-palm",
+   "topic": "Plants",
+   "status": "approved",
+   "query": "date palm seed",
+   "title": "A 2,000-year-old seed",
+   "text": "In 2005, scientists sprouted a 2,000-year-old date palm seed: the oldest seed ever germinated with human help.",
+   "cite": {
+    "title": "Wikipedia: Judean date palm",
+    "url": "https://en.wikipedia.org/wiki/Judean_date_palm"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pixabay",
+    "id": "019e19d0-1360-7660-b39f-425abdc9578f",
+    "title": "Palm tree with clusters of ripe yellow dates hanging from its branches prominently displayed",
+    "media": {
+     "src": "https://cdn.pixabay.com/photo/2017/07/20/22/24/dates-2523979_1280.jpg",
+     "thumb": "https://cdn.pixabay.com/photo/2017/07/20/22/24/dates-2523979_640.jpg"
+    },
+    "poster": "https://cdn.pixabay.com/photo/2017/07/20/22/24/dates-2523979_640.jpg",
+    "credit": "Msaeedsalem",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com//photos/dates-palm-tree-tropical-fruit-2523979/",
+    "via": "Pexafy",
+    "requiresCache": true
+   }
+  },
+  {
+   "id": "rafflesia",
+   "topic": "Plants",
+   "status": "approved",
+   "query": "rafflesia",
+   "note": "No Pixabay video; photos only.",
+   "title": "The biggest flower",
+   "text": "Rafflesia arnoldii produces the largest individual flower on Earth.",
+   "cite": {
+    "title": "Wikipedia: Rafflesia arnoldii",
+    "url": "https://en.wikipedia.org/wiki/Rafflesia_arnoldii"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pexels",
+    "id": "019e22e3-ec3d-7c0d-b176-9719150ea302",
+    "title": "The image shows a close-up view of a red flower with white spots, which appears to be a type of carnivorous plant known as a Venus flytrap. The flower is situated on a bed of leaves and dirt, providing a naturalistic setting for the plant's growth. The Venus flytrap has its mouth open, ready to capture any prey that comes too close.",
+    "media": {
+     "src": "https://images.pexels.com/photos/15695205/pexels-photo-15695205.jpeg?w=1280",
+     "hi": "https://images.pexels.com/photos/15695205/pexels-photo-15695205.jpeg?w=1920",
+     "thumb": "https://images.pexels.com/photos/15695205/pexels-photo-15695205.jpeg?w=400"
+    },
+    "poster": "https://images.pexels.com/photos/15695205/pexels-photo-15695205.jpeg?w=400",
+    "credit": "T Ken",
+    "license": "Pexels License",
+    "sourceUrl": "https://www.pexels.com/photo/close-up-of-rafflesia-flower-15695205",
+    "via": "Pexafy"
+   }
+  },
+  {
+   "id": "mycorrhiza",
+   "topic": "Plants",
+   "status": "approved",
+   "query": "mushrooms forest floor",
+   "title": "Roots holding hands with fungi",
+   "text": "About 70% of plant species partner with fungi whose threads grow right into their roots, trading sugar for water and nutrients.",
+   "cite": {
+    "title": "Wikipedia: Mycorrhiza",
+    "url": "https://en.wikipedia.org/wiki/Mycorrhiza"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "131495",
+    "title": "mushrooms, toadstool, forest, forest floor, nature, fall, fungal science, forest mushrooms, fungi species, poisonous, spore",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2022/09/16/131495-750569063_small.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2022/09/16/131495-750569063_small.jpg",
+    "duration": 14,
+    "credit": "Kaufdex",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-131495/",
+    "requiresCache": true
+   }
+  },
+  {
+   "id": "lotus-effect",
+   "topic": "Plants",
+   "status": "approved",
+   "query": "lotus leaf water drop",
+   "title": "Self-cleaning leaves",
+   "text": "Water beads up on a lotus leaf and rolls off, picking up dirt as it goes, thanks to a microscopic surface texture.",
+   "cite": {
+    "title": "Wikipedia: Lotus effect",
+    "url": "https://en.wikipedia.org/wiki/Lotus_effect"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "302247",
+    "title": "lotus, lotus flower, lotus leaf, pond, lake, rain, summer, rainy season, raindrop, wave, wavelength, garden, water drop, water surface, aquatic plant, aquatic grass, buddhism, wetland",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2025/09/06/302247_small.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2025/09/06/302247_small.jpg",
+    "duration": 15,
+    "credit": "santorihan",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-302247/",
+    "requiresCache": true
+   }
+  },
+  {
+   "id": "hyperion",
+   "topic": "Plants",
+   "status": "draft",
+   "query": "hyperion sequoia",
+   "title": "The tallest tree",
+   "text": "Hyperion, a coast redwood in California, is the tallest known living tree: 116.22 metres when measured in 2026.",
+   "cite": {
+    "title": "Wikipedia: Hyperion (tree)",
+    "url": "https://en.wikipedia.org/wiki/Hyperion_(tree)"
+   }
+  }
  ]
 }
