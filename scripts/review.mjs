@@ -95,7 +95,8 @@ async function pixabay(q, n) {
   if (!keys.pixabay) return [];
   const r = await getJSON(`https://pixabay.com/api/videos/?${new URLSearchParams({ key: keys.pixabay, q, per_page: String(Math.max(3, n * 3)), safesearch: 'true' })}`);
   // A feed about real nature never shows AI-generated footage: skip anything Pixabay tags that way.
-  return (r.hits || []).filter(h => !/\bai[- ]?generated\b|\bai\b/i.test(h.tags || '')).slice(0, n).flatMap(h => {
+  // Tags seen in the wild: "ai generated", "generated to...", "realistic". Better to skip a real clip than show a fake.
+  return (r.hits || []).filter(h => !/\bai\b|generat|\bcgi\b|\brender/i.test(h.tags || '')).slice(0, n).flatMap(h => {
     const f = ['medium', 'small', 'large'].map(k => h.videos?.[k]).find(x => x?.url && x.width <= 1920);
     if (!f) return [];
     // Pixabay asks that files be served from our own storage, not hotlinked: cache-media copies it to R2 and the

@@ -4,205 +4,512 @@
   {
    "id": "red-blood-cells",
    "topic": "Human body",
-   "status": "draft",
+   "status": "approved",
    "query": "blood cells microscope",
    "title": "You are being rebuilt right now",
    "text": "Your body makes about 2.4 million new red blood cells every second.",
    "cite": {
     "title": "Wikipedia: Red blood cell",
     "url": "https://en.wikipedia.org/wiki/Red_blood_cell"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "5452",
+    "title": "blood cells, medical, cell, human, medicine, microscopic, healthcare, science",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2016/09/21/5452-183788682_medium.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2016/09/21/5452-183788682_medium.jpg",
+    "duration": 10,
+    "credit": "tommyvideo",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-5452/",
+    "requiresCache": true
    }
   },
   {
    "id": "made-in-stars",
    "topic": "Deep time",
-   "status": "draft",
-   "query": "stars night sky timelapse",
+   "status": "approved",
+   "query": "forging star",
    "title": "Made of starlight",
    "text": "The Big Bang made only the lightest elements. The carbon, oxygen and iron in you were forged later, inside stars.",
    "cite": {
     "title": "Wikipedia: Nucleosynthesis",
     "url": "https://en.wikipedia.org/wiki/Nucleosynthesis"
+   },
+   "footage": {
+    "provider": "NASA",
+    "id": "How Are We Made of Star Stuff Horizontal",
+    "title": "How Are We Made of Star Stuff | We Asked a NASA Expert",
+    "sources": [
+     {
+      "src": "https://images-assets.nasa.gov/video/How%20Are%20We%20Made%20of%20Star%20Stuff%20Horizontal/How%20Are%20We%20Made%20of%20Star%20Stuff%20Horizontal~small.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://images-assets.nasa.gov/video/How%20Are%20We%20Made%20of%20Star%20Stuff%20Horizontal/How%20Are%20We%20Made%20of%20Star%20Stuff%20Horizontal~medium.jpg",
+    "duration": 0,
+    "credit": "HQ",
+    "license": "Public domain (NASA)",
+    "sourceUrl": "https://images.nasa.gov/details/How%20Are%20We%20Made%20of%20Star%20Stuff%20Horizontal"
    }
   },
   {
    "id": "cosmic-calendar",
    "topic": "Deep time",
-   "status": "draft",
-   "query": "galaxy",
+   "status": "approved",
+   "query": "cosmic calendar",
    "title": "If the universe were one year old",
    "text": "Squeeze the universe's whole history into one calendar year, and the time since the last ice age fits into the final 23 seconds of December 31st.",
    "cite": {
     "title": "Wikipedia: Cosmic Calendar",
     "url": "https://en.wikipedia.org/wiki/Cosmic_Calendar"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "151154399",
+    "title": "Deep time and cosmic history as one year – the cosmic calendar",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bc/Deep_time_and_cosmic_history_as_one_year_%E2%80%93_the_cosmic_calendar.webm/Deep_time_and_cosmic_history_as_one_year_%E2%80%93_the_cosmic_calendar.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bc/Deep_time_and_cosmic_history_as_one_year_%E2%80%93_the_cosmic_calendar.webm/Deep_time_and_cosmic_history_as_one_year_%E2%80%93_the_cosmic_calendar.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Deep_time_and_cosmic_history_as_one_year_%E2%80%93_the_cosmic_calendar.webm/960px--Deep_time_and_cosmic_history_as_one_year_%E2%80%93_the_cosmic_calendar.webm.jpg",
+    "duration": 0,
+    "credit": "The Royal Society",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_time_and_cosmic_history_as_one_year_%E2%80%93_the_cosmic_calendar.webm"
    }
   },
   {
    "id": "sunlight-8-minutes",
    "topic": "Physics",
-   "status": "draft",
-   "query": "sunrise",
+   "status": "approved",
+   "query": "distance to sun",
    "title": "Old light",
    "text": "The sunlight on your skin left the Sun about 8 minutes ago.",
    "cite": {
     "title": "Wikipedia: Sunlight",
     "url": "https://en.wikipedia.org/wiki/Sunlight"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "96297187",
+    "title": "NASA - SDO- Three Years of Sun in Three Minutes piuKlpJmjfg",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bb/NASA_-_SDO-_Three_Years_of_Sun_in_Three_Minutes_piuKlpJmjfg.webm/NASA_-_SDO-_Three_Years_of_Sun_in_Three_Minutes_piuKlpJmjfg.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bb/NASA_-_SDO-_Three_Years_of_Sun_in_Three_Minutes_piuKlpJmjfg.webm/NASA_-_SDO-_Three_Years_of_Sun_in_Three_Minutes_piuKlpJmjfg.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/NASA_-_SDO-_Three_Years_of_Sun_in_Three_Minutes_piuKlpJmjfg.webm/960px--NASA_-_SDO-_Three_Years_of_Sun_in_Three_Minutes_piuKlpJmjfg.webm.jpg",
+    "duration": 0,
+    "credit": "NASA Goddard",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NASA_-_SDO-_Three_Years_of_Sun_in_Three_Minutes_piuKlpJmjfg.webm"
    }
   },
   {
    "id": "trees-vs-stars",
    "topic": "Earth",
-   "status": "draft",
+   "status": "approved",
    "query": "forest aerial",
    "title": "More trees than stars",
    "text": "Earth has about three trillion trees: more than the 100 to 400 billion stars in the whole Milky Way.",
    "cite": {
     "title": "Wikipedia: Tree",
     "url": "https://en.wikipedia.org/wiki/Tree"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "135279128",
+    "title": "Aerial views of pine plantation near Woodend, Victoria, Australia",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/af/Aerial_views_of_pine_plantation_near_Woodend%2C_Victoria%2C_Australia.webm/Aerial_views_of_pine_plantation_near_Woodend%2C_Victoria%2C_Australia.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/af/Aerial_views_of_pine_plantation_near_Woodend%2C_Victoria%2C_Australia.webm/Aerial_views_of_pine_plantation_near_Woodend%2C_Victoria%2C_Australia.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Aerial_views_of_pine_plantation_near_Woodend%2C_Victoria%2C_Australia.webm/960px--Aerial_views_of_pine_plantation_near_Woodend%2C_Victoria%2C_Australia.webm.jpg",
+    "duration": 0,
+    "credit": "DronieUp",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_views_of_pine_plantation_near_Woodend,_Victoria,_Australia.webm"
    }
   },
   {
    "id": "octopus-hearts",
    "topic": "Biology",
    "status": "draft",
-   "query": "octopus",
+   "query": "octopus three hearts",
    "title": "Three hearts",
    "text": "An octopus has three hearts, and its blood carries oxygen with a copper-rich protein instead of iron.",
    "cite": {
     "title": "Wikipedia: Octopus",
     "url": "https://en.wikipedia.org/wiki/Octopus"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "129315625",
+    "title": "Anatomie Oktopus",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a4/Anatomie_Oktopus.webm/Anatomie_Oktopus.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a4/Anatomie_Oktopus.webm/Anatomie_Oktopus.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Anatomie_Oktopus.webm/960px--Anatomie_Oktopus.webm.jpg",
+    "duration": 0,
+    "credit": "ZDF/Terra X/N. Bergenthal/O. Roetz/WENDEVARGA/Michel Cren Pietsch",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anatomie_Oktopus.webm"
    }
   },
   {
    "id": "waggle-dance",
    "topic": "Biology",
-   "status": "draft",
-   "query": "honey bees",
+   "status": "approved",
+   "query": "waggle dance",
    "title": "Directions, by dance",
    "text": "A honey bee that finds flowers dances back at the hive, and the angle and length of her waggle tell the others which way to fly and how far.",
    "cite": {
     "title": "Wikipedia: Waggle dance",
     "url": "https://en.wikipedia.org/wiki/Waggle_dance"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "42199982",
+    "title": "Waggle Dance",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/63/Waggle_Dance.webm/Waggle_Dance.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/63/Waggle_Dance.webm/Waggle_Dance.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Waggle_Dance.webm/960px--Waggle_Dance.webm.jpg",
+    "duration": 0,
+    "credit": "OakleyOriginals",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waggle_Dance.webm"
    }
   },
   {
    "id": "snowflake-six",
    "topic": "Physics",
-   "status": "draft",
-   "query": "snow falling",
+   "status": "approved",
+   "query": "snowflake arms",
    "title": "Why six arms?",
    "text": "Snowflakes tend toward six-fold symmetry because ice itself is built as a hexagonal crystal.",
    "cite": {
     "title": "Wikipedia: Snowflake",
     "url": "https://en.wikipedia.org/wiki/Snowflake"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pexels",
+    "id": "019e25e9-f4bb-7b8c-8050-d1989ee87cd8",
+    "title": "The image shows a close-up view of two snowflakes, each with six points and eight arms extending outwards from their center. The snowflakes are positioned diagonally across the frame, creating an interesting visual effect against a gray background.",
+    "media": {
+     "src": "https://images.pexels.com/photos/16171516/pexels-photo-16171516.jpeg?w=1280",
+     "hi": "https://images.pexels.com/photos/16171516/pexels-photo-16171516.jpeg?w=1920",
+     "thumb": "https://images.pexels.com/photos/16171516/pexels-photo-16171516.jpeg?w=400"
+    },
+    "poster": "https://images.pexels.com/photos/16171516/pexels-photo-16171516.jpeg?w=400",
+    "credit": "Kristin Morgan",
+    "license": "Pexels License",
+    "sourceUrl": "https://www.pexels.com/photo/close-up-of-snowflakes-16171516",
+    "via": "Pexafy"
    }
   },
   {
    "id": "moon-drifting",
    "topic": "Space",
-   "status": "draft",
-   "query": "moon",
+   "status": "approved",
+   "query": "moon drift",
    "title": "The Moon is slowly leaving",
    "text": "Lasers bounced off mirrors left on the Moon show it moving about 3.8 cm farther from Earth every year.",
    "cite": {
     "title": "Wikipedia: Lunar Laser Ranging experiments",
     "url": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiments"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "111433892",
+    "title": "Le croissant de Lune au-dessus de Rennes le 19 Février 2021",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/ca/Le_croissant_de_Lune_au-dessus_de_Rennes_le_19_F%C3%A9vrier_2021.ogg/Le_croissant_de_Lune_au-dessus_de_Rennes_le_19_F%C3%A9vrier_2021.ogg.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/ca/Le_croissant_de_Lune_au-dessus_de_Rennes_le_19_F%C3%A9vrier_2021.ogg/Le_croissant_de_Lune_au-dessus_de_Rennes_le_19_F%C3%A9vrier_2021.ogg.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Le_croissant_de_Lune_au-dessus_de_Rennes_le_19_F%C3%A9vrier_2021.ogg/960px--Le_croissant_de_Lune_au-dessus_de_Rennes_le_19_F%C3%A9vrier_2021.ogg.jpg",
+    "duration": 0,
+    "credit": "Erwan Corre",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_croissant_de_Lune_au-dessus_de_Rennes_le_19_F%C3%A9vrier_2021.ogg"
    }
   },
   {
    "id": "gravitational-waves",
    "topic": "New discovery",
-   "status": "draft",
+   "status": "approved",
    "query": "black hole merger",
    "title": "Hearing space ripple",
    "text": "On 14 September 2015, detectors on Earth first caught ripples in spacetime itself, from two black holes merging about 1.4 billion light-years away.",
    "cite": {
     "title": "Wikipedia: First observation of gravitational waves",
     "url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "74233034",
+    "title": "Black Hole Binary System with Super Massive Black Hole",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d9/Black_Hole_Binary_System_with_Super_Massive_Black_Hole.webm/Black_Hole_Binary_System_with_Super_Massive_Black_Hole.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d9/Black_Hole_Binary_System_with_Super_Massive_Black_Hole.webm/Black_Hole_Binary_System_with_Super_Massive_Black_Hole.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Black_Hole_Binary_System_with_Super_Massive_Black_Hole.webm/500px--Black_Hole_Binary_System_with_Super_Massive_Black_Hole.webm.jpg",
+    "duration": 0,
+    "credit": "User:Simulating eXtreme Spacetimes, Thibaut Paumard,ESO/L. Calçada",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Hole_Binary_System_with_Super_Massive_Black_Hole.webm"
    }
   },
   {
    "id": "brain-energy",
    "topic": "Human body",
-   "status": "draft",
-   "query": "neurons",
+   "status": "approved",
+   "query": "brain energy",
    "title": "Thinking is hungry work",
    "text": "Your brain is about 2% of your body weight, yet it uses up to 20% of your body's energy.",
    "cite": {
     "title": "Wikipedia: Human brain",
     "url": "https://en.wikipedia.org/wiki/Human_brain"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "307347",
+    "title": "neuron, sew, green, glow, particle, abstraction, data, energy, nodes, light, electricity, current, brain, intelligence, connection, circuit, flow, pulse, rhythm, system, grid, technology, animation, and generated",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2025/10/01/307347_small.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2025/10/01/307347_small.jpg",
+    "duration": 6,
+    "credit": "IgorKocka",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-307347/",
+    "requiresCache": true
    }
   },
   {
    "id": "methuselah",
    "topic": "Deep time",
-   "status": "draft",
+   "status": "approved",
    "query": "bristlecone pine",
    "title": "Still growing",
    "text": "A Great Basin bristlecone pine in California called Methuselah is more than 4,800 years old.",
    "cite": {
     "title": "Wikipedia: Pinus longaeva",
     "url": "https://en.wikipedia.org/wiki/Pinus_longaeva"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "335040",
+    "title": "drone, nature, landscape, flight, forest, aerial, summer, travel, trees, pine, evergreen, woods, green",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2026/02/17/335040_small.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2026/02/17/335040_small.jpg",
+    "duration": 27,
+    "credit": "Kamen_A",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-335040/",
+    "requiresCache": true
    }
   },
   {
    "id": "sea-otter-fur",
    "topic": "Biology",
-   "status": "draft",
-   "query": "sea otter",
+   "status": "approved",
+   "query": "sea otter coat",
    "title": "The softest coat",
    "text": "Sea otters have the densest fur of any animal: up to 150,000 hairs in every square centimetre.",
    "cite": {
     "title": "Wikipedia: Sea otter",
     "url": "https://en.wikipedia.org/wiki/Sea_otter"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Unsplash",
+    "id": "019e2655-be05-79b0-aac0-24d57911d345",
+    "title": "In the center of a light blue ocean, an adult sea otter is captured in a playful moment, lying on its back with its arms and legs spread out in front of it. The otter's fur is a mix of brown and gray shades, blending harmoniously with the surrounding water. Its head is slightly tilted to the left as if it's about to dive into the ocean or simply enjoying the cool water around it.",
+    "media": {
+     "src": "https://images.unsplash.com/photo-1700797054491-5220c612fbc1?w=1280",
+     "hi": "https://images.unsplash.com/photo-1700797054491-5220c612fbc1?w=1920",
+     "thumb": "https://images.unsplash.com/photo-1700797054491-5220c612fbc1?w=400"
+    },
+    "poster": "https://images.unsplash.com/photo-1700797054491-5220c612fbc1?w=400",
+    "credit": "mana5280",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/a-couple-of-sea-otters-playing-in-the-water-aW1SIDafy6Y",
+    "via": "Pexafy"
    }
   },
   {
    "id": "rainbow-circle",
    "topic": "Physics",
-   "status": "draft",
-   "query": "rainbow",
+   "status": "approved",
+   "query": "plane rainbow",
    "title": "Half a rainbow",
    "text": "From the ground a rainbow looks like an arc, but from a plane, with enough mist below, you can see it as a full circle.",
    "cite": {
     "title": "Wikipedia: Rainbow",
     "url": "https://en.wikipedia.org/wiki/Rainbow"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pixabay",
+    "id": "019e19fd-5f35-718c-bb4e-0fb51e4bb4b6",
+    "title": "Small airplane flies from left to right across the frame with visible tail",
+    "media": {
+     "src": "https://cdn.pixabay.com/photo/2012/02/27/16/58/rainbow-17436_1280.jpg",
+     "thumb": "https://cdn.pixabay.com/photo/2012/02/27/16/58/rainbow-17436_640.jpg"
+    },
+    "poster": "https://cdn.pixabay.com/photo/2012/02/27/16/58/rainbow-17436_640.jpg",
+    "credit": "PublicDomainPictures",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com//photos/rainbow-plane-storm-sky-aircraft-17436/",
+    "via": "Pexafy",
+    "requiresCache": true
    }
   },
   {
    "id": "soil-teaspoon",
    "topic": "Earth",
-   "status": "draft",
-   "query": "forest floor",
+   "status": "approved",
+   "query": "teaspoon",
    "title": "A crowded teaspoon",
    "text": "A single teaspoon of productive soil can hold anywhere from 100 million to 3 billion bacteria.",
    "cite": {
     "title": "Wikipedia: Soil biology",
     "url": "https://en.wikipedia.org/wiki/Soil_biology"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pixabay",
+    "id": "019e1970-4d3e-7d0f-b216-0be2e79898bb",
+    "title": "Rusted green metal spoon lies diagonally on rock surface, partially buried in earth",
+    "media": {
+     "src": "https://cdn.pixabay.com/photo/2016/06/07/09/34/spoon-1441298_1280.jpg",
+     "thumb": "https://cdn.pixabay.com/photo/2016/06/07/09/34/spoon-1441298_640.jpg"
+    },
+    "poster": "https://cdn.pixabay.com/photo/2016/06/07/09/34/spoon-1441298_640.jpg",
+    "credit": "makamuki0",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com//photos/spoon-old-ancient-alpaca-rusty-1441298/",
+    "via": "Pexafy",
+    "requiresCache": true
    }
   },
   {
    "id": "arctic-tern",
    "topic": "Animals",
-   "status": "draft",
+   "status": "approved",
    "query": "arctic tern",
    "title": "Two summers a year",
    "text": "Arctic terns fly from the Arctic to the Antarctic and back every year, seeing two summers. Birds from Iceland and Greenland average about 70,900 km a round trip.",
    "cite": {
     "title": "Wikipedia: Arctic tern",
     "url": "https://en.wikipedia.org/wiki/Arctic_tern"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "33370078",
+    "title": "Noordse stern baltsend, visetend en met jong",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/8a/Noordse_stern_baltsend%2C_visetend_en_met_jong-4961820.webm/Noordse_stern_baltsend%2C_visetend_en_met_jong-4961820.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/8a/Noordse_stern_baltsend%2C_visetend_en_met_jong-4961820.webm/Noordse_stern_baltsend%2C_visetend_en_met_jong-4961820.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Noordse_stern_baltsend%2C_visetend_en_met_jong-4961820.webm/960px--Noordse_stern_baltsend%2C_visetend_en_met_jong-4961820.webm.jpg",
+    "duration": 0,
+    "credit": "Marc Plomp",
+    "license": "CC BY-SA 3.0 nl",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Noordse_stern_baltsend,_visetend_en_met_jong-4961820.webm"
    }
   },
   {
    "id": "sloth-algae",
    "topic": "Animals",
-   "status": "draft",
-   "query": "sloth",
+   "status": "approved",
+   "query": "sloth hair",
    "title": "A coat that grows a garden",
    "text": "A sloth's grooved hair hosts green algae, which tint its coat to blend into the trees.",
    "cite": {
     "title": "Wikipedia: Sloth",
     "url": "https://en.wikipedia.org/wiki/Sloth"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Unsplash",
+    "id": "019e2790-db18-79a7-b9b2-0c9e641f7cee",
+    "title": "The image depicts a sloth hanging from a tree branch, with its body oriented towards the left side of the frame and its head turned to the right. The sloth's fur is a mix of brown and green colors, blending in with the surrounding foliage. The background features lush trees and leaves, providing a natural habitat for the sloth.",
+    "media": {
+     "src": "https://images.unsplash.com/photo-1590536527363-f11dce09bbe4?w=1280",
+     "hi": "https://images.unsplash.com/photo-1590536527363-f11dce09bbe4?w=1920",
+     "thumb": "https://images.unsplash.com/photo-1590536527363-f11dce09bbe4?w=400"
+    },
+    "poster": "https://images.unsplash.com/photo-1590536527363-f11dce09bbe4?w=400",
+    "credit": "Jack Charles",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/gray-and-brown-monkey-on-tree-branch-during-daytime-qmYTIcJ82qk",
+    "via": "Pexafy"
    }
   },
   {
@@ -359,7 +666,7 @@
   {
    "id": "humpback-song",
    "topic": "Animals",
-   "status": "approved",
+   "status": "draft",
    "query": "humpback whale",
    "title": "Songs that change",
    "text": "Male humpback whales sing complex songs up to half an hour long, and when one changes his song, others nearby pick up the change.",
@@ -383,7 +690,8 @@
     "license": "Pixabay Content License",
     "sourceUrl": "https://pixabay.com/videos/id-335486/",
     "requiresCache": true
-   }
+   },
+   "note": "Previous footage was AI-generated or digital art; pick real footage."
   },
   {
    "id": "godwit",
@@ -798,32 +1106,68 @@
   {
    "id": "hyperion",
    "topic": "Plants",
-   "status": "draft",
+   "status": "approved",
    "query": "hyperion sequoia",
    "title": "The tallest tree",
    "text": "Hyperion, a coast redwood in California, is the tallest known living tree: 116.22 metres when measured in 2026.",
    "cite": {
     "title": "Wikipedia: Hyperion (tree)",
     "url": "https://en.wikipedia.org/wiki/Hyperion_(tree)"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pexels",
+    "id": "019e1a2a-fffa-7d1f-b49a-7e1b56ad6bbd",
+    "title": "Sequoia tree stands tall against clear blue sky with rough bark and green foliage",
+    "media": {
+     "src": "https://images.pexels.com/photos/36597117/pexels-photo-36597117.jpeg?w=1280",
+     "hi": "https://images.pexels.com/photos/36597117/pexels-photo-36597117.jpeg?w=1920",
+     "thumb": "https://images.pexels.com/photos/36597117/pexels-photo-36597117.jpeg?w=400"
+    },
+    "poster": "https://images.pexels.com/photos/36597117/pexels-photo-36597117.jpeg?w=400",
+    "credit": "Marcus Luu",
+    "license": "Pexels License",
+    "sourceUrl": "https://www.pexels.com/photo/majestic-giant-sequoia-in-forest-landscape-36597117",
+    "via": "Pexafy"
    }
   },
   {
    "id": "whale-shark",
    "topic": "Evolution",
-   "status": "draft",
+   "status": "approved",
    "query": "whale shark",
    "title": "Pups on a schedule",
    "text": "A female whale shark can keep sperm from a single mating and give birth to pups gradually, over a long period. One was found carrying about 300 pups.",
    "cite": {
     "title": "Wikipedia: Whale shark",
     "url": "https://en.wikipedia.org/wiki/Whale_shark"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "16315891",
+    "title": "Nadando con un Tiburón Ballena- Swimming with a Whale Shark",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/9a/Nadando_con_un_Tibur%C3%B3n_Ballena-_Swimming_with_a_Whale_Shark.ogv/Nadando_con_un_Tibur%C3%B3n_Ballena-_Swimming_with_a_Whale_Shark.ogv.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/9a/Nadando_con_un_Tibur%C3%B3n_Ballena-_Swimming_with_a_Whale_Shark.ogv/Nadando_con_un_Tibur%C3%B3n_Ballena-_Swimming_with_a_Whale_Shark.ogv.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Nadando_con_un_Tibur%C3%B3n_Ballena-_Swimming_with_a_Whale_Shark.ogv/500px--Nadando_con_un_Tibur%C3%B3n_Ballena-_Swimming_with_a_Whale_Shark.ogv.jpg",
+    "duration": 0,
+    "credit": "Srosama",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nadando_con_un_Tibur%C3%B3n_Ballena-_Swimming_with_a_Whale_Shark.ogv"
    }
   },
   {
    "id": "sperm-whale-dive",
    "topic": "Evolution",
-   "status": "draft",
-   "query": "sperm whale",
+   "status": "rejected",
+   "query": "Physeter macrocephalus",
    "note": "Pixabay has AI-generated sperm whale clips; they are now filtered out, but double-check.",
    "title": "Built for the deep",
    "text": "Sperm whales dive to 2,250 metres. Their ribcage is held by flexible cartilage so it folds instead of breaking under the pressure, and their muscles are packed with oxygen-storing myoglobin.",
@@ -835,20 +1179,36 @@
   {
    "id": "gastric-brooding-frog",
    "topic": "Evolution",
-   "status": "draft",
-   "query": "frog stream australia",
+   "status": "approved",
+   "query": "Rheobatrachus silus",
    "note": "Both species have been extinct since the mid-1980s: no footage of the real animal. Use a historic photo, a calm stand-in, or reject.",
    "title": "A nursery in the stomach",
    "text": "The gastric-brooding frog swallowed her eggs and raised them in her stomach, which stopped making acid while the young grew. The froglets left through her mouth.",
    "cite": {
     "title": "Wikipedia: Gastric-brooding frog",
     "url": "https://en.wikipedia.org/wiki/Gastric-brooding_frog"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Unsplash",
+    "id": "019e2727-539e-7f83-af62-22c8ff532031",
+    "title": "The image shows a close-up view of a frog with large eyes and a prominent nose, resting on its hind legs on a bed of rocks. The frog's body is slightly tilted to the left, giving it an almost cartoonish appearance. In the background, there are other rocks scattered around, adding depth to the scene.",
+    "media": {
+     "src": "https://images.unsplash.com/photo-1752810191435-abcfcc07a435?w=1280",
+     "hi": "https://images.unsplash.com/photo-1752810191435-abcfcc07a435?w=1920",
+     "thumb": "https://images.unsplash.com/photo-1752810191435-abcfcc07a435?w=400"
+    },
+    "poster": "https://images.unsplash.com/photo-1752810191435-abcfcc07a435?w=400",
+    "credit": "Joseph Sharp",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/an-adorable-frog-is-posing-for-the-camera-V4sWEyb8Ur4",
+    "via": "Pexafy"
    }
   },
   {
    "id": "ribbon-eel",
    "topic": "Evolution",
-   "status": "draft",
+   "status": "approved",
    "query": "ribbon eel",
    "note": "Wikipedia confirms the colour stages but does not state the sex change itself, so the wording stays with colours.",
    "title": "Colours for every stage of life",
@@ -856,12 +1216,28 @@
    "cite": {
     "title": "Wikipedia: Ribbon eel",
     "url": "https://en.wikipedia.org/wiki/Ribbon_eel"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pexels",
+    "id": "019e1bb8-4486-7f85-b3fe-bda25e11114d",
+    "title": "Blue and yellow striped fish with open mouth, showcasing sharp teeth in underwater scene",
+    "media": {
+     "src": "https://images.pexels.com/photos/8970779/pexels-photo-8970779.jpeg?w=1280",
+     "hi": "https://images.pexels.com/photos/8970779/pexels-photo-8970779.jpeg?w=1920",
+     "thumb": "https://images.pexels.com/photos/8970779/pexels-photo-8970779.jpeg?w=400"
+    },
+    "poster": "https://images.pexels.com/photos/8970779/pexels-photo-8970779.jpeg?w=400",
+    "credit": "Jeffry Surianto",
+    "license": "Pexels License",
+    "sourceUrl": "https://www.pexels.com/photo/photo-of-ribbon-eel-underwater-8970779",
+    "via": "Pexafy"
    }
   },
   {
    "id": "hoatzin",
    "topic": "Evolution",
-   "status": "draft",
+   "status": "approved",
    "query": "hoatzin",
    "note": "No Pixabay video; photos or Commons.",
    "title": "Claws on the wings",
@@ -869,6 +1245,22 @@
    "cite": {
     "title": "Wikipedia: Hoatzin",
     "url": "https://en.wikipedia.org/wiki/Hoatzin"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pixabay",
+    "id": "019e1d50-0c78-7128-a4a2-efbad69160db",
+    "title": "Brown and black bird with red head perches on tree branch in forest",
+    "media": {
+     "src": "https://cdn.pixabay.com/photo/2019/06/14/00/44/ecuador-4272657_1280.jpg",
+     "thumb": "https://cdn.pixabay.com/photo/2019/06/14/00/44/ecuador-4272657_640.jpg"
+    },
+    "poster": "https://cdn.pixabay.com/photo/2019/06/14/00/44/ecuador-4272657_640.jpg",
+    "credit": "hbieser",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com//photos/ecuador-tropic-bird-hoatzin-4272657/",
+    "via": "Pexafy",
+    "requiresCache": true
    }
   },
   {
@@ -881,24 +1273,58 @@
    "cite": {
     "title": "Wikipedia: Pangolin",
     "url": "https://en.wikipedia.org/wiki/Pangolin"
-   }
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "343245",
+    "title": "pangolin, nature, wildlife, exotic, insectivore, rare, animal",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2026/03/29/343245_small.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2026/03/29/343245_small.jpg",
+    "duration": 6,
+    "credit": "u_o5vqne0uk0",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-343245/",
+    "requiresCache": true
+   },
+   "note": "Previous footage was AI-generated or digital art; pick real footage."
   },
   {
    "id": "leaf-tailed-gecko",
    "topic": "Evolution",
-   "status": "draft",
-   "query": "leaf-tailed gecko",
+   "status": "approved",
+   "query": "Uroplatus_phantasticus",
    "title": "A lizard disguised as a leaf",
    "text": "The satanic leaf-tailed gecko of Madagascar has a flattened tail shaped like a leaf.",
    "cite": {
     "title": "Wikipedia: Uroplatus phantasticus",
     "url": "https://en.wikipedia.org/wiki/Uroplatus_phantasticus"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Unsplash",
+    "id": "019e1dec-8b24-75e6-a579-5c79f9df40d4",
+    "title": "Brown gecko with white spots lies on pile of dried leaves and twigs, facing left",
+    "media": {
+     "src": "https://images.unsplash.com/photo-1704351196355-78c431fc208a?w=1280",
+     "hi": "https://images.unsplash.com/photo-1704351196355-78c431fc208a?w=1920",
+     "thumb": "https://images.unsplash.com/photo-1704351196355-78c431fc208a?w=400"
+    },
+    "poster": "https://images.unsplash.com/photo-1704351196355-78c431fc208a?w=400",
+    "credit": "Husha Bilimale",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/a-close-up-of-a-lizard-on-a-pile-of-leaves-X6x_oXFkwj8",
+    "via": "Pexafy"
    }
   },
   {
    "id": "mimic-octopus",
    "topic": "Evolution",
-   "status": "draft",
+   "status": "approved",
    "query": "mimic octopus",
    "note": "Pixabay 'mimic octopus' returns unrelated clips; use photos or Commons.",
    "title": "An octopus of many disguises",
@@ -906,24 +1332,64 @@
    "cite": {
     "title": "Wikipedia: Mimic octopus",
     "url": "https://en.wikipedia.org/wiki/Mimic_octopus"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "64301418",
+    "title": "Mimic Octopus video",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/19/Mimic_Octopus_video.webm/Mimic_Octopus_video.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/19/Mimic_Octopus_video.webm/Mimic_Octopus_video.webm.240p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Mimic_Octopus_video.webm/250px--Mimic_Octopus_video.webm.jpg",
+    "duration": 0,
+    "credit": "Steve Childs",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mimic_Octopus_video.webm"
    }
   },
   {
    "id": "leafy-seadragon",
    "topic": "Evolution",
-   "status": "draft",
+   "status": "approved",
    "query": "leafy seadragon",
    "title": "A fish dressed as seaweed",
    "text": "Leafy seadragons are covered in long, leaf-like flaps, and, as with seahorses, it is the father who carries the eggs.",
    "cite": {
     "title": "Wikipedia: Leafy seadragon",
     "url": "https://en.wikipedia.org/wiki/Leafy_seadragon"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "34735721",
+    "title": "Seah1001",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f6/Seah1001.webm/Seah1001.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f6/Seah1001.webm/Seah1001.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Seah1001.webm/500px--Seah1001.webm.jpg",
+    "duration": 0,
+    "credit": "Jon Houseman",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seah1001.webm"
    }
   },
   {
    "id": "archerfish",
    "topic": "Evolution",
-   "status": "draft",
+   "status": "approved",
    "query": "archerfish",
    "note": "Mentions catching insects; your call on the calm tone.",
    "title": "Sharpshooters",
@@ -931,6 +1397,26 @@
    "cite": {
     "title": "Wikipedia: Archerfish",
     "url": "https://en.wikipedia.org/wiki/Archerfish"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "22347375",
+    "title": "Archer fish shooting at prey",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/ab/Archer_fish_shooting_at_prey.ogv/Archer_fish_shooting_at_prey.ogv.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/ab/Archer_fish_shooting_at_prey.ogv/Archer_fish_shooting_at_prey.ogv.240p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Archer_fish_shooting_at_prey.ogv/120px--Archer_fish_shooting_at_prey.ogv.jpg",
+    "duration": 0,
+    "credit": "Vailati A, Zinnato L, Cerbino R (2012)",
+    "license": "CC BY 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Archer_fish_shooting_at_prey.ogv"
    }
   },
   {
@@ -943,25 +1429,59 @@
    "cite": {
     "title": "Wikipedia: Glaucus atlanticus",
     "url": "https://en.wikipedia.org/wiki/Glaucus_atlanticus"
-   }
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "387612",
+    "title": "blue dragon, marine mollusk, glaucus atlanticus, nudibranch, sea snail, marine fauna, sea life, ocean, sea, exotic animal, sea creature, aquatic animal, blue, nature, biodiversity, macro photography, wildlife",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2026/11/07/387612_medium.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2026/11/07/387612_medium.jpg",
+    "duration": 7,
+    "credit": "Elf-Moondance",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-387612/",
+    "requiresCache": true
+   },
+   "note": "Previous footage was AI-generated or digital art; pick real footage."
   },
   {
    "id": "glass-frog",
    "topic": "Evolution",
-   "status": "draft",
-   "query": "glass frog",
+   "status": "approved",
+   "query": "glassfrog",
    "title": "Hiding in plain sight",
    "text": "You can see a glass frog's heart and organs through its belly. When it sleeps, it hides most of its blood in its liver, so it turns even more see-through.",
    "cite": {
     "title": "Wikipedia: Glass frog",
     "url": "https://en.wikipedia.org/wiki/Glass_frog"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Unsplash",
+    "id": "019e1fa2-00bc-73f3-a115-94bd729ca5bc",
+    "title": "Green frog with white spots sits on hind legs against black background, appearing to float",
+    "media": {
+     "src": "https://images.unsplash.com/photo-1603762794925-57e837942d27?w=1280",
+     "hi": "https://images.unsplash.com/photo-1603762794925-57e837942d27?w=1920",
+     "thumb": "https://images.unsplash.com/photo-1603762794925-57e837942d27?w=400"
+    },
+    "poster": "https://images.unsplash.com/photo-1603762794925-57e837942d27?w=400",
+    "credit": "Raphael Fraga",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/green-frog-on-black-background-6jbRKJ72xlw",
+    "via": "Pexafy"
    }
   },
   {
    "id": "star-nosed-mole",
    "topic": "Evolution",
-   "status": "draft",
-   "query": "star-nosed mole",
+   "status": "rejected",
+   "query": "Condylura cristata",
    "note": "Pixabay 'star-nosed mole' returns ordinary moles and molehills; use photos or Commons.",
    "title": "A nose made for touch",
    "text": "The star-nosed mole's nose has 22 fleshy rays carrying more than 25,000 touch receptors, which it uses to feel its way around in the dark.",
@@ -980,117 +1500,294 @@
    "cite": {
     "title": "Wikipedia: Platypus",
     "url": "https://en.wikipedia.org/wiki/Platypus"
-   }
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "385696",
+    "title": "platypus, wild animal, australian fauna, oviparous mammal, river, fresh water, wildlife, nature, natural habitat, swimming, torrent, forest, biodiversity, nature documentary, aquatic animal, australia, fauna, ecosystem, realistic, generated to",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2026/10/28/385696_medium.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2026/10/28/385696_medium.jpg",
+    "duration": 8,
+    "credit": "Elf-Moondance",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-385696/",
+    "requiresCache": true
+   },
+   "note": "Previous footage was AI-generated or digital art; pick real footage."
   },
   {
    "id": "seahorse-father",
    "topic": "Evolution",
-   "status": "draft",
-   "query": "seahorse",
+   "status": "approved",
+   "query": "seahorse dad",
    "note": "Pixabay had AI-generated seahorse clips; they are now filtered out, but double-check.",
    "title": "Dad carries the babies",
    "text": "In seahorses, the female places up to 1,500 eggs in the male's brood pouch, and he carries them.",
    "cite": {
     "title": "Wikipedia: Seahorse",
     "url": "https://en.wikipedia.org/wiki/Seahorse"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Unsplash",
+    "id": "019e1c30-da3f-7815-9de6-9ad5dc3e77f6",
+    "title": "Seahorse stands upright on hind legs with brown body and black spots against blurred background",
+    "media": {
+     "src": "https://images.unsplash.com/photo-1637308114668-a72b272a62f5?w=1280",
+     "hi": "https://images.unsplash.com/photo-1637308114668-a72b272a62f5?w=1920",
+     "thumb": "https://images.unsplash.com/photo-1637308114668-a72b272a62f5?w=400"
+    },
+    "poster": "https://images.unsplash.com/photo-1637308114668-a72b272a62f5?w=400",
+    "credit": "Oleksandr Sushko",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/a-close-up-of-a-sea-horse-in-a-tank-ALyQfNN0TZ4",
+    "via": "Pexafy"
    }
   },
   {
    "id": "giraffe-neck",
    "topic": "Evolution",
-   "status": "draft",
+   "status": "approved",
    "query": "giraffe",
    "title": "Same bones, longer",
    "text": "A giraffe's long neck has the same number of neck vertebrae as yours: seven, like most mammals. Each one is just much longer.",
    "cite": {
     "title": "Wikipedia: Giraffe",
     "url": "https://en.wikipedia.org/wiki/Giraffe"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "227950",
+    "title": "giraffe, mammal, wildlife, safari, africa, nature, animal",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2024/08/23/227950_medium.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2024/08/23/227950_medium.jpg",
+    "duration": 29,
+    "credit": "Afzaal0001",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-227950/",
+    "requiresCache": true
    }
   },
   {
    "id": "lyrebird",
    "topic": "Evolution",
-   "status": "draft",
+   "status": "approved",
    "query": "lyrebird",
    "title": "The bird that copies everything",
    "text": "Superb lyrebirds mimic the calls of other birds, and even car alarms, chainsaws and camera shutters.",
    "cite": {
     "title": "Wikipedia: Superb lyrebird",
     "url": "https://en.wikipedia.org/wiki/Superb_lyrebird"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "184303857",
+    "title": "Superb lyrebird display",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/91/Superb_lyrebird_display.webm/Superb_lyrebird_display.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/91/Superb_lyrebird_display.webm/Superb_lyrebird_display.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Superb_lyrebird_display.webm/960px--Superb_lyrebird_display.webm.jpg",
+    "duration": 0,
+    "credit": "Gompk",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Superb_lyrebird_display.webm"
    }
   },
   {
    "id": "basilisk",
    "topic": "Evolution",
-   "status": "draft",
-   "query": "basilisk lizard",
+   "status": "approved",
+   "query": "basilisk running",
    "title": "Walking on water",
    "text": "The common basilisk can run across the surface of water, and it can also stay underwater for up to half an hour.",
    "cite": {
     "title": "Wikipedia: Common basilisk",
     "url": "https://en.wikipedia.org/wiki/Common_basilisk"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "22185409",
+    "title": "Basiliscus basiliscus running on water - pone.0037300.s001",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/fd/Basiliscus_basiliscus_running_on_water_-_pone.0037300.s001.ogv/Basiliscus_basiliscus_running_on_water_-_pone.0037300.s001.ogv.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/fd/Basiliscus_basiliscus_running_on_water_-_pone.0037300.s001.ogv/Basiliscus_basiliscus_running_on_water_-_pone.0037300.s001.ogv.240p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Basiliscus_basiliscus_running_on_water_-_pone.0037300.s001.ogv/250px--Basiliscus_basiliscus_running_on_water_-_pone.0037300.s001.ogv.jpg",
+    "duration": 0,
+    "credit": "Minetti A, Ivanenko Y, Cappellini G, Dominici N, Lacquaniti F",
+    "license": "CC BY 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basiliscus_basiliscus_running_on_water_-_pone.0037300.s001.ogv"
    }
   },
   {
    "id": "thorny-devil",
    "topic": "Evolution",
-   "status": "draft",
-   "query": "thorny devil",
+   "status": "approved",
+   "query": "Moloch horridus",
    "note": "Pixabay 'thorny devil' returns unrelated clips; use photos or Commons.",
    "title": "Drinking through the skin",
    "text": "A thorny devil can collect water just by touching it: tiny channels between its scales carry the water by capillary action to its mouth.",
    "cite": {
     "title": "Wikipedia: Thorny devil",
     "url": "https://en.wikipedia.org/wiki/Thorny_devil"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pixabay",
+    "id": "019e19e0-4467-7f63-9f18-083a350d32f1",
+    "title": "Lizard lies on its side, showing brown scales and sharp teeth in stillness",
+    "media": {
+     "src": "https://cdn.pixabay.com/photo/2014/07/08/13/41/thorny-dragon-387217_1280.jpg",
+     "thumb": "https://cdn.pixabay.com/photo/2014/07/08/13/41/thorny-dragon-387217_640.jpg"
+    },
+    "poster": "https://cdn.pixabay.com/photo/2014/07/08/13/41/thorny-dragon-387217_640.jpg",
+    "credit": "PublicDomainImages",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com//photos/thorny-dragon-thorny-devil-387217/",
+    "via": "Pexafy",
+    "requiresCache": true
    }
   },
   {
    "id": "mudskipper",
    "topic": "Evolution",
-   "status": "draft",
+   "status": "approved",
    "query": "mudskipper",
    "title": "A fish that lives on land",
    "text": "Mudskippers are fish that spend long stretches out of the water, moving around and meeting each other on the mud.",
    "cite": {
     "title": "Wikipedia: Mudskipper",
     "url": "https://en.wikipedia.org/wiki/Mudskipper"
+   },
+   "footage": {
+    "provider": "Wikimedia Commons",
+    "id": "29898911",
+    "title": "New Guinea mudskipper (Periophthalmus cantonensis)",
+    "sources": [
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/New_Guinea_mudskipper_%28Periophthalmus_cantonensis%29.webm/New_Guinea_mudskipper_%28Periophthalmus_cantonensis%29.webm.360p.mpeg4.mov",
+      "type": "video/mp4; codecs=\"mp4v\""
+     },
+     {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/New_Guinea_mudskipper_%28Periophthalmus_cantonensis%29.webm/New_Guinea_mudskipper_%28Periophthalmus_cantonensis%29.webm.480p.vp9.webm",
+      "type": "video/webm; codecs=\"vp9, opus\""
+     }
+    ],
+    "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/New_Guinea_mudskipper_%28Periophthalmus_cantonensis%29.webm/960px--New_Guinea_mudskipper_%28Periophthalmus_cantonensis%29.webm.jpg",
+    "duration": 0,
+    "credit": "The Nature Box",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Guinea_mudskipper_(Periophthalmus_cantonensis).webm"
    }
   },
   {
    "id": "owl-head",
    "topic": "Evolution",
-   "status": "draft",
-   "query": "owl",
+   "status": "approved",
+   "query": "owl rotate",
    "title": "Turning heads",
    "text": "An owl's eyes are fixed in their sockets, so it turns its whole head instead, as much as 270 degrees.",
    "cite": {
     "title": "Wikipedia: Owl",
     "url": "https://en.wikipedia.org/wiki/Owl"
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "18244",
+    "title": "owl, animal, bird, nature, feather, head, eagle owl, raptor, sitting, eyes, bill, animal world",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2018/09/15/18244-290348856_medium.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2018/09/15/18244-290348856_medium.jpg",
+    "duration": 20,
+    "credit": "Lirofilm",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-18244/",
+    "requiresCache": true
    }
   },
   {
    "id": "kiwi-egg",
    "topic": "Evolution",
-   "status": "draft",
-   "query": "kiwi bird",
+   "status": "approved",
+   "query": "kiwi bird egg",
    "title": "An enormous egg",
    "text": "A kiwi's egg can weigh up to 20% of the mother's body weight, one of the largest in proportion to body size of any bird.",
    "cite": {
     "title": "Wikipedia: Kiwi (bird)",
     "url": "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Unsplash",
+    "id": "019e24ab-5008-7458-9451-986a3ad7d334",
+    "title": "The image depicts two Kiwis, a type of bird native to New Zealand, standing on platforms and facing each other. The birds are positioned with their beaks open, possibly interacting or displaying territorial behavior. One Kiwi is situated on the left side of the frame, while the other is on the right side. Both birds have long necks and legs characteristic of this species. In front of them, there's a small nest made from twigs and leaves, which they appear to be inspecting curiously. The image has a sepia tone, giving it an old-fashioned appearance.",
+    "media": {
+     "src": "https://images.unsplash.com/photo-1718642212359-97fe7bff45c1?w=1280",
+     "hi": "https://images.unsplash.com/photo-1718642212359-97fe7bff45c1?w=1920",
+     "thumb": "https://images.unsplash.com/photo-1718642212359-97fe7bff45c1?w=400"
+    },
+    "poster": "https://images.unsplash.com/photo-1718642212359-97fe7bff45c1?w=400",
+    "credit": "National Library of Australia",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/two-kiwi-birds-with-a-nest-7oOVRSZjXL4",
+    "via": "Pexafy"
    }
   },
   {
    "id": "octopus-arms",
    "topic": "Evolution",
    "status": "draft",
-   "query": "octopus",
+   "query": "octopus neuron",
    "title": "Thinking with its arms",
    "text": "An octopus has about 500 million neurons, roughly as many as a dog, and two-thirds of them are in its arms.",
    "cite": {
     "title": "Wikipedia: Octopus",
     "url": "https://en.wikipedia.org/wiki/Octopus"
-   }
+   },
+   "footage": {
+    "kind": "image",
+    "provider": "Pixabay",
+    "id": "019e1252-3e1d-74e0-be0f-3a36d39a7a39",
+    "title": "Single octopus with spread-out tentacles against a stark black background, showcasing vibrant blue coloration",
+    "media": {
+     "src": "https://cdn.pixabay.com/photo/2024/02/09/07/21/octopus-8562474_1280.jpg",
+     "thumb": "https://cdn.pixabay.com/photo/2024/02/09/07/21/octopus-8562474_640.jpg"
+    },
+    "poster": "https://cdn.pixabay.com/photo/2024/02/09/07/21/octopus-8562474_640.jpg",
+    "credit": "Edgar117",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com//photos/octopus-glow-bioluminescence-8562474/",
+    "via": "Pexafy",
+    "requiresCache": true
+   },
+   "note": "Previous footage was AI-generated or digital art; pick real footage."
   },
   {
    "id": "naked-mole-rat",
@@ -1102,7 +1799,25 @@
    "cite": {
     "title": "Wikipedia: Naked mole-rat",
     "url": "https://en.wikipedia.org/wiki/Naked_mole-rat"
-   }
+   },
+   "footage": {
+    "provider": "Pixabay",
+    "id": "387727",
+    "title": "naked mole rat, underground animal, rodent, heterocephalus glaber, wildlife, mammal, african rodents, african animals, tunnel, underground tunnel, underground life, social animals, wrinkled skin, incisors, nature, biodiversity",
+    "sources": [
+     {
+      "src": "https://cdn.pixabay.com/video/2026/11/07/387727_medium.mp4",
+      "type": "video/mp4"
+     }
+    ],
+    "poster": "https://cdn.pixabay.com/video/2026/11/07/387727_medium.jpg",
+    "duration": 7,
+    "credit": "Elf-Moondance",
+    "license": "Pixabay Content License",
+    "sourceUrl": "https://pixabay.com/videos/id-387727/",
+    "requiresCache": true
+   },
+   "note": "Previous footage was AI-generated or digital art; pick real footage."
   }
  ]
 }
