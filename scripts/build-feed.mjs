@@ -355,6 +355,7 @@ async function fromESO() {
     const img = (it.match(/<enclosure[^>]*url="([^"]+)"/) || [])[1];
     const link = stripHtml(tag(it, 'link'));
     if (!img) return [];
+    if (!isCalm(stripHtml(tag(it, 'title')), stripHtml(tag(it, 'description')))) return []; // e.g. "grave threat to the night sky"
     const date = new Date(stripHtml(tag(it, 'pubDate')));
     return [{
       id: `eso-${link.split('/').filter(Boolean).pop()}`,
