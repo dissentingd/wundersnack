@@ -401,7 +401,9 @@ async function fromCommons() {
       const vi = p.videoinfo?.[0];
       if (!vi || !vi.duration || vi.duration > c.maxDurationSeconds) continue;
       const m = vi.extmetadata || {};
-      const name = cleanTitle(stripHtml(m.ObjectName?.value) || p.title.replace(/^File:/, '').replace(/\.[^.]+$/, ''));
+      let name = cleanTitle(stripHtml(m.ObjectName?.value) || p.title.replace(/^File:/, '').replace(/\.[^.]+$/, ''));
+      // Journal supplementary videos are titled like "Desiccation-Tolerance-in-the-Tardigrade-...": make them readable.
+      if (!/\s/.test(name) && (name.match(/-/g) || []).length >= 3) name = name.replace(/-/g, ' ');
       const desc = stripHtml(m.ImageDescription?.value).replace(/^Original caption:\s*/i, '').replace(/^"(.*)"$/, '$1');
       if (!isCalm(name, desc)) continue;
       if (!isNature(name, desc, stripHtml(m.Categories?.value).replace(/\|/g, ' '))) continue;

@@ -95,7 +95,26 @@
     "quarr(y|ies)\\b",
     "pipes?\\b",
     "sheds?\\b",
-    "Quarzwerke"
+    "Quarzwerke",
+    "mating\\b",
+    "copula",
+    "pseudocopulat",
+    "ejaculat",
+    "sexual",
+    "genital",
+    "sperm",
+    "survived by",
+    "last (known )?(surviving )?individuals?\\b",
+    "declin(e|ed|es|ing)\\b",
+    "endangered",
+    "critically",
+    "died\\b",
+    "threats?\\b",
+    "invasi(ve|on)",
+    "invading",
+    "drown",
+    "digest",
+    "cost of carnivory"
   ],
   "inaturalist": {
     "perTaxon": 30,
@@ -157,6 +176,41 @@
         "id": 47534,
         "label": "Jellies and corals",
         "wonder": "An animal that is mostly water and light"
+      },
+      {
+        "id": 47459,
+        "label": "Cephalopods",
+        "wonder": "Octopus, squid and cuttlefish: clever, and masters of colour"
+      },
+      {
+        "id": 71348,
+        "label": "Birds of paradise",
+        "wonder": "Feathers shaped by a long history of courtship display"
+      },
+      {
+        "id": 19350,
+        "label": "Owls",
+        "wonder": "Soft feathers built for quiet flight"
+      },
+      {
+        "id": "51937,52649,52647",
+        "label": "Carnivorous plants",
+        "wonder": "Sundews and pitcher plants: plants with a surprising way of getting nutrients"
+      },
+      {
+        "id": 47217,
+        "label": "Orchids",
+        "wonder": "One of the largest families of flowering plants, in endless shapes"
+      },
+      {
+        "id": "1658175,20980,554974,21218",
+        "label": "Frogs",
+        "wonder": "Tree, leaf, glass and poison frogs: jewels of the rainforest"
+      },
+      {
+        "id": 49106,
+        "label": "Seahorses and sea dragons",
+        "wonder": "Fish that swim upright and drift like seaweed"
       }
     ],
     "_taxaDoc": "Per taxon: optional perTaxon (overrides the default count), weight (0-1, how often the app shows this group relative to others; default 1) and grossButCool (every item of this taxon is hidden unless the viewer turns on \"Gross, but cool\")."
@@ -424,6 +478,44 @@
           "lenticular cloud",
           "clouds timelapse",
           "wind ripples"
+        ]
+      },
+      {
+        "topic": "Life",
+        "_doc": "Living things in motion: behaviour, growth and the very small. Videos found here are tagged Life instead of Motion.",
+        "queries": [
+          "octopus",
+          "cuttlefish",
+          "squid",
+          "seahorse",
+          "frog",
+          "owl",
+          "bird of paradise",
+          "courtship display",
+          "hummingbird",
+          "bee pollination",
+          "butterfly",
+          "chameleon",
+          "jellyfish",
+          "nudibranch",
+          "manta ray",
+          "sea turtle",
+          "whale",
+          "dolphin",
+          "otter",
+          "orchid",
+          "sundew",
+          "pitcher plant",
+          "flower opening timelapse",
+          "plant growth timelapse",
+          "seed germination",
+          "mimosa pudica",
+          "tardigrade",
+          "rotifer",
+          "paramecium",
+          "diatom",
+          "cell division",
+          "bioluminescence"
         ]
       }
     ]
