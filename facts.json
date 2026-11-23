@@ -806,6 +806,303 @@
     "title": "Wikipedia: Hyperion (tree)",
     "url": "https://en.wikipedia.org/wiki/Hyperion_(tree)"
    }
+  },
+  {
+   "id": "whale-shark",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "whale shark",
+   "title": "Pups on a schedule",
+   "text": "A female whale shark can keep sperm from a single mating and give birth to pups gradually, over a long period. One was found carrying about 300 pups.",
+   "cite": {
+    "title": "Wikipedia: Whale shark",
+    "url": "https://en.wikipedia.org/wiki/Whale_shark"
+   }
+  },
+  {
+   "id": "sperm-whale-dive",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "sperm whale",
+   "note": "Pixabay has AI-generated sperm whale clips; they are now filtered out, but double-check.",
+   "title": "Built for the deep",
+   "text": "Sperm whales dive to 2,250 metres. Their ribcage is held by flexible cartilage so it folds instead of breaking under the pressure, and their muscles are packed with oxygen-storing myoglobin.",
+   "cite": {
+    "title": "Wikipedia: Sperm whale",
+    "url": "https://en.wikipedia.org/wiki/Sperm_whale"
+   }
+  },
+  {
+   "id": "gastric-brooding-frog",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "frog stream australia",
+   "note": "Both species have been extinct since the mid-1980s: no footage of the real animal. Use a historic photo, a calm stand-in, or reject.",
+   "title": "A nursery in the stomach",
+   "text": "The gastric-brooding frog swallowed her eggs and raised them in her stomach, which stopped making acid while the young grew. The froglets left through her mouth.",
+   "cite": {
+    "title": "Wikipedia: Gastric-brooding frog",
+    "url": "https://en.wikipedia.org/wiki/Gastric-brooding_frog"
+   }
+  },
+  {
+   "id": "ribbon-eel",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "ribbon eel",
+   "note": "Wikipedia confirms the colour stages but does not state the sex change itself, so the wording stays with colours.",
+   "title": "Colours for every stage of life",
+   "text": "Ribbon eels change colour as they grow: jet black when young, bright blue as adult males, and yellow as the larger females.",
+   "cite": {
+    "title": "Wikipedia: Ribbon eel",
+    "url": "https://en.wikipedia.org/wiki/Ribbon_eel"
+   }
+  },
+  {
+   "id": "hoatzin",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "hoatzin",
+   "note": "No Pixabay video; photos or Commons.",
+   "title": "Claws on the wings",
+   "text": "Hoatzin chicks have two claws on each wing.",
+   "cite": {
+    "title": "Wikipedia: Hoatzin",
+    "url": "https://en.wikipedia.org/wiki/Hoatzin"
+   }
+  },
+  {
+   "id": "pangolin",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "pangolin",
+   "title": "Fingernail armour",
+   "text": "Pangolins are covered in large scales made of keratin, the same material as your fingernails. Their name comes from a Malay word meaning 'one who rolls up'.",
+   "cite": {
+    "title": "Wikipedia: Pangolin",
+    "url": "https://en.wikipedia.org/wiki/Pangolin"
+   }
+  },
+  {
+   "id": "leaf-tailed-gecko",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "leaf-tailed gecko",
+   "title": "A lizard disguised as a leaf",
+   "text": "The satanic leaf-tailed gecko of Madagascar has a flattened tail shaped like a leaf.",
+   "cite": {
+    "title": "Wikipedia: Uroplatus phantasticus",
+    "url": "https://en.wikipedia.org/wiki/Uroplatus_phantasticus"
+   }
+  },
+  {
+   "id": "mimic-octopus",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "mimic octopus",
+   "note": "Pixabay 'mimic octopus' returns unrelated clips; use photos or Commons.",
+   "title": "An octopus of many disguises",
+   "text": "The mimic octopus is one of the only animals known to impersonate several others: it can pass for a lionfish, a sea snake or a jellyfish by reshaping its arms and body.",
+   "cite": {
+    "title": "Wikipedia: Mimic octopus",
+    "url": "https://en.wikipedia.org/wiki/Mimic_octopus"
+   }
+  },
+  {
+   "id": "leafy-seadragon",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "leafy seadragon",
+   "title": "A fish dressed as seaweed",
+   "text": "Leafy seadragons are covered in long, leaf-like flaps, and, as with seahorses, it is the father who carries the eggs.",
+   "cite": {
+    "title": "Wikipedia: Leafy seadragon",
+    "url": "https://en.wikipedia.org/wiki/Leafy_seadragon"
+   }
+  },
+  {
+   "id": "archerfish",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "archerfish",
+   "note": "Mentions catching insects; your call on the calm tone.",
+   "title": "Sharpshooters",
+   "text": "Archerfish spit jets of water to knock insects off leaves, hitting targets up to 3 metres above the surface.",
+   "cite": {
+    "title": "Wikipedia: Archerfish",
+    "url": "https://en.wikipedia.org/wiki/Archerfish"
+   }
+  },
+  {
+   "id": "blue-dragon",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "glaucus atlanticus",
+   "title": "Borrowed armour",
+   "text": "The blue dragon sea slug keeps the stinging cells of the siphonophores it feeds on and stores them in its own body for protection.",
+   "cite": {
+    "title": "Wikipedia: Glaucus atlanticus",
+    "url": "https://en.wikipedia.org/wiki/Glaucus_atlanticus"
+   }
+  },
+  {
+   "id": "glass-frog",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "glass frog",
+   "title": "Hiding in plain sight",
+   "text": "You can see a glass frog's heart and organs through its belly. When it sleeps, it hides most of its blood in its liver, so it turns even more see-through.",
+   "cite": {
+    "title": "Wikipedia: Glass frog",
+    "url": "https://en.wikipedia.org/wiki/Glass_frog"
+   }
+  },
+  {
+   "id": "star-nosed-mole",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "star-nosed mole",
+   "note": "Pixabay 'star-nosed mole' returns ordinary moles and molehills; use photos or Commons.",
+   "title": "A nose made for touch",
+   "text": "The star-nosed mole's nose has 22 fleshy rays carrying more than 25,000 touch receptors, which it uses to feel its way around in the dark.",
+   "cite": {
+    "title": "Wikipedia: Star-nosed mole",
+    "url": "https://en.wikipedia.org/wiki/Star-nosed_mole"
+   }
+  },
+  {
+   "id": "platypus",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "platypus",
+   "title": "The mammal that lays eggs",
+   "text": "The platypus is a mammal that lays eggs, and it finds food underwater by sensing electric fields, with its eyes, ears and nostrils shut.",
+   "cite": {
+    "title": "Wikipedia: Platypus",
+    "url": "https://en.wikipedia.org/wiki/Platypus"
+   }
+  },
+  {
+   "id": "seahorse-father",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "seahorse",
+   "note": "Pixabay had AI-generated seahorse clips; they are now filtered out, but double-check.",
+   "title": "Dad carries the babies",
+   "text": "In seahorses, the female places up to 1,500 eggs in the male's brood pouch, and he carries them.",
+   "cite": {
+    "title": "Wikipedia: Seahorse",
+    "url": "https://en.wikipedia.org/wiki/Seahorse"
+   }
+  },
+  {
+   "id": "giraffe-neck",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "giraffe",
+   "title": "Same bones, longer",
+   "text": "A giraffe's long neck has the same number of neck vertebrae as yours: seven, like most mammals. Each one is just much longer.",
+   "cite": {
+    "title": "Wikipedia: Giraffe",
+    "url": "https://en.wikipedia.org/wiki/Giraffe"
+   }
+  },
+  {
+   "id": "lyrebird",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "lyrebird",
+   "title": "The bird that copies everything",
+   "text": "Superb lyrebirds mimic the calls of other birds, and even car alarms, chainsaws and camera shutters.",
+   "cite": {
+    "title": "Wikipedia: Superb lyrebird",
+    "url": "https://en.wikipedia.org/wiki/Superb_lyrebird"
+   }
+  },
+  {
+   "id": "basilisk",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "basilisk lizard",
+   "title": "Walking on water",
+   "text": "The common basilisk can run across the surface of water, and it can also stay underwater for up to half an hour.",
+   "cite": {
+    "title": "Wikipedia: Common basilisk",
+    "url": "https://en.wikipedia.org/wiki/Common_basilisk"
+   }
+  },
+  {
+   "id": "thorny-devil",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "thorny devil",
+   "note": "Pixabay 'thorny devil' returns unrelated clips; use photos or Commons.",
+   "title": "Drinking through the skin",
+   "text": "A thorny devil can collect water just by touching it: tiny channels between its scales carry the water by capillary action to its mouth.",
+   "cite": {
+    "title": "Wikipedia: Thorny devil",
+    "url": "https://en.wikipedia.org/wiki/Thorny_devil"
+   }
+  },
+  {
+   "id": "mudskipper",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "mudskipper",
+   "title": "A fish that lives on land",
+   "text": "Mudskippers are fish that spend long stretches out of the water, moving around and meeting each other on the mud.",
+   "cite": {
+    "title": "Wikipedia: Mudskipper",
+    "url": "https://en.wikipedia.org/wiki/Mudskipper"
+   }
+  },
+  {
+   "id": "owl-head",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "owl",
+   "title": "Turning heads",
+   "text": "An owl's eyes are fixed in their sockets, so it turns its whole head instead, as much as 270 degrees.",
+   "cite": {
+    "title": "Wikipedia: Owl",
+    "url": "https://en.wikipedia.org/wiki/Owl"
+   }
+  },
+  {
+   "id": "kiwi-egg",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "kiwi bird",
+   "title": "An enormous egg",
+   "text": "A kiwi's egg can weigh up to 20% of the mother's body weight, one of the largest in proportion to body size of any bird.",
+   "cite": {
+    "title": "Wikipedia: Kiwi (bird)",
+    "url": "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+   }
+  },
+  {
+   "id": "octopus-arms",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "octopus",
+   "title": "Thinking with its arms",
+   "text": "An octopus has about 500 million neurons, roughly as many as a dog, and two-thirds of them are in its arms.",
+   "cite": {
+    "title": "Wikipedia: Octopus",
+    "url": "https://en.wikipedia.org/wiki/Octopus"
+   }
+  },
+  {
+   "id": "naked-mole-rat",
+   "topic": "Evolution",
+   "status": "draft",
+   "query": "naked mole rat",
+   "title": "Life with almost no air",
+   "text": "Naked mole-rats can survive 18 minutes with no oxygen at all, apparently unharmed.",
+   "cite": {
+    "title": "Wikipedia: Naked mole-rat",
+    "url": "https://en.wikipedia.org/wiki/Naked_mole-rat"
+   }
   }
  ]
 }
