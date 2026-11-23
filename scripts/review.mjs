@@ -191,7 +191,7 @@ function render(){
           use.onclick=()=>{o.footage=c;mark();showPick();cands.querySelectorAll('.cand').forEach(x=>x.classList.remove('picked'));box.classList.add('picked')};
           cands.append(box)}
         if(!r.items.length)cands.append(el('span',{textContent:'Nothing found; try other words.'}))};
-      row.append(el('div',{className:'meta',textContent:o.id+'  ·  '+o.topic}),el('div',{className:'line'},'Headline:',title),field(o,'text',3),citeLine(o),
+      row.append(el('div',{className:'meta',textContent:o.id+'  ·  '+o.topic+(o.note?'  ·  '+o.note:'')}),el('div',{className:'line'},'Headline:',title),field(o,'text',3),citeLine(o),
         el('div',{className:'line'},'Footage search:',q,find),pickInfo,cands,el('div',{className:'line'},'Status:',statusSel(o,row)));main.append(row)}
   }
 }
