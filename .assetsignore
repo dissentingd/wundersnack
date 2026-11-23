@@ -21,3 +21,6 @@ CNAME
 .nojekyll
 .gitignore
 .assetsignore
+trivia.json
+facts.json
+.env

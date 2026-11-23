@@ -25,6 +25,8 @@ The natural world is full of wonder most people never get to see. wundersnack pu
 | [Wikimedia Commons Featured Pictures](https://commons.wikimedia.org/wiki/Commons:Featured_pictures) | Community-selected photos of geology (hoodoos, basalt columns, canyons, caves), waves and wind (dunes, wind-carved rock, wave clouds) | Each file's own license |
 | [Wiki Loves Earth](https://wikilovesearth.org/) winners and Commons [Picture of the Year](https://commons.wikimedia.org/wiki/Commons:Picture_of_the_Year) finalists | Prize-winning nature photography (Picture of the Year finalists are filtered to nature subjects) | Each file's own license |
 | Hand-picked (`curated.json`) | YouTube and Vimeo videos, embedded | The creator's own terms |
+| Reviewed trivia (`trivia.json`) | "Did you know?" lines on matching cards (by species or genus, title word or topic), each checked against and linked to its source | Our own wording; sources linked |
+| Fact cards (`facts.json`) | A fascinating fact shown over muted footage from NASA, Wikimedia Commons or [Pixabay](https://pixabay.com/) | Fact: our wording, source linked. Footage: its own license, credited on the card |
 
 If you made something shown here and want it removed, or spot something that shouldn't be in a calm feed, please [open an issue](https://github.com/dissentingd/wundersnack/issues).
 
@@ -75,6 +77,16 @@ Wikimedia Commons only offers its videos as MPEG-4 Part 2 or WebM, which iPhone 
 **Storage budget.** R2's Standard storage includes 10 GB free, and `mediaCache.maxBytes` caps the bucket at 9 GB. Every upload run first prunes copies of items that have left the feed (including ones dropped for being voted unhelpful), then, if a new file wouldn't fit, deletes the copies with the worst vote scores (helped < 50%) before skipping new items; skipped items keep loading from Wikimedia. A run never prunes more than a quarter of the cache at once.
 
 The weekly workflow does this automatically (up to 60 new videos per run) when these repository secrets are set: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` (an R2 API token with object read and write on the bucket). It uses the AWS CLI against R2's S3-compatible API. To test conversion locally without uploading: `node scripts/cache-media.mjs --dry-run=out --limit=3` (needs ffmpeg).
+
+### Review trivia and fact cards
+
+```sh
+node scripts/review.mjs     # then open http://127.0.0.1:8790
+```
+
+A small local page for `trivia.json` and `facts.json`: edit the wording, check the source link, set each line to approved or rejected, and pick footage for fact cards. Only approved lines reach the feed on the next build. Footage search always covers NASA and Wikimedia Commons; Pixabay (and Pexels) join when `PIXABAY_API_KEY` / `PEXELS_API_KEY` are set in the environment or in a gitignored `.env` file. A picked clip is saved with its file URL, credit and license, so the feed build itself needs no keys. Pixabay asks that its files be served from your own storage rather than hotlinked, so `cache-media` copies picked Pixabay clips to R2 and those cards only appear once copied.
+
+Matching rules for `trivia.json`: a `taxon` line (iNaturalist species or genus name) beats a `title` line (a word in the card title, skipping species cards unless `source` is set; `notTitle` excludes words), which beats a `topic` line. Title and topic lines appear on at most three cards each. To test a build against other files: `WS_TRIVIA=path WS_FACTS=path node scripts/build-feed.mjs`.
 
 ### Add a hand-picked video
 

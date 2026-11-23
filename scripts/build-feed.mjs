@@ -520,9 +520,79 @@ for (const name of Object.keys(runners)) {
   }
 }
 
-const items = [...curated.map(i => ({ ...i, curated: true })), ...Object.values(bySource).flat()];
+// ---------- fact cards (facts.json): a reviewed fact over muted footage, picked in scripts/review.mjs ----------
+// Only status "approved" with picked footage goes live. Footage keeps its own credit/license/source link; the fact
+// keeps its citation.
+// WS_FACTS / WS_TRIVIA point at other files, for testing the build against fixtures without touching the real ones.
+const readJSON = async (f, fallback) => { try { return JSON.parse(await readFile(path.resolve(root, f), 'utf8')); } catch { return fallback; } };
+const factCards = ((await readJSON(process.env.WS_FACTS || 'facts.json', {})).items || [])
+  .filter(f => f.status === 'approved' && f.footage?.sources?.length)
+  .map(f => ({
+    id: `fact-${f.id}`,
+    source: f.footage.provider,
+    kind: 'video',
+    topic: f.topic,
+    title: f.title,
+    subtitle: '',
+    caption: '',
+    fact: { text: f.text, cite: f.cite.title, url: f.cite.url },
+    media: {
+      sources: f.footage.sources.map(s => ({ src: s.src, type: s.type })),
+      poster: f.footage.poster || '', duration: f.footage.duration || 0,
+      ...(f.footage.requiresCache ? { requiresCache: true } : {}),
+    },
+    credit: f.footage.credit,
+    license: f.footage.license,
+    sourceUrl: f.footage.sourceUrl,
+  }));
+console.log(`fact cards: ${factCards.length} approved with footage`);
+
+const items = [...curated.map(i => ({ ...i, curated: true })), ...factCards, ...Object.values(bySource).flat()];
 const ids = new Set(cfg.exclude?.ids || []);
 let unique = items.filter(i => !ids.has(i.id) && ids.add(i.id));
+
+// ---------- trivia (trivia.json): a reviewed "did you know" line, matched by taxon, title word or topic ----------
+// Most specific match wins (taxon > title > topic); several lines at one level rotate by item id so neighbouring
+// cards don't repeat. iNaturalist cards whose caption is only a generic or higher-level line lose it in favour of
+// the trivia; everything else keeps its caption under the trivia.
+const trivia = ((await readJSON(process.env.WS_TRIVIA || 'trivia.json', {})).items || []).filter(t => t.status === 'approved');
+const hash = s => [...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+const wordRe = w => new RegExp(`\\b${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i');
+const genericWonder = new Set((cfg.inaturalist?.taxa || []).map(t => t.wonder));
+let withTrivia = 0;
+const lineUses = new Map();
+unique = unique.map(i => {
+  const { trivia: _t, ...rest } = i;
+  if (i.fact) return rest;
+  const sci = i.source === 'iNaturalist' ? (i.subtitle || i.title) : '';
+  const fits = t => (!t.match.source || t.match.source === i.source)
+    && !(t.match.notTitle && new RegExp(t.match.notTitle, 'i').test(i.title)); // e.g. Earth's aurora line, not Jupiter's
+  // A species card that already has its own Wikipedia fact keeps it; topic lines only fill in for generic or
+  // higher-level ("About ...") captions, so the same few topic lines don't repeat on dozens of cards.
+  const ownFact = i.source === 'iNaturalist' && i.caption && !genericWonder.has(i.caption) && !/^About /.test(i.caption);
+  const levels = [
+    trivia.filter(t => t.match.taxon && sci && fits(t) && (sci === t.match.taxon || sci.startsWith(`${t.match.taxon} `))),
+    // title words skip species cards unless the line names a source ("Moon moth" isn't the Moon)
+    trivia.filter(t => t.match.title && fits(t) && (t.match.source || i.source !== 'iNaturalist') && wordRe(t.match.title).test(i.title)),
+    ownFact ? [] : trivia.filter(t => t.match.topic && fits(t) && t.match.topic === i.topic),
+  ];
+  // Title and topic lines go on at most 3 cards each (least-used first), like the higher-level Wikipedia facts.
+  levels[1] = levels[1].filter(t => (lineUses.get(t.id) || 0) < 3);
+  levels[2] = levels[2].filter(t => (lineUses.get(t.id) || 0) < 3);
+  const level = levels.findIndex(l => l.length);
+  if (level < 0) return rest;
+  const pool = level === 0 ? levels[0]
+    : levels[level].filter(t => (lineUses.get(t.id) || 0) === Math.min(...levels[level].map(x => lineUses.get(x.id) || 0)));
+  const t = pool[hash(i.id) % pool.length];
+  lineUses.set(t.id, (lineUses.get(t.id) || 0) + 1);
+  withTrivia++;
+  const out = { ...rest, trivia: { text: t.text, cite: t.cite.title, url: t.cite.url } };
+  // A species/genus line replaces the Wikipedia caption (usually the same article); so does any line on a card whose
+  // caption was only generic or higher-level.
+  if (i.source === 'iNaturalist' && (level === 0 || !ownFact)) out.caption = '';
+  return out;
+});
+console.log(`trivia: ${trivia.length} approved lines, on ${withTrivia} cards`);
 
 // "Gross, but cool": flag creepy-crawlies (and whole taxa marked grossButCool) so the app can hide them by default.
 const grossRe = (cfg.grossButCool?.patterns || []).map(w => new RegExp(`\\b${w}`, 'i'));

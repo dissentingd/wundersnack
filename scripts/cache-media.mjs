@@ -172,7 +172,8 @@ const inputFor = it => {
 const feedPath = path.join(root, 'feed.json');
 const feed = JSON.parse(await readFile(feedPath, 'utf8'));
 const manifest = await loadManifest();
-const videos = feed.items.filter(i => i.kind === 'video' && i.id.startsWith('commons-'));
+// Commons videos, plus fact-card footage that isn't NASA's (NASA already serves phone-friendly H.264).
+const videos = feed.items.filter(i => i.kind === 'video' && (i.id.startsWith('commons-') || (i.id.startsWith('fact-') && i.source !== 'NASA')));
 const pictures = feed.items.filter(i => i.kind === 'image' && i.id.startsWith('commonsimg-'));
 const todo = videos.filter(i => !manifest[i.id]).slice(0, LIMIT);
 
@@ -249,12 +250,13 @@ if (UPLOAD || DRY) {
   }
 }
 
-// Attach cached copies (ours first, Commons originals kept as fallback).
-let attached = 0;
+// Attach cached copies (ours first, originals kept as fallback). Footage whose source asks to be served from our
+// own storage (Pixabay) only appears once it has been cached.
+let attached = 0, held = 0;
 for (const it of videos) {
   const m = manifest[it.id];
   const originals = it.media.sources.filter(s => !s.cached);
-  if (!m) { it.media.sources = originals; continue; }
+  if (!m) { it.media.sources = originals; if (it.media.requiresCache) { it.held = true; held++; } continue; }
   it.media.sources = [{ src: `${base}/${m.v}`, type: CACHED_TYPE, cached: true }, ...originals];
   if (m.p) { it.media.originalPoster ??= it.media.poster; it.media.poster = `${base}/${m.p}`; }
   attached++;
@@ -272,7 +274,12 @@ for (const it of pictures) {
   it.media.fallback = origSrc; // the app switches to Wikimedia's copy if ours fails to load
   attachedImg++;
 }
+if (held) {
+  feed.items = feed.items.filter(i => !i.held);
+  feed.count = feed.items.length;
+  console.log(`media cache: ${held} fact cards held back until their footage is cached`);
+}
 await writeFile(feedPath, JSON.stringify(feed, null, 1) + '\n');
 console.log(`media cache: ${attachedImg}/${pictures.length} Commons photos served from ${base}`);
-console.log(`media cache: ${attached}/${videos.length} Commons videos served from ${base}` +
+console.log(`media cache: ${attached}/${videos.length} Commons/fact videos served from ${base}` +
   (UPLOAD ? `, ${Object.keys(manifest).length} in manifest` : '') + (DRY ? ` (dry run: files in ${DRY})` : ''));

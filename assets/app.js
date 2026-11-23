@@ -27,6 +27,32 @@ function markSeen(id) {
   store.set('ws.seen', seen);
 }
 
+// ---------- tagline: a different line under the wordmark each visit (index.html keeps the first as the default) ----------
+const TAGLINES = [
+  'A snack of wonder: one “woah” at a time, to feel a little better.',
+  'Small wonders, one at a time. No rush.',
+  'The world is stranger and kinder than the news.',
+  'A minute of wonder for a heavy day.',
+  'Look closely. Something out there is glowing.',
+  'Somewhere right now, a moss is quietly doing its thing.',
+  'Take a breath. The universe is still beautiful.',
+  'Tiny marvels, big skies, slow breaths.',
+  'A little awe goes a long way.',
+  'Nothing to keep up with. Just something to wonder at.',
+  'Here are some things that are simply amazing.',
+  'Wonder first. Everything else can wait a minute.',
+];
+(function pickTagline() {
+  const elTag = document.getElementById('tagline');
+  if (!elTag) return;
+  const last = store.get('ws.tagline', -1);
+  const fresh = last >= 0 && last < TAGLINES.length;
+  let i = Math.floor(Math.random() * (TAGLINES.length - (fresh ? 1 : 0)));
+  if (fresh && i >= last) i++; // never the same line twice in a row
+  elTag.textContent = TAGLINES[i];
+  store.set('ws.tagline', i);
+})();
+
 // ---------- ordering ----------
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
@@ -79,7 +105,8 @@ function roundRobin(pool, keyOf, rank) {
 // Alternate motion (video/embeds) and stills one-for-one while motion lasts; curated picks lead each pool.
 // Items this device voted down are left out.
 // Each source + topic (e.g. Commons Geology, iNaturalist Fungi, NASA Space) is its own group, so new topics get a fair share.
-const groupOf = i => `${i.source}:${i.topic || ''}`;
+// Fact cards share one group, so a handful of them don't each claim a slot per round.
+const groupOf = i => i.fact ? 'facts' : `${i.source}:${i.topic || ''}`;
 function arrange(all) {
   const rank = ranker(all);
   const pool = all.filter(i => myVotes[i.id] !== -1 && (showGross || !i.gross));
@@ -133,21 +160,32 @@ const el = (tag, props = {}, ...kids) => {
   return n;
 };
 
+const citeLink = (c, label = 'Source') => el('a', { className: 'cite', href: c.url, target: '_blank', rel: 'noopener', title: c.cite, textContent: `${label} ↗` });
+
 function infoBlock(it) {
-  const topic = el('span', { className: 'topic' + (it.discovery ? ' discovery' : ''), textContent: it.topic || it.source });
+  const topic = el('span', { className: 'topic' + (it.discovery ? ' discovery' : '') + (it.fact ? ' fact' : ''), textContent: it.topic || it.source });
   const credit = el('p', { className: 'credit' },
-    [it.credit, it.license].filter(Boolean).join(' · ') + ' · ',
+    (it.fact ? 'Footage: ' : '') + [it.credit, it.license].filter(Boolean).join(' · ') + ' · ',
     el('a', { href: it.sourceUrl, target: '_blank', rel: 'noopener', textContent: `${it.source} ↗` }));
+  if (it.fact) {
+    // Fact card: the fact is the star; the footage is a calm backdrop.
+    return el('div', { className: 'info fact-info' },
+      topic,
+      el('h2', { textContent: it.title }),
+      el('p', { className: 'fact-text' }, it.fact.text, ' ', citeLink(it.fact)),
+      credit);
+  }
   return el('div', { className: 'info' },
     topic,
     el('h2', { textContent: it.title }),
     it.subtitle ? el('p', { className: 'sub', textContent: it.subtitle }) : null,
-    it.caption ? el('p', { className: 'caption', textContent: it.caption }) : null,
+    it.trivia ? el('p', { className: 'trivia' }, el('strong', { textContent: 'Did you know? ' }), it.trivia.text, ' ', citeLink(it.trivia)) : null,
+    it.caption ? el('p', { className: 'caption' + (it.trivia ? ' secondary' : ''), textContent: it.caption }) : null,
     credit);
 }
 
 function makeCard(it) {
-  const card = el('section', { className: 'card', tabIndex: -1 });
+  const card = el('section', { className: 'card' + (it.fact ? ' fact-card' : ''), tabIndex: -1 });
   card.dataset.id = it.id;
   card._item = it;
   const thumb = it.media.thumb || it.media.poster || it.media.src;
